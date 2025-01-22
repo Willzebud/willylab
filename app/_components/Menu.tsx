@@ -1,28 +1,50 @@
 "use client";
 
 import { X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
+import { useWindowSize } from "usehooks-ts"; // Assurez-vous que ce hook est installé
 
 export const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false); // Permet de vérifier si on est côté client
+  const { width } = useWindowSize();
+
+  useEffect(() => {
+    // Une fois monté, indique que nous sommes côté client
+    setIsClient(true);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  if (!isClient) {
+    // Empêche tout rendu côté serveur pour éviter les conflits
+    return null;
+  }
+
   return (
     <>
       {/* Barre verticale (Desktop) */}
-      <motion.div
-        initial={{ left: "4rem" }}
-        animate={{ left: isMenuOpen ? "12.5rem" : "4rem" }} // Ajustement pour correspondre à la largeur exacte de la div motion
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className="hidden md:block absolute top-0 h-full w-[1px] bg-black z-50"
-      />
+      {width >= 768 && (
+        <motion.div
+          initial={{ left: "4rem" }}
+          animate={{ left: isMenuOpen ? "12.5rem" : "4rem" }}
+          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          className="hidden md:block absolute top-0 h-full w-[1px] bg-black z-50"
+        />
+      )}
 
       {/* Barre horizontale (Mobile) */}
-      <div className="block md:hidden absolute top-16 left-0 w-full h-[1px] bg-black" />
+      {width < 768 && (
+        <motion.div
+          initial={{ top: "4rem" }}
+          animate={{ top: isMenuOpen ? "30rem" : "4rem" }}
+          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          className="block md:hidden absolute left-0 w-full h-[1px] bg-black z-50"
+        />
+      )}
 
       {/* Bouton du menu */}
       <div
@@ -38,10 +60,22 @@ export const Menu = () => {
 
       {/* Menu latéral avec animation */}
       <motion.div
-        initial={{ x: "-100%" }}
-        animate={{ x: isMenuOpen ? 0 : "-100%" }}
+        initial={width >= 768 ? { x: "-100%" } : { y: "-100%" }}
+        animate={
+          isMenuOpen
+            ? width >= 768
+              ? { x: 0 }
+              : { y: 0 }
+            : width >= 768
+            ? { x: "-100%" }
+            : { y: "-100%" }
+        }
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className="fixed top-0 left-0 w-[15rem] md:w-[12.5rem] h-full bg-white shadow-lg z-40" // Ajustement de la largeur
+        className={`fixed ${
+          width >= 768
+            ? "top-0 left-0 w-[15rem] md:w-[12.5rem] h-full"
+            : "top-0 left-0 w-full h-[30rem]"
+        } bg-white shadow-lg z-40`}
       >
         {/* Bouton pour fermer */}
         <div className="flex justify-end p-4">
