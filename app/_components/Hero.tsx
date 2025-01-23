@@ -29,7 +29,7 @@ export const Hero = () => {
           </div>
 
           {/* Carte d'information */}
-          <div className="bg-white p-4 rounded-lg shadow-lg w-full max-w-sm md:max-w-xl">
+          <div className="bg-white p-4 mx-2 rounded-lg shadow-lg w-auto md:max-w-xl">
             <h2 className="text-lg font-bold text-center md:text-left">
               Ophélie Roche. Ostéopathe
             </h2>
