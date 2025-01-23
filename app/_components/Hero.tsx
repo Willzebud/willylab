@@ -13,7 +13,7 @@ export const Hero = () => {
           alt="Fond coloré avec des dessins de plantes"
           fill
           priority
-          className="z-0 object-cover p-3"
+          className="z-0 object-cover px-3"
         />
       </div>
 
