@@ -30,7 +30,7 @@ export const Menu = ({ heroHeight }: MenuProps) => {
   return (
     <>
       {/* Barre verticale (Desktop) */}
-      {width >= 768 && (
+      {width >= 1024 && (
         <motion.div
           initial={{ left: "4rem" }}
           animate={{ left: isMenuOpen ? "12.5rem" : "4rem" }}
@@ -38,12 +38,12 @@ export const Menu = ({ heroHeight }: MenuProps) => {
           style={{
             height: `${heroHeight}px`, // Hauteur dynamique
           }}
-          className="hidden md:block absolute w-[1px] bg-black z-50"
+          className="hidden lg:block absolute w-[1px] bg-black z-50"
         />
       )}
 
       {/* Barre horizontale (Mobile) */}
-      {width < 768 && (
+      {width < 1024 && (
         <motion.div
           initial={{ top: "4rem", opacity: 0 }}
           animate={{
@@ -55,7 +55,7 @@ export const Menu = ({ heroHeight }: MenuProps) => {
             stiffness: 300,
             damping: 30,
           }}
-          className="block md:hidden h-[1px] bg-black z-50 mx-auto"
+          className="block lg:hidden h-[1px] bg-black z-50 mx-auto"
           style={{
             maxWidth: "95%", // Assure que la barre a la même largeur que la carte Hero
             left: 0, // Centrage horizontal
@@ -67,12 +67,12 @@ export const Menu = ({ heroHeight }: MenuProps) => {
 
       <div
         className={`absolute z-30 ${
-          width >= 768
+          width >= 1024
             ? "" // Applique uniquement les styles spécifiques à Desktop
             : "top-4 right-4" // Position pour Mobile
         }`}
         style={{
-          ...(width >= 768 && {
+          ...(width >= 1024 && {
             // Ces styles ne s'appliquent qu'à Desktop
             height: `${heroHeight}px`, // Hauteur de la barre verticale
             width: "calc(4.5rem - 8px)", // Largeur dynamique pour Desktop
@@ -83,10 +83,10 @@ export const Menu = ({ heroHeight }: MenuProps) => {
       >
         <div
           className={`absolute ${
-            width >= 768
+            width >= 1024
               ? "top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" // Centrage pour Desktop
               : "top-0 right-0 transform translate-x-0 translate-y-0" // Position pour Mobile
-          } w-8 h-8 md:w-10 md:h-10 p-1 mb-2 border border-black md:border md:border-transparent rounded-full cursor-pointer transition md:hover:border-transparent hover:border-primary group flex flex-col items-center justify-center`}
+          } w-8 h-8 lg:w-10 lg:h-10 mb-2 border border-black lg:border lg:border-transparent rounded-full cursor-pointer transition lg:hover:border-transparent hover:border-primary group flex flex-col items-center justify-center`}
         >
           <div className="w-1 h-1 mb-1 rounded-full bg-black group-hover:bg-primary" />
           <div className="w-1 h-1 mb-1 rounded-full bg-black group-hover:bg-primary" />
@@ -96,20 +96,20 @@ export const Menu = ({ heroHeight }: MenuProps) => {
 
       {/* Menu latéral avec animation */}
       <motion.div
-        initial={width >= 768 ? { x: "-100%" } : { y: "-100%" }}
+        initial={width >= 1024 ? { x: "-100%" } : { y: "-100%" }}
         animate={
           isMenuOpen
-            ? width >= 768
+            ? width >= 1024
               ? { x: 0 }
               : { y: 0 }
-            : width >= 768
+            : width >= 1024
             ? { x: "-100%" }
             : { y: "-100%" }
         }
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
         className={`fixed ${
-          width >= 768
-            ? "top-0 left-0 w-[15rem] md:w-[12.5rem] h-full"
+          width >= 1024
+            ? "top-0 left-0 w-[15rem] lg:w-[12.5rem] h-full"
             : "top-0 left-0 w-full h-[30rem]"
         } bg-white shadow-lg z-40`}
       >
@@ -124,7 +124,7 @@ export const Menu = ({ heroHeight }: MenuProps) => {
         </div>
 
         {/* Contenu du menu */}
-        <div className="md:p-4 space-y-6 ml-4">
+        <div className="lg:p-4 space-y-6 ml-4">
           <div>
             <h2 className="text-lg font-bold cursor-pointer transition hover:text-primary">
               Sections
