@@ -10,7 +10,7 @@ type MenuProps = {
   heroWidth: number; // Largeur du Hero (pour Mobile)
 };
 
-export const Menu = ({ heroHeight, heroWidth }: MenuProps) => {
+export const Menu = ({ heroHeight }: MenuProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const { width } = useWindowSize();
