@@ -1,11 +1,34 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { TiktokIcon } from "./icons/Tiktok";
 import { InstaIcon } from "./icons/Insta";
 import { YoutubeIcon } from "./icons/Youtube";
+import { Dispatch, SetStateAction } from "react";
 
-export const Hero = () => {
+type HeroProps = {
+  setHeroHeight: Dispatch<SetStateAction<number>>;
+  setHeroWidth: Dispatch<SetStateAction<number>>;
+};
+
+export const Hero = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
+  const heroRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (heroRef.current) {
+      const height = heroRef.current.offsetHeight; // Mesurer la hauteur du Hero
+      const width = heroRef.current.offsetWidth; // Mesurer la largeur du Hero
+      setHeroHeight(height); // Transmettre la hauteur au parent
+      setHeroWidth(width); // Transmettre la largeur au parent
+    }
+  }, [setHeroHeight, setHeroWidth]);
+
   return (
-    <div className="relative w-full h-auto mx-auto mt-5 px-4 md:w-[1200px] md:h-[600px]">
+    <div
+      ref={heroRef}
+      className="relative z-0 w-full h-auto mx-auto mt-5 md:mt-0 overflow-hidden md:w-[1200px] md:h-[600px] max-w-[95%]" // max-w-[95%] pour éviter que la carte touche les bords
+    >
       {/* Image de fond */}
       <div className="absolute inset-0 h-full w-full z-0 overflow-hidden">
         <Image
@@ -13,7 +36,7 @@ export const Hero = () => {
           alt="Fond coloré avec des dessins de plantes"
           fill
           priority
-          className="z-0 object-cover px-3"
+          className="z-0 object-cover"
         />
       </div>
 
