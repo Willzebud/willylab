@@ -42,29 +42,6 @@ export const Menu = ({ heroHeight }: MenuProps) => {
         />
       )}
 
-      {/* Barre horizontale (Mobile) */}
-      {width < 1025 && (
-        <motion.div
-          initial={{ top: "4rem", opacity: 0 }}
-          animate={{
-            top: isMenuOpen ? "30rem" : "4rem",
-            opacity: 1,
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 30,
-          }}
-          className="block lg:hidden h-[1px] bg-black z-50 mx-auto"
-          style={{
-            maxWidth: "95%", // Assure que la barre a la même largeur que la carte Hero
-            left: 0, // Centrage horizontal
-            right: 0, // Centrage horizontal
-            position: "absolute", // Permet le déplacement vertical (top)
-          }}
-        />
-      )}
-
       <div
         className={`absolute z-30 ${
           width >= 1025
@@ -85,12 +62,12 @@ export const Menu = ({ heroHeight }: MenuProps) => {
           className={`absolute ${
             width >= 1025
               ? "top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" // Centrage pour Desktop
-              : "top-0 right-0 transform translate-x-0 translate-y-0" // Position pour Mobile
-          } w-8 h-8 lg:w-10 lg:h-10 border border-black lg:border lg:border-transparent rounded-full cursor-pointer transition lg:hover:border-transparent hover:border-primary group flex flex-col items-center justify-center`}
+              : "" // Position pour Mobile
+          } lg:w-10 lg:h-10 lg:border lg:border-transparent lg:rounded-full lg:cursor-pointer lg:transition lg:hover:border-transparent hover:border-primary group flex flex-col items-center justify-center`}
         >
-          <div className="w-1 h-1 mb-1 rounded-full bg-black group-hover:bg-primary" />
-          <div className="w-1 h-1 mb-1 rounded-full bg-black group-hover:bg-primary" />
-          <div className="w-1 h-1 rounded-full bg-black group-hover:bg-primary" />
+          <div className="lg:w-1 lg:h-1 mb-1 rounded-full bg-black group-hover:bg-primary" />
+          <div className="lg:w-1 lg:h-1 mb-1 rounded-full bg-black group-hover:bg-primary" />
+          <div className="lg:w-1 lg:h-1 rounded-full bg-black group-hover:bg-primary" />
         </div>
       </div>
 
