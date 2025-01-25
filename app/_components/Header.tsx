@@ -19,25 +19,24 @@ export const Header = () => {
         <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-black bg-transparent cursor-pointer transition hover:border-primary hover:bg-primary" />
 
         {/* Boutons Tarifs et Rendez-vous */}
-        <div className="flex items-center space-x-2">
+        <div className=" relative flex items-center space-x-2">
           <div className="h-auto w-auto border border-black px-3 lg:px-4 py-1 rounded-lg cursor-pointer transition hover:border-primary group">
             <p className="text-black group-hover:text-primary">Tarifs</p>
           </div>
           <div className="h-auto w-auto border border-black px-3 lg:px-4 py-1 rounded-lg cursor-pointer transition hover:border-primary group">
             <p className="text-black group-hover:text-primary">Rendez-vous</p>
           </div>
-        </div>
-
-        {/* Cercle avec trois points */}
-        <div className="relative flex items-center lg:hidden">
-          <div
-            className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-black bg-transparent cursor-pointer transition hover:border-primary hover:bg-primary flex items-center justify-center"
-            onClick={toggleMenu}
-          >
-            <div className="space-y-[2px] flex flex-col items-center">
-              <span className="w-1 h-1 bg-black rounded-full"></span>
-              <span className="w-1 h-1 bg-black rounded-full"></span>
-              <span className="w-1 h-1 bg-black rounded-full"></span>
+          {/* Cercle avec trois points */}
+          <div className="relative flex items-center lg:hidden">
+            <div
+              className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-black bg-transparent cursor-pointer transition hover:border-primary hover:bg-primary flex items-center justify-center"
+              onClick={toggleMenu}
+            >
+              <div className="space-y-[2px] flex flex-col items-center">
+                <span className="w-1 h-1 bg-black rounded-full"></span>
+                <span className="w-1 h-1 bg-black rounded-full"></span>
+                <span className="w-1 h-1 bg-black rounded-full"></span>
+              </div>
             </div>
           </div>
         </div>
