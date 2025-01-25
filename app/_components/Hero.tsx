@@ -27,7 +27,7 @@ export const Hero = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
   return (
     <div
       ref={heroRef}
-      className="relative z-0 w-full h-auto mx-auto mt-5 lg:mt-0 overflow-hidden lg:w-[1200px] lg:h-[600px] max-w-[95%]" // max-w-[95%] pour éviter que la carte touche les bords
+      className="relative z-0 w-full h-auto mx-auto mt-5 lg:mt-0 overflow-hidden lg:w-[80%] lg:h-[600px] max-w-[95%]" // max-w-[95%] pour éviter que la carte touche les bords
     >
       {/* Image de fond */}
       <div className="absolute inset-0 h-full w-full z-0 overflow-hidden">
