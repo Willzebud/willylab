@@ -27,7 +27,7 @@ export const Header = () => {
             <p className="text-black group-hover:text-primary">Rendez-vous</p>
           </div>
           {/* Cercle avec trois points */}
-          <div className="relative flex items-center lg:hidden">
+          <div className="relative flex items-center ipadPro:hidden">
             <div
               className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-black bg-transparent cursor-pointer transition hover:border-primary hover:bg-primary flex items-center justify-center"
               onClick={toggleMenu}
@@ -54,7 +54,7 @@ export const Header = () => {
           stiffness: 300,
           damping: 30,
         }}
-        className="block lg:hidden h-[1px] bg-black z-50 mx-auto"
+        className="block ipadPro:hidden h-[1px] bg-black z-50 mx-auto"
         style={{
           maxWidth: "95%", // Assure que la barre a la même largeur que le Hero
           left: 0, // Centrage horizontal
@@ -68,7 +68,7 @@ export const Header = () => {
         initial={{ y: "-100%" }}
         animate={{ y: isMenuOpen ? "0%" : "-100%" }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className={`fixed top-0 left-0 w-full h-[30rem] bg-white shadow-lg z-40 lg:hidden`}
+        className={`fixed top-0 left-0 w-full h-[30rem] bg-white shadow-lg z-40 ipadPro:hidden`}
       >
         {/* Bouton pour fermer */}
         <div className="flex justify-end p-4">

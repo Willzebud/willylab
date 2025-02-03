@@ -14,6 +14,9 @@ const config: Config = {
       caption: ["var(--font-caption)"],
     },
     extend: {
+      screens: {
+        ipadPro: "1025px", // Breakpoint juste au-dessus de l'iPad Pro
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
