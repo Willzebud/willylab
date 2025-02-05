@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Menu } from "./_components/Menu";
 import { Header } from "./_components/Header";
 import { Hero } from "./_components/Hero";
+import { Sections } from "./_components/Sections";
+import { Spacing } from "./Spacing";
 
 export default function Home() {
   // États pour stocker la hauteur et la largeur du Hero
@@ -17,6 +19,8 @@ export default function Home() {
       <Menu heroHeight={heroHeight} heroWidth={heroWidth} />
       {/* Passer setHeroHeight et setHeroWidth à Hero */}
       <Hero setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
+      <Spacing />
+      <Sections setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
     </main>
   );
 }
