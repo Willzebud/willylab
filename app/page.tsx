@@ -15,9 +15,9 @@ export default function Home() {
   return (
     <main>
       <Header />
-      {/* Passer heroHeight et heroWidth à Menu */}
+      <Spacing />
       <Menu heroHeight={heroHeight} heroWidth={heroWidth} />
-      {/* Passer setHeroHeight et setHeroWidth à Hero */}
+      <Spacing />
       <Hero setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
       <Spacing />
       <Sections setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />

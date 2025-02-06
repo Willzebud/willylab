@@ -13,7 +13,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="sticky py-4 z-30 bg-background">
+    <header className="fixed top-0 left-0 w-full py-4 z-50 bg-background">
       <Section className="flex items-center justify-between">
         {/* Cercle à gauche */}
         <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-black bg-transparent cursor-pointer transition hover:border-primary hover:bg-primary" />

@@ -52,39 +52,77 @@ export const Sections = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
         {/* Conteneur pour centrer les cartes */}
         <div className="flex justify-center items-center h-auto sm:h-[calc(100vh-300px)] mt-10 sm:mt-0">
           {/* Cartes des sections */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 w-full">
             {/* Carte Ostéopathie adulte */}
-            <div className="flex flex-col items-center bg-[#023333] p-6 rounded-lg shadow-lg hover:scale-105 transition">
-              <div className="w-16 h-16 mb-4 text-primary">
+            <div className="relative flex flex-col items-center bg-[#023333] p-6 rounded-lg shadow-lg transition duration-300 hover:bg-[#A9E6DA] group">
+              {/* Icône */}
+              <div className="w-16 h-16 mb-4 text-primary transition-opacity duration-300 group-hover:opacity-40">
                 <OsteoIcon className="w-full h-full" />
               </div>
-              <h3 className="font-bold text-white text-center">
+
+              {/* Texte principal */}
+              <h3 className="font-bold text-white text-center transition-opacity duration-300 group-hover:opacity-40">
                 Ostéopathie adulte
               </h3>
+
+              {/* Texte "Voir plus" qui apparaît au hover */}
+              <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-black opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Voir plus
+              </p>
             </div>
 
             {/* Carte Pédiatrie */}
-            <div className="flex flex-col items-center bg-[#023333] p-6 rounded-lg shadow-lg hover:scale-105 transition">
-              <div className="w-16 h-16 mb-4 text-primary">
+            <div className="relative flex flex-col items-center bg-[#023333] p-6 rounded-lg shadow-lg transition duration-300 hover:bg-[#A9E6DA] group">
+              {/* Icône */}
+              <div className="w-16 h-16 mb-4 text-primary transition-opacity duration-300 group-hover:opacity-40">
                 <PediatrieIcon className="w-full h-full" />
               </div>
-              <h3 className="font-bold text-white text-center">Pédiatrie</h3>
+
+              {/* Texte principal */}
+              <h3 className="font-bold text-white text-center transition-opacity duration-300 group-hover:opacity-40">
+                Pédiatrie
+              </h3>
+
+              {/* Texte "Voir plus" */}
+              <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-black opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Voir plus
+              </p>
             </div>
 
             {/* Carte Drainage */}
-            <div className="flex flex-col items-center bg-[#023333] p-6 rounded-lg shadow-lg hover:scale-105 transition">
-              <div className="w-16 h-16 mb-4 text-primary">
+            <div className="relative flex flex-col items-center bg-[#023333] p-6 rounded-lg shadow-lg transition duration-300 hover:bg-[#A9E6DA] group">
+              {/* Icône */}
+              <div className="w-16 h-16 mb-4 text-primary transition-opacity duration-300 group-hover:opacity-40">
                 <DrainageIcon className="w-full h-full" />
               </div>
-              <h3 className="font-bold text-white text-center">Drainage</h3>
+
+              {/* Texte principal */}
+              <h3 className="font-bold text-white text-center transition-opacity duration-300 group-hover:opacity-40">
+                Drainage
+              </h3>
+
+              {/* Texte "Voir plus" */}
+              <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-black opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Voir plus
+              </p>
             </div>
 
             {/* Carte Haptonomie */}
-            <div className="flex flex-col items-center bg-[#023333] p-6 rounded-lg shadow-lg hover:scale-105 transition">
-              <div className="w-16 h-16 mb-4 text-primary">
+            <div className="relative flex flex-col items-center bg-[#023333] p-6 rounded-lg shadow-lg transition duration-300 hover:bg-[#A9E6DA] group">
+              {/* Icône */}
+              <div className="w-16 h-16 mb-4 text-primary transition-opacity duration-300 group-hover:opacity-40">
                 <HaptoIcon className="w-full h-full" />
               </div>
-              <h3 className="font-bold text-white text-center">Haptonomie</h3>
+
+              {/* Texte principal */}
+              <h3 className="font-bold text-white text-center transition-opacity duration-300 group-hover:opacity-40">
+                Haptonomie
+              </h3>
+
+              {/* Texte "Voir plus" */}
+              <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-black opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                Voir plus
+              </p>
             </div>
           </div>
         </div>
