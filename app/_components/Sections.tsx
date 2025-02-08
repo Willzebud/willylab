@@ -31,11 +31,13 @@ export const Sections = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
       className="relative z-0 w-full h-auto mx-auto mt-5 lg:mt-0 overflow-hidden xl:w-[80%] lg:h-[600px] max-w-[95%]"
     >
       {/* Image de fond */}
-      <div className="absolute inset-0 w-full min-h-[600px]">
+      <div className="absolute inset-0 h-full w-full z-0 overflow-hidden">
         <Image
           src="/images/fonds/Fond-2.webp"
           alt="Fond coloré avec des dessins de plantes"
-          fill
+          layout="intrinsic"
+          width={1200} // Tu peux mettre la largeur réelle de ton image
+          height={800} // Idem pour la hauteur
           priority
           className="z-0 object-cover"
         />
