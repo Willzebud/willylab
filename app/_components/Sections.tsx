@@ -31,7 +31,7 @@ export const Sections = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
       className="relative z-0 w-full h-auto mx-auto mt-5 lg:mt-0 overflow-hidden xl:w-[80%] lg:h-[600px] max-w-[95%]"
     >
       {/* Image de fond */}
-      <div className="absolute inset-0 h-full w-full z-0 overflow-hidden">
+      <div className="absolute inset-0 w-full min-h-[600px]">
         <Image
           src="/images/fonds/Fond-2.webp"
           alt="Fond coloré avec des dessins de plantes"
