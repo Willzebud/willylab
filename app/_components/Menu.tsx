@@ -88,7 +88,7 @@ export const Menu = ({ heroHeight }: MenuProps) => {
           width >= 1025
             ? "top-0 left-0 w-[15rem] lg:w-[12.5rem] h-full"
             : "top-0 left-0 w-full h-[30rem]"
-        } bg-white shadow-lg z-40`}
+        } bg-white shadow-lg z-50`}
       >
         {/* Bouton pour fermer */}
         <div className="flex justify-end p-4">

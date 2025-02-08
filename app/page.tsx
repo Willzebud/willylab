@@ -17,7 +17,6 @@ export default function Home() {
       <Header />
       <Spacing />
       <Menu heroHeight={heroHeight} heroWidth={heroWidth} />
-      <Spacing />
       <Hero setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
       <Spacing />
       <Sections setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
