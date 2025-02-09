@@ -5,6 +5,7 @@ import { Menu } from "./_components/Menu";
 import { Header } from "./_components/Header";
 import { Hero } from "./_components/Hero";
 import { Sections } from "./_components/Sections";
+import { NoticePatient } from "./_components/NoticePatient";
 import { Spacing } from "./Spacing";
 
 export default function Home() {
@@ -20,6 +21,8 @@ export default function Home() {
       <Hero setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
       <Spacing />
       <Sections setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
+      <Spacing />
+      <NoticePatient />
     </main>
   );
 }
