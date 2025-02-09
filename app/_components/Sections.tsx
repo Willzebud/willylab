@@ -35,9 +35,7 @@ export const Sections = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
         <Image
           src="/images/Fonds/Fond2.webp"
           alt="Fond coloré avec des dessins de plantes"
-          layout="intrinsic"
-          width={1200} // Tu peux mettre la largeur réelle de ton image
-          height={800} // Idem pour la hauteur
+          fill
           priority
           className="z-0 object-cover"
         />

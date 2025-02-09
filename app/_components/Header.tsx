@@ -20,10 +20,10 @@ export const Header = () => {
 
         {/* Boutons Tarifs et Rendez-vous */}
         <div className=" relative flex items-center space-x-2">
-          <div className="h-auto w-auto border border-black px-3 lg:px-4 py-1 rounded-lg cursor-pointer transition hover:border-primary group">
+          <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-lg cursor-pointer transition hover:border hover:border-primary group">
             <p className="text-black group-hover:text-primary">Tarifs</p>
           </div>
-          <div className="h-auto w-auto border border-black px-3 lg:px-4 py-1 rounded-lg cursor-pointer transition hover:border-primary group">
+          <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-lg cursor-pointer transition hover:border hover:border-primary group">
             <p className="text-black group-hover:text-primary">Rendez-vous</p>
           </div>
           {/* Cercle avec trois points */}
