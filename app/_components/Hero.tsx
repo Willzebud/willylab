@@ -32,7 +32,7 @@ export const Hero = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
       {/* Image de fond */}
       <div className="absolute inset-0 h-full w-full z-0 overflow-hidden">
         <Image
-          src="/images/fonds/Fond-1.webp"
+          src="/images/Fonds/Fond1.webp"
           alt="Fond coloré avec des dessins de plantes"
           layout="intrinsic"
           width={1200} // Tu peux mettre la largeur réelle de ton image
