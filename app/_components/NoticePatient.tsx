@@ -32,10 +32,10 @@ export const NoticePatient = () => {
   return (
     <div className="relative z-0 w-full h-auto mx-auto mt-5 lg:mt-0 overflow-hidden xl:w-[80%] max-w-[95%] bg-[#4A9599]">
       {/* Contenu */}
-      <div className="relative z-10 pb-20 px-4 sm:px-12">
+      <div className="relative z-10 pb-20">
         {/* Titre "Avis patients" */}
-        <div className="inline-block bg-white px-6 py-2 rounded-md mt-10">
-          <h2 className="font-bold text-4xl text-left text-[#023333]">
+        <div className="inline-block bg-white px-6 py-2 rounded-md mt-10 ml-4">
+          <h2 className="font-bold text-5xl text-left text-[#023333] leading-none">
             Avis patients
           </h2>
         </div>
@@ -58,7 +58,7 @@ export const NoticePatient = () => {
         </div>
 
         {/* Conteneur des avis selon la catégorie active */}
-        <div className="relative mt-6 h-auto max-h-[500px] overflow-y-scroll pr-4">
+        <div className="relative px-4 sm:px-24 mt-6 h-auto max-h-[500px] overflow-y-scroll pr-4">
           {typedAvisData[categorieActive]?.map((avis, index) => (
             <div
               key={index}

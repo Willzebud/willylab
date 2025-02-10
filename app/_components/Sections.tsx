@@ -50,7 +50,7 @@ export const Sections = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
         </div>
 
         {/* Conteneur pour centrer les cartes */}
-        <div className="flex justify-center items-center h-auto sm:h-[calc(100vh-300px)] mt-10 sm:mt-0">
+        <div className="flex justify-center items-center h-auto mt-10">
           {/* Cartes des sections */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 w-full">
             {/* Carte Ostéopathie adulte */}
