@@ -9,6 +9,11 @@
       "nom": "Jean.P",
       "photo": "/images/ImageProfilAvis/M.jpg",
       "commentaire": "Je me sens beaucoup mieux après plusieurs séances. Excellente expérience !"
+    },
+    {
+      "nom": "Laura.M",
+      "photo": "/images/ImageProfilAvis/G.jpg",
+      "commentaire": "L'ostéopathie m'a vraiment aidée à soulager mes douleurs chroniques. Merci beaucoup !"
     }
   ],
   "Pédiatrie": [

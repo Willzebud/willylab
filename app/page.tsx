@@ -7,6 +7,7 @@ import { Hero } from "./_components/Hero";
 import { Sections } from "./_components/Sections";
 import { NoticePatient } from "./_components/NoticePatient";
 import { Spacing } from "./Spacing";
+import { QuiJeSuis } from "./_components/QuiJeSuis";
 
 export default function Home() {
   // États pour stocker la hauteur et la largeur du Hero
@@ -23,6 +24,8 @@ export default function Home() {
       <Sections setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
       <Spacing />
       <NoticePatient />
+      <Spacing />
+      <QuiJeSuis />
     </main>
   );
 }
