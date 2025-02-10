@@ -1,0 +1,35 @@
+{
+  "Ostéopathie Adulte": [
+    {
+      "nom": "Laura.M",
+      "photo": "/images/ImageProfilAvis/G.jpg",
+      "commentaire": "L'ostéopathie m'a vraiment aidée à soulager mes douleurs chroniques. Merci beaucoup !"
+    },
+    {
+      "nom": "Jean.P",
+      "photo": "/images/ImageProfilAvis/M.jpg",
+      "commentaire": "Je me sens beaucoup mieux après plusieurs séances. Excellente expérience !"
+    }
+  ],
+  "Pédiatrie": [
+    {
+      "nom": "Sophie.L",
+      "photo": "/images/ImageProfilAvis/G.jpg",
+      "commentaire": "Mon bébé dort beaucoup mieux depuis la séance avec l’ostéopathe."
+    }
+  ],
+  "Drainage": [
+    {
+      "nom": "Alice.K",
+      "photo": "/images/ImageProfilAvis/G.jpg",
+      "commentaire": "Le drainage lymphatique a été une révélation pour moi, je me sens plus légère !"
+    }
+  ],
+  "Haptonomie": [
+    {
+      "nom": "Mathieu.R",
+      "photo": "/images/ImageProfilAvis/M.jpg",
+      "commentaire": "Une approche douce et rassurante qui m'a beaucoup aidé."
+    }
+  ]
+}

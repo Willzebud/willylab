@@ -33,7 +33,7 @@ export const Sections = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
       {/* Image de fond */}
       <div className="absolute inset-0 h-full w-full z-0 overflow-hidden">
         <Image
-          src="/images/Fonds/Fond2.webp"
+          src="/images/FondCartes/Fond2.webp"
           alt="Fond coloré avec des dessins de plantes"
           fill
           priority
