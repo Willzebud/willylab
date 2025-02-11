@@ -3,7 +3,7 @@
 import { Section } from "./Section";
 import { X } from "lucide-react";
 import { useState } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

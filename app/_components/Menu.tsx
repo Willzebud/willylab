@@ -2,8 +2,9 @@
 
 import { X } from "lucide-react";
 import { useState, useEffect } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { useWindowSize } from "usehooks-ts";
+import { Phone, Mail } from "lucide-react";
 
 type MenuProps = {
   heroHeight: number; // Hauteur du Hero (pour Desktop)
@@ -134,11 +135,11 @@ export const Menu = ({ heroHeight }: MenuProps) => {
           <div>
             <h2 className="text-lg font-bold">Contacts</h2>
             <div className="flex space-x-4 mt-2">
-              <div className="w-10 h-10 bg-transparent border border-black flex items-center justify-center rounded-full cursor-pointer transition hover:border-primary hover:bg-primary">
-                📞
+              <div className="w-10 h-10 bg-transparent flex items-center justify-center rounded-full cursor-pointer transition hover:border-primary hover:bg-primary">
+                <Phone />
               </div>
-              <div className="w-10 h-10 bg-transparent border border-black flex items-center justify-center rounded-full cursor-pointer transition hover:border-primary hover:bg-primary">
-                ✉️
+              <div className="w-10 h-10 bg-transparent flex items-center justify-center rounded-full cursor-pointer transition hover:border-primary hover:bg-primary">
+                <Mail />
               </div>
             </div>
           </div>
