@@ -20,15 +20,28 @@ export default function Home() {
       <Header />
       <Spacing />
       <Menu heroHeight={heroHeight} heroWidth={heroWidth} />
-      <Hero setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
-      <Spacing />
-      <Sections setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
-      <Spacing />
-      <NoticePatient />
-      <Spacing />
-      <QuiJeSuis />
-      <Spacing />
-      <Contacts setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
+      {/* Conteneur des cartes */}
+      <div className="flex flex-col lg:flex-row lg:w-[500vw] overflow-hidden">
+        <div className="w-screen  flex items-center justify-center">
+          <Hero setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
+        </div>
+        <Spacing />
+        <div className="w-screen  flex items-center justify-center">
+          <Sections setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
+        </div>
+        <Spacing />
+        <div className="w-screen  flex items-center justify-center">
+          <NoticePatient />
+        </div>
+        <Spacing />
+        <div className="w-screen  flex items-center justify-center">
+          <QuiJeSuis />
+        </div>
+        <Spacing />
+        <div className="w-screen  flex items-center justify-center">
+          <Contacts setHeroHeight={setHeroHeight} setHeroWidth={setHeroWidth} />
+        </div>
+      </div>
     </main>
   );
 }

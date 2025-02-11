@@ -29,7 +29,7 @@ export const Menu = ({ heroHeight }: MenuProps) => {
   }
 
   return (
-    <>
+    <div className="fixed z-50">
       {/* Barre verticale (Desktop) */}
       {width >= 1025 && (
         <motion.div
@@ -145,6 +145,6 @@ export const Menu = ({ heroHeight }: MenuProps) => {
           </div>
         </div>
       </motion.div>
-    </>
+    </div>
   );
 };

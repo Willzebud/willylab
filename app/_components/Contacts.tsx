@@ -44,7 +44,7 @@ export const Contacts = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
         {/* Titre "Contact" */}
         <div className="inline-block bg-white px-6 py-2 rounded-md mt-10 ml-4 max-w-fit">
           <h2 className="font-bold text-5xl text-left text-[#023333] leading-none">
-            Contact
+            Contacts
           </h2>
         </div>
 
