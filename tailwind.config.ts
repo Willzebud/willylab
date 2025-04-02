@@ -18,6 +18,13 @@ const config: Config = {
         ipadPro: "1025px", // Breakpoint juste au-dessus de l'iPad Pro
       },
       colors: {
+        brand: {
+          primary: "hsl(var(--brand-primary))",
+          dark: "hsl(var(--brand-dark))",
+          medium: "hsl(var(--brand-medium))",
+          light: "hsl(var(--brand-light))",
+          cream: "hsl(var(--brand-cream))",
+        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

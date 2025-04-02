@@ -39,6 +39,11 @@ body {
     --chart-4: 137 12% 89%;
     --chart-5: 137 48% 65%;
     --radius: 0.5rem;
+    --brand-primary: 24 72% 53%;
+    --brand-dark: 17 44% 45%;
+    --brand-medium: 17 44% 61%;
+    --brand-light: 20 56% 76%;
+    --brand-cream: 30 100% 95%;
   }
 }
 
@@ -47,6 +52,6 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-brand-cream text-foreground;
   }
 }

@@ -29,7 +29,7 @@ export default function RootLayout({
           GeistSans.variable, // Applique la police GeistSans
           GeistMono.variable, // Applique la police GeistMono
           AnekTelugu.variable, // Applique la police AnekTelugu
-          "font-sans h-full bg-background text-foreground" // Styles globaux pour le layout
+          "font-sans h-full bg-brand-cream text-foreground" // Styles globaux pour le layout
         )}
       >
         {children}

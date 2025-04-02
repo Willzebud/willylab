@@ -54,7 +54,7 @@ export default function ContactForm() {
             name="name"
             id="name"
             required
-            className="mt-1 p-2 block w-full border rounded-md bg-background text-foreground border-2 border-black"
+            className="mt-1 p-2 block w-full border rounded-md bg-brand-cream text-foreground border-2 border-black"
           />
         </div>
 
@@ -71,7 +71,7 @@ export default function ContactForm() {
             name="email"
             id="email"
             required
-            className="mt-1 p-2 block w-full border rounded-md bg-background text-foreground border-2 border-black"
+            className="mt-1 p-2 block w-full border rounded-md bg-brand-cream text-foreground border-2 border-black"
           />
         </div>
 
@@ -87,7 +87,7 @@ export default function ContactForm() {
             name="message"
             id="message"
             required
-            className="mt-1 p-2 block w-full border rounded-md bg-background text-foreground h-32 border-2 border-black"
+            className="mt-1 p-2 block w-full border rounded-md bg-brand-cream text-foreground h-32 border-2 border-black"
           ></textarea>
         </div>
 

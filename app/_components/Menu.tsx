@@ -39,7 +39,7 @@ export const Menu = ({ heroHeight }: MenuProps) => {
           style={{
             height: `${heroHeight}px`, // Hauteur dynamique
           }}
-          className="hidden lg:block absolute w-[1px] bg-black z-50"
+          className="hidden lg:block absolute w-[1px] bg-brand-primary z-50"
         />
       )}
 
@@ -54,7 +54,7 @@ export const Menu = ({ heroHeight }: MenuProps) => {
             // Ces styles ne s'appliquent qu'à Desktop
             height: `${heroHeight}px`, // Hauteur de la barre verticale
             width: "calc(4.5rem - 8px)", // Largeur dynamique pour Desktop
-            backgroundColor: "hsl(var(--background))", // Fond blanc pour masquer la carte Hero
+            backgroundColor: "hsl(var(--brand-cream))", // Fond blanc pour masquer la carte Hero
           }),
         }}
         onClick={toggleMenu}
@@ -64,11 +64,11 @@ export const Menu = ({ heroHeight }: MenuProps) => {
             width >= 1025
               ? "top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" // Centrage pour Desktop
               : "" // Position pour Mobile
-          } lg:w-10 lg:h-10 lg:border lg:border-transparent lg:rounded-full lg:cursor-pointer lg:transition lg:hover:border-transparent hover:border-primary group flex flex-col items-center justify-center`}
+          } lg:w-10 lg:h-10 lg:border lg:border-transparent lg:rounded-full lg:cursor-pointer lg:transition lg:hover:bg-brand-primary hover:g-brand-primary group flex flex-col items-center justify-center`}
         >
-          <div className="lg:w-1 lg:h-1 mb-1 rounded-full bg-black group-hover:bg-primary" />
-          <div className="lg:w-1 lg:h-1 mb-1 rounded-full bg-black group-hover:bg-primary" />
-          <div className="lg:w-1 lg:h-1 rounded-full bg-black group-hover:bg-primary" />
+          <div className="lg:w-1 lg:h-1 mb-1 rounded-full bg-brand-primary group-hover:bg-brand-cream" />
+          <div className="lg:w-1 lg:h-1 mb-1 rounded-full bg-brand-primary group-hover:bg-brand-cream" />
+          <div className="lg:w-1 lg:h-1 rounded-full bg-brand-primary group-hover:bg-brand-cream" />
         </div>
       </div>
 
@@ -89,12 +89,12 @@ export const Menu = ({ heroHeight }: MenuProps) => {
           width >= 1025
             ? "top-0 left-0 w-[15rem] lg:w-[12.5rem] h-full"
             : "top-0 left-0 w-full h-[30rem]"
-        } bg-white shadow-lg z-50`}
+        } bg-brand-dark shadow-lg z-50`}
       >
         {/* Bouton pour fermer */}
         <div className="flex justify-end p-4">
           <button
-            className="text-black text-2xl cursor-pointer"
+            className="text-brand-cream text-2xl cursor-pointer hover:text-brand-primary"
             onClick={toggleMenu}
           >
             <X />
@@ -104,41 +104,41 @@ export const Menu = ({ heroHeight }: MenuProps) => {
         {/* Contenu du menu */}
         <div className="lg:p-4 space-y-6 ml-4">
           <div>
-            <h2 className="text-lg font-bold cursor-pointer transition hover:text-primary">
+            <h2 className="text-lg font-bold text-brand-cream cursor-pointer transition hover:text-brand-primary">
               Sections
             </h2>
             <ul className="space-y-2">
-              <li className="cursor-pointer transition hover:text-primary">
+              <li className="cursor-pointer text-brand-cream transition hover:text-brand-primary">
                 Adulte
               </li>
-              <li className="cursor-pointer transition hover:text-primary">
+              <li className="cursor-pointer text-brand-cream transition hover:text-brand-primary">
                 Pédiatrie
               </li>
-              <li className="cursor-pointer transition hover:text-primary">
+              <li className="cursor-pointer text-brand-cream transition hover:text-brand-primary">
                 Drainage
               </li>
-              <li className="cursor-pointer transition hover:text-primary">
+              <li className="cursor-pointer text-brand-cream transition hover:text-brand-primary">
                 Haptonomie
               </li>
             </ul>
           </div>
           <div>
-            <h2 className="text-lg font-bold cursor-pointer transition hover:text-primary">
+            <h2 className="text-lg font-bold text-brand-cream cursor-pointer transition hover:text-brand-primary">
               Avis patients
             </h2>
           </div>
           <div>
-            <h2 className="text-lg font-bold cursor-pointer transition hover:text-primary">
+            <h2 className="text-lg font-bold text-brand-cream cursor-pointer transition hover:text-brand-primary">
               Qui je suis
             </h2>
           </div>
           <div>
-            <h2 className="text-lg font-bold">Contacts</h2>
+            <h2 className="text-lg font-bold text-brand-cream">Contacts</h2>
             <div className="flex space-x-4 mt-2">
-              <div className="w-10 h-10 bg-transparent flex items-center justify-center rounded-full cursor-pointer transition hover:border-primary hover:bg-primary">
+              <div className="w-10 h-10 text-brand-cream bg-transparent flex items-center justify-center rounded-full cursor-pointer transition hover:border-brand-primary hover:bg-brand-primary">
                 <Phone />
               </div>
-              <div className="w-10 h-10 bg-transparent flex items-center justify-center rounded-full cursor-pointer transition hover:border-primary hover:bg-primary">
+              <div className="w-10 h-10 text-brand-cream bg-transparent flex items-center justify-center rounded-full cursor-pointer transition hover:border-brand-primary hover:bg-brand-primary">
                 <Mail />
               </div>
             </div>

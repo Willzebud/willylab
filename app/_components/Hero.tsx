@@ -2,9 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { TiktokIcon } from "./icons/Tiktok";
-import { InstaIcon } from "./icons/Insta";
-import { YoutubeIcon } from "./icons/Youtube";
 import { Dispatch, SetStateAction } from "react";
 
 type HeroProps = {
@@ -27,19 +24,8 @@ export const Hero = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
   return (
     <div
       ref={heroRef}
-      className="relative mt-8 z-0 w-full h-auto mx-auto lg:mt-0 overflow-hidden xl:w-[80%] lg:h-[600px] max-w-[95%]" // Ajustement des largeurs
+      className="relative mt-8 z-0 w-full h-auto mx-auto lg:mt-0 overflow-hidden xl:w-[80%] lg:h-[600px] max-w-[95%] bg-brand-dark" // Ajustement des largeurs
     >
-      {/* Image de fond */}
-      <div className="absolute inset-0 h-full w-full z-0 overflow-hidden">
-        <Image
-          src="/images/FondCartes/Fond1.webp"
-          alt="Fond coloré avec des dessins de plantes"
-          fill
-          priority
-          className="z-0 object-cover"
-        />
-      </div>
-
       {/* Contenu du Hero */}
       <div className="relative z-10 flex flex-col items-center justify-center h-auto lg:h-full space-y-6">
         {/* Logo et Carte d'information */}
@@ -78,17 +64,6 @@ export const Hero = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
         </div>
 
         {/* Icônes sociales */}
-        <div className="flex space-x-6 md:space-x-16 lg:space-x-32 mt-6 pb-6 lg:pb-0 lg:pt-8">
-          <div className="w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-black flex items-center justify-center cursor-pointer transition hover:bg-primary">
-            <TiktokIcon size={30} />
-          </div>
-          <div className="w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-black flex items-center justify-center cursor-pointer transition hover:bg-primary">
-            <InstaIcon size={30} />
-          </div>
-          <div className="w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-black flex items-center justify-center cursor-pointer transition hover:bg-primary">
-            <YoutubeIcon size={30} />
-          </div>
-        </div>
       </div>
     </div>
   );

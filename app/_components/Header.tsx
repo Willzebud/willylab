@@ -2,6 +2,7 @@
 
 import { Section } from "./Section";
 import { X } from "lucide-react";
+import { InstaIcon } from "./icons/Insta";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -13,18 +14,28 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full py-4 z-50 bg-background">
+    <header className="fixed top-0 left-0 w-full py-4 z-50 bg-brand-cream">
       <Section className="flex items-center justify-between">
         {/* Cercle à gauche */}
-        <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-black bg-transparent cursor-pointer transition hover:border-primary hover:bg-primary" />
+        <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-brand-primary bg-transparent cursor-pointer transition hover:border-brand-primary hover:bg-brand-primary" />
 
         {/* Boutons Tarifs et Rendez-vous */}
         <div className=" relative flex items-center space-x-2">
-          <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-lg cursor-pointer transition lg:hover:border lg:hover:border-primary group">
-            <p className="text-black group-hover:text-primary">Tarifs</p>
+          <div className="group w-16 h-16 md:w-16 md:h-4 lg:w-12 lg:h-12 rounded-full bg-transparent flex items-center justify-center cursor-pointer transition hover:bg-brand-primary">
+            <InstaIcon
+              size={30}
+              className="text-brand-primary transition group-hover:text-brand-cream"
+            />
           </div>
-          <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-lg cursor-pointer transition lg:hover:border lg:hover:border-primary group">
-            <p className="text-black group-hover:text-primary">Rendez-vous</p>
+          <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition lg:hover:bg-brand-primary lg:hover:border-primary group">
+            <p className="text-brand-primary group-hover:text-brand-cream">
+              Tarifs
+            </p>
+          </div>
+          <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition lg:hover:bg-brand-primary lg:hover:border-primary group">
+            <p className="text-brand-primary group-hover:text-brand-cream">
+              Rendez-vous
+            </p>
           </div>
           {/* Cercle avec trois points */}
           <div className="relative flex items-center ipadPro:hidden">
