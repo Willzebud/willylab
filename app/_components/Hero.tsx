@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
 
 type HeroProps = {
