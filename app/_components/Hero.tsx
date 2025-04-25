@@ -39,7 +39,7 @@ export const Hero = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
           {/* Carte d'information */}
           <div className="bg-white p-4 mx-2 mt-5 rounded-lg shadow-lg w-auto  lg:max-w-xl">
             <h2 className="text-lg md:text-xl font-bold text-center md:text-left">
-              Ophélie Roche. Ostéopathe yoyoyoy
+              Ophélie Roche. Ostéopathe yoyoyoyyoyoyo
             </h2>
             <p className="text-gray-500 mb-2 text-center md:text-left">
               Santé/beauté
