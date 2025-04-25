@@ -1,68 +1,61 @@
 "use client";
+import Image from "next/image";
 
-import { useEffect, useRef } from "react";
-import { Dispatch, SetStateAction } from "react";
-
-type HeroProps = {
-  setHeroHeight: Dispatch<SetStateAction<number>>;
-  setHeroWidth: Dispatch<SetStateAction<number>>;
-};
-
-export const Hero = ({ setHeroHeight, setHeroWidth }: HeroProps) => {
-  const heroRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    if (heroRef.current) {
-      const height = heroRef.current.offsetHeight;
-      const width = heroRef.current.offsetWidth;
-      setHeroHeight(height);
-      setHeroWidth(width);
-    }
-  }, [setHeroHeight, setHeroWidth]);
-
+export const Hero = () => {
   return (
-    <div
-      ref={heroRef}
-      className="relative mt-8 z-0 w-full h-auto mx-auto lg:mt-0 overflow-hidden xl:w-[80%] lg:h-[600px] max-w-[95%] bg-brand-dark" // Ajustement des largeurs
-    >
+    <div className="relative z-0 w-full h-auto mx-auto overflow-hidden bg-brand-cream mt-10">
       {/* Contenu du Hero */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-auto lg:h-full space-y-6">
-        {/* Logo et Carte d'information */}
-        <div className="flex flex-col lg:flex-row items-center lg:space-x-32 mb-10 lg:mb-6">
+      <div className="relative z-10 flex flex-col lg:flex-row mx-10">
+        {/* Bloc logo + carte */}
+        <div className="flex flex-col md:flex-row lg:flex-col items-center justify-center w-full lg:max-w-[45%]">
           {/* Logo */}
-          <div className="flex-shrink-0 mb-6 mt-5 md:mb-0">
-            <div className="w-32 h-32 md:w-48 md:h-48 lg:w-60 lg:h-60 rounded-full border border-black bg-white flex items-center justify-center text-lg md:text-xl lg:text-2xl font-semibold">
-              Logo
+          <div className="flex-shrink-0 md:mb-0">
+            <div
+              className="relative w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden shadow-lg"
+              style={{
+                borderRadius: "66% 34% 67% 33% / 40% 65% 35% 60%",
+              }}
+            >
+              <Image
+                src="/images/Logo.webp"
+                alt="Logo de la marque Nopheïa"
+                fill
+                sizes="(max-width: 640px) 160px, (max-width: 1024px) 192px, 224px"
+                className="object-cover"
+              />
             </div>
           </div>
 
-          {/* Carte d'information */}
-          <div className="bg-white p-4 mx-2 mt-5 rounded-lg shadow-lg w-auto  lg:max-w-xl">
-            <h2 className="text-lg md:text-xl font-bold text-center md:text-left">
-              Ophélie Roche. Ostéopathe yoyoyoyyoyoyo
-            </h2>
-            <p className="text-gray-500 mb-2 text-center md:text-left">
-              Santé/beauté
-            </p>
-            <ul className="text-sm md:text-base text-center md:text-left">
-              <li>🎓 Ostéopathe D.O</li>
-              <li>🌿 Soin drainant & anti-cellulite</li>
-              <li>🌿 Posturologie</li>
-              <li>🏋️‍♀️ Préparatrice physique</li>
-            </ul>
-            <p className="text-sm md:text-base text-gray-700 mt-4 text-center md:text-left">
-              Résidence la Malounière, bât G, avenue de Verdun, Aubagne 13400
-            </p>
-            <a
-              href="https://www.doctolib.fr/osteopathe/carnoux-en-provence/ophelie-ribiere"
-              className="text-blue-600 underline mt-2 block text-center md:text-left"
-            >
-              www.doctolib.fr/osteopathe/carnoux-en-provence/ophelie-ribiere
-            </a>
+          {/* Carte info */}
+          <div
+            className="bg-brand-primary w-[300px] md:w-[400px] lg:w-[600px] h-[200px] mx-2 flex items-center justify-center px-6"
+            style={{
+              borderRadius: "66% 34% 67% 33% / 40% 65% 35% 60%",
+            }}
+          >
+            <h1 className="text-brand-cream text-lg md:text-2xl lg:text-4xl font-bold text-center">
+              Découvrez le massage révolutionnaire, drainant et anticellulite :
+              Le GAD®
+            </h1>
           </div>
         </div>
 
-        {/* Icônes sociales */}
+        {/* Vidéo massage */}
+        <div
+          className="lg:w-[70%] lg:max-w-2xl mx-auto mt-4 overflow-hidden shadow-lg bg-brand-dark h-[250px] md:h-[500px]"
+          style={{
+            borderRadius: "23% 77% 37% 63% / 40% 44% 56% 60%",
+          }}
+        >
+          <video
+            src="/video/massage.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
     </div>
   );

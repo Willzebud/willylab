@@ -1,44 +1,78 @@
 "use client";
 
 import Image from "next/image";
+import { Section } from "./Section";
+import Wave from "react-wavify";
+import Link from "next/link";
 
 export const QuiJeSuis = () => {
   return (
-    <div className="relative z-0 w-full h-auto mx-auto mt-5 lg:mt-0 overflow-hidden xl:w-[80%] lg:h-[600px] max-w-[95%] bg-[#4A9599] flex flex-col justify-between">
-      {/* Contenu */}
-      <div className="relative z-10 pb-20 flex flex-col h-full">
-        {/* Titre "Qui je suis" */}
-        <div className="inline-block bg-white px-6 py-2 rounded-md mt-10 ml-4 max-w-fit">
-          <h2 className="font-bold text-5xl text-left text-[#023333] leading-none">
-            Qui je suis
-          </h2>
-        </div>
-
-        {/* Section avec l'image et la description */}
-        <div className="flex flex-col lg:flex-row items-center lg:justify-center gap-8 px-6 lg:px-12 mt-10 lg:mt-20">
-          {/* Photo de la cliente */}
-          <div className="relative w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
-            <Image
-              src="/images/Sis.webp"
-              alt="Photo de profil d'Ophélie l'Ostéopathe"
-              fill
-              sizes="(max-width: 640px) 160px, (max-width: 1024px) 192px, 224px"
-              className="object-cover"
-            />
+    <Section>
+      <div className="relative z-0 w-full mx-auto overflow-hidden xl:w-[80%] max-w-[95%] min-h-[600px] flex flex-col lg:flex-row items-center justify-between">
+        <div className="z-10 w-full">
+          <Wave
+            fill="#a45c40"
+            paused={false}
+            style={{ display: "flex" }}
+            options={{
+              height: 110,
+              amplitude: 20,
+              speed: 0.15,
+              points: 3,
+            }}
+          />
+          <div className="bg-brand-dark flex flex-col lg:flex-row items-center justify-center lg:gap-10 gap-4 w-full">
+            <div className="flex-shrink-0 md:mb-0 mx-auto md:mx-0 pl-6">
+              <div
+                className="relative w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden shadow-lg"
+                style={{
+                  borderRadius: "31% 69% 57% 43% / 73% 30% 70% 27% ",
+                }}
+              >
+                <Image
+                  src="/images/Logo2.webp"
+                  alt="Logo de la marque Nopheïa"
+                  fill
+                  sizes="(max-width: 640px) 160px, (max-width: 1024px) 192px, 224px"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <p className="text-base sm:text-xl text-justify text-brand-cream mt-4 px-4 py-4 lg:pr-8 sm:pb-4 lg:pb-8">
+                Nopheïa est une marque fondée par Ophélie Montalto, ostéopathe
+                diplômée d&rsquo;État et ambassadrice de la méthode GAD® depuis
+                3 ans. <br />
+                <br />
+                Elle s&rsquo;adresse à toutes les femmes qui souhaitent estomper
+                leur cellulite, redessiner leur silhouette et retrouver une peau
+                plus lisse et tonique. <br />
+                <br />
+                Notre expertise est de révéler le potentiel du corps féminin
+                avec à une méthode 100% naturelle et bienveillante.
+              </p>
+              <Link href="/nopheia">
+                <div className="w-full flex justify-center mt-5">
+                  <p className="text-lg md:text-2xl lg:text-xl text-brand-cream hover:text-brand-primary transition cursor-pointer underline pb-4 md:pb-0">
+                    En savoir plus
+                  </p>
+                </div>
+              </Link>
+            </div>
           </div>
-
-          {/* Bloc de texte */}
-          <div className="bg-white p-6 rounded-md shadow-lg max-w-2xl">
-            <p className="text-lg text-gray-800 leading-relaxed text-wrap break-words">
-              {"<<"} Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Proin sit amet odio eget justo efficitur fermentum vel in sapien.
-              Suspendisse potenti. Mauris eu urna at erat tempus dapibus ut non
-              felis. In et metus sed felis sodales ultricies a eget augue.
-              Integer aliquet vestibulum arcu at cursus. {" >>"}
-            </p>
-          </div>
+          <Wave
+            fill="#a45c40"
+            paused={false}
+            style={{ display: "flex", transform: "rotate(180deg)" }}
+            options={{
+              height: 110,
+              amplitude: 20,
+              speed: 0.15,
+              points: 3,
+            }}
+          />
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
