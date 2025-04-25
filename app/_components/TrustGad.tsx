@@ -18,7 +18,7 @@ export const TrustGad = () => {
       </div>
 
       {/* Contenu centré */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 sm:px-6">
         <h2 className="font-bold text-xl sm:text-3xl text-brand-cream leading-tight mb-4 md:px-6">
           Plus de 4 000 patients.es ont fait confiance au GAD®
         </h2>
