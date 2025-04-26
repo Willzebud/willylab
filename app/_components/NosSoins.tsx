@@ -9,7 +9,7 @@ const soins = [
     title: "Soin Signature GAD",
     description: "Le soin pour allier l’utile à l’agréable",
     image: "/images/ImgSoins/1.webp",
-    href: "#soin-signature",
+    href: "/soin-signature-gad",
     alt: "Image de l'offre : Soin Signature GAD",
   },
   {

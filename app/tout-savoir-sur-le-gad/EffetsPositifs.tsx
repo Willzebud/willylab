@@ -13,7 +13,7 @@ export const EffetsPositifs = () => {
           </h2>
 
           {/* Grille des 3 actions */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pt-6 lg:pt-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pt-2 lg:pt-16">
             {/* Action 1 */}
             <div className="flex flex-col items-center text-center">
               <Image

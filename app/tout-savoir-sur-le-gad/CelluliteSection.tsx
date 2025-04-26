@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { Section } from "../_components/Section";
 
 export const CelluliteSection = () => {
   return (
-    <section className="bg-brand-cream py-12 px-4">
-      <div className="max-w-7xl mx-auto">
+    <Section className="bg-brand-cream py-12 px-4">
+      <div className="max-w-7xl mx-autorelative z-0 w-full mx-auto overflow-hidden xl:w-[80%] max-w-[95%] min-h-[400px]">
         {/* Partie Titre + Texte */}
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary w-full lg:w-1/2">
@@ -67,6 +68,6 @@ export const CelluliteSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };

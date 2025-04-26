@@ -12,6 +12,7 @@ export default function ToutSavoirPage() {
   return (
     <main>
       <Header />
+      <Spacing />
       <HeroGad />
       <CelluliteSection />
       <Spacing />

@@ -119,9 +119,11 @@ export const Header = () => {
               </div>
               {openMesSoins && (
                 <div className="absolute left-0 top-full mt-2 flex flex-col bg-brand-cream shadow-lg rounded-md w-56 py-2">
-                  <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer">
-                    Soin Signature GAD®
-                  </p>
+                  <Link href="/soin-signature-gad">
+                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer">
+                      Soin Signature GAD®
+                    </p>
+                  </Link>
                   <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer">
                     Le GAD® Detox +
                   </p>
@@ -226,7 +228,7 @@ export const Header = () => {
           <div>
             <h2 className="text-lg font-bold text-brand-dark">Nos soins</h2>
             <ul className="space-y-2">
-              <Link href="">
+              <Link href="/soin-signature-gad">
                 <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2">
                   Soin Signature GAD®
                 </li>
