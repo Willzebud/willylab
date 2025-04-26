@@ -4,6 +4,8 @@ import { Footer } from "../_components/Footer";
 import { Header } from "../_components/Header";
 import { Spacing } from "../Spacing";
 import { Check } from "./Check";
+import { Gad1Seance } from "./Gad1Seance";
+import { Gad7Seance } from "./Gad7Seance";
 import { HeroSignature } from "./HeroSignature";
 import { Precision } from "./Precision";
 import { WhatGad } from "./WhatGad";
@@ -18,6 +20,10 @@ export default function SoinSignatureGad() {
       <WhatGad />
       <Spacing />
       <Check />
+      <Spacing />
+      <Gad1Seance />
+      <Spacing />
+      <Gad7Seance />
       <Footer />
     </main>
   );

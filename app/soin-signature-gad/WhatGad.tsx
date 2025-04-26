@@ -9,7 +9,7 @@ export const WhatGad = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6">
-            Notre soin signature le GAD®
+            Le Gad®, c&rsquo;est quoi ?
           </h1>
           <div className="w-full lg:w-1/2 flex justify-center lg:hidden">
             <Image
