@@ -7,12 +7,12 @@ const questions = [
   {
     question: "Pour qui est cette cure ?",
     answer:
-      "Idéale pour celles et ceux qui font de la rétention d’eau et qui souhaiteraient perdre en centimètres en un temps record (départ vacances iminante, mariage, évènement proche à venir…)",
+      "Pour celles et ceux qui souhaitent perdre un maximum de centimètres, tonifier leur peau et diminuer l’aspect de leur cellulite.",
   },
   {
     question: "Que comprend-elle ?",
     answer:
-      "Après votre premier Rdv Bilan la Cure Express comprend un Bilan Final pour mesurer vos résultats. Le suivi est personnalisé avec un réajustement de la fréquence des séances si besoin. Le massage GAD est effectué sur les jambes, les cuisses, les hanches et le ventre. Chaque massage se termine par un massage drainant et relaxant pour vous que repartez 100% détendu(e).",
+      "Après votre premier Rdv Bilan la Cure Signature comprend un bilan intermédiaire ainsi qu’un Bilan Final. Le suivi est personnalisé avec un réajustement de la fréquence des séances si besoin. Le massage GAD est effectué sur les jambes, les cuisses, les hanches et le ventre. Chaque massage se termine par un massage drainant et relaxant pour vous que repartez 100% détendu(e).",
   },
   {
     question: "Comment se déroule la cure Express ?",
@@ -21,11 +21,12 @@ const questions = [
   },
 ];
 
-export const Gad7Seance = () => {
+export const Gad14Seance = () => {
   const points = [
-    "Une perte moyenne d'une taille en moins",
+    "1 à 2 tailles en moins de vêtement en moyenne",
     "Relance la circulation sanguine et lymphatique",
-    "Amélioration de la qualité de la peau",
+    "Forte diminution de la cellulite",
+    "Amélioration de la fermeté de la peau",
   ];
 
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -40,12 +41,12 @@ export const Gad7Seance = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-[50px]">
-            Cure express en 7 séances
+            Cure signature en 14 séances
           </h1>
           <div>
             <div className="w-full lg:w-1/2 flex justify-center lg:hidden mb-[40px]">
               <Image
-                src="/images/ImgSi/SI4.webp"
+                src="/images/ImgSi/SI5.webp"
                 alt="Dessin de main qui masse"
                 width={600}
                 height={200}
@@ -53,9 +54,10 @@ export const Gad7Seance = () => {
               />
             </div>
             <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-center pb-[50px]">
-              Cette cure minceur permet en 7 séances de retrouver une allure
-              dynamique et d&apos;éliminer la rétention d&apos;eau qui nous fait
-              gonfler.
+              Cette cure minceur de 14 séances est la cure « phare » avec
+              laquelle on obtient le plus de résultats. L&apos;étude clinique a
+              d’ailleurs été testé avec cette cure et démontre bien
+              l&apos;efficacité de cette méthode de massage amincissant unique.
             </p>
           </div>
           {/* Check */}
@@ -114,7 +116,7 @@ export const Gad7Seance = () => {
                 Réservez un premier RDV
               </button>
               <p className="text-brand-primary font-bold text-2xl mt-4 lg:mt-0">
-                115€ PAR SÉANCE / Économisez 105€ au total
+                100€ PAR SÉANCE / Économisez 420€ au total
               </p>
             </div>
 
@@ -127,7 +129,7 @@ export const Gad7Seance = () => {
         {/* Image à droite */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
-            src="/images/ImgSi/SI4.webp"
+            src="/images/ImgSi/SI5.webp"
             alt="Dessin de main qui masse"
             width={600}
             height={600}
@@ -142,9 +144,10 @@ export const Gad7Seance = () => {
 // Fonction pour mettre en gras automatiquement certaines parties du texte
 function highlightImportant(text: string) {
   const boldWords = [
-    "une taille en moins",
+    "1 à 2 tailles en moins",
     "Relance la circulation",
-    "qualité de la peau",
+    "Forte diminution",
+    "fermeté de la peau",
   ];
 
   let formattedText = text;
