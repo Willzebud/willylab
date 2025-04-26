@@ -17,6 +17,11 @@ export const AvisPatients = () => {
     },
   });
 
+  // 👉 Fonction pour ouvrir YouTube dans un nouvel onglet
+  const openYouTubeVideo = (url: string) => {
+    window.open(url, "_blank");
+  };
+
   const data = [
     { name: "Nicole", quote: "Nicole a perdu 1 taille de vêtement" },
     { name: "Sylvie", quote: "Sylvie a vu sa silhouette s’affiner" },
@@ -32,14 +37,19 @@ export const AvisPatients = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
-        {/* Vidéo YouTube */}
-        <div className="relative group w-[280px] md:w-[320px] aspect-[9/16] overflow-hidden shadow-lg rounded-xl bg-brand-dark">
+        {/* Vidéo YouTube cliquable */}
+        <div
+          onClick={() =>
+            openYouTubeVideo("https://www.youtube.com/watch?v=VjVdu-oY8sA")
+          }
+          className="relative group w-[280px] md:w-[320px] aspect-[9/16] overflow-hidden shadow-lg rounded-xl bg-brand-dark cursor-pointer"
+        >
           <iframe
             src="https://www.youtube.com/embed/VjVdu-oY8sA"
             title="Avis patiente Nopheïa"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover pointer-events-none" // << On bloque l'interaction sur l'iframe
           />
         </div>
 
