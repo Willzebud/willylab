@@ -3,13 +3,10 @@
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { Section } from "./Section";
-import { useRef, useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
 
 export const AvisPatients = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
   const [, setCurrentSlide] = useState(0);
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
@@ -26,19 +23,6 @@ export const AvisPatients = () => {
     { name: "Karine", quote: "Karine a retrouvé confiance en elle" },
   ];
 
-  const toggleVideo = () => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    if (video.paused) {
-      video.play();
-      setIsPlaying(true);
-    } else {
-      video.pause();
-      setIsPlaying(false);
-    }
-  };
-
   return (
     <Section className="py-20 bg-cover bg-center bg-no-repeat">
       <div className="w-full flex flex-col justify-center mb-10">
@@ -48,21 +32,15 @@ export const AvisPatients = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
-        {/* Vidéo */}
+        {/* Vidéo YouTube */}
         <div className="relative group w-[280px] md:w-[320px] aspect-[9/16] overflow-hidden shadow-lg rounded-xl bg-brand-dark">
-          <video
-            ref={videoRef}
-            src=""
-            loop
-            playsInline
+          <iframe
+            src="https://www.youtube.com/embed/VjVdu-oY8sA"
+            title="Avis patiente Nopheïa"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
             className="w-full h-full object-cover"
           />
-          <button
-            onClick={toggleVideo}
-            className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-brand-primary text-white text-sm px-4 py-2 rounded-full shadow-md hover:bg-brand-dark transition"
-          >
-            {isPlaying ? "Pause" : "Lecture"}
-          </button>
         </div>
 
         {/* Témoignages (slider) */}
@@ -100,7 +78,7 @@ export const AvisPatients = () => {
         </div>
       </div>
 
-      {/* 👉 Bouton "Consultez les avis" */}
+      {/* 👉 Bouton "Consultez les résultats" */}
       <div className="mt-16 lg:mt-20 flex justify-center">
         <Link href="/resultats">
           <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">

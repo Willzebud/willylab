@@ -37,11 +37,11 @@ export const TemoiVideo = () => {
       <div className="flex flex-col md:flex-row items-center justify-center gap-10">
         {/* Vidéo 1 */}
         <div className="relative group w-[280px] md:w-[320px] aspect-[9/16] overflow-hidden shadow-lg rounded-xl bg-brand-dark">
-          <video
-            ref={videoRef1}
-            src=""
-            loop
-            playsInline
+          <iframe
+            src="https://www.youtube.com/embed/VjVdu-oY8sA"
+            title="Avis patiente Nopheïa"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
             className="w-full h-full object-cover"
           />
           <button
@@ -54,11 +54,11 @@ export const TemoiVideo = () => {
 
         {/* Vidéo 2 */}
         <div className="relative group w-[280px] md:w-[320px] aspect-[9/16] overflow-hidden shadow-lg rounded-xl bg-brand-dark">
-          <video
-            ref={videoRef2}
-            src=""
-            loop
-            playsInline
+          <iframe
+            src="https://www.youtube.com/watch?v=gnSDpHjyP7Q"
+            title="Avis patiente Nopheïa"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
             className="w-full h-full object-cover"
           />
           <button
