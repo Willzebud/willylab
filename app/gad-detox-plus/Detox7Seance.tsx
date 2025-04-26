@@ -7,18 +7,23 @@ const questions = [
   {
     question: "Pour qui est cette cure ?",
     answer:
-      "Idéale pour celles et ceux qui souhaitent découvrir le DAD® Detox + et ses bienfaits.",
+      "Idéale pour celles et ceux qui font de la rétention d’eau, qui ont de la cellulite et qui souhaiteraient perdre 1 à 2 tailles de vêtements en moisn en un temps record (départ vacances iminante, mariage, évènement proche à venir…)",
   },
   {
     question: "Que comprend-elle ?",
     answer:
-      "Un bilan complet ainsi qu’une séance de massage GAD® Detox +. Le suivi est personnalisé avec un réajustement de la fréquence des séances si besoin. Le massage GAD® Detox + est effectué sur les cuisses, les fesses, le ventre, les bras et les hanches. Chaque massage se termine par un massage drainant et relaxant pour que vous repartez 100% détendu(e).",
+      "Après votre premier Rdv Bilan, la Cure Detox + Express comprend un Bilan Final pour mesurer vos résultats. Le suivi est personnalisé avec un réajustement de la fréquence des séances si besoin. Le massage GAD® Detox + est effectué sur les cuisses, les fesses, le ventre, les bras et les hanches. Chaque massage se termine par un massage drainant et relaxant pour vous que repartez 100% détendu(e).",
+  },
+  {
+    question: "Comment se déroule la cure Detox + Express ?",
+    answer:
+      "On commence avec un premier rdv bilan personnalisé suivi d'une séance GAD® Detox Plus. Ce bilan permet de faire un diagnostic complet sur votre santé vous conseiller au mieux pour votre alimentation et votre activité physique et adapter les séances de massage à vos objectifs et à votre type de cellulite. \nCe rdv d’1h15 comprend une prise de mesure, du poids, des photos et se termine par un massage GAD® Detox + de 45 min.",
   },
 ];
 
-export const Detox1Seance = () => {
+export const Detox7Seance = () => {
   const points = [
-    "Perte d'une taille en moyenne apres la 1ere séance",
+    "1 à 2 tailles en moins de vêtement en moyenne",
     "Relance la circulation sanguine et lymphatique",
     "Amélioration de la qualité et de la fermeté de la peau qui dure dans le temps",
   ];
@@ -35,12 +40,12 @@ export const Detox1Seance = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-[50px]">
-            1 séance - Cure Gad® Detox Plus
+            Cure Detox Plus express en 7 séances
           </h1>
           <div>
             <div className="w-full lg:w-1/2 flex justify-center lg:hidden mb-[40px]">
               <Image
-                src="/images/ImgSi/SI3.webp"
+                src="/images/ImgSi/SI4.webp"
                 alt="Dessin de main qui masse"
                 width={600}
                 height={200}
@@ -48,7 +53,9 @@ export const Detox1Seance = () => {
               />
             </div>
             <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-center pb-[50px]">
-              Idéal pour découvrir le Massage GAD® Detox +.
+              Cette cure détoxifiante minceur permet en 7 séances de retrouver
+              une allure dynamique et d&apos;éliminer la rétention d&apos;eau
+              qui nous fait gonfler et la cellulite durablement.
             </p>
           </div>
           {/* Check */}
@@ -107,15 +114,20 @@ export const Detox1Seance = () => {
                 Réservez un premier RDV
               </button>
               <p className="text-brand-primary font-bold text-2xl mt-4 lg:mt-0">
-                150€ PAR SÉANCE
+                135€ PAR SÉANCE / Économisez 105€ au total
               </p>
             </div>
+
+            {/* Texte sous bouton (toujours centré) */}
+            <p className="text-brand-dark text-sm text-center mt-4">
+              * Possibilité de payer en plusieurs fois sans frais
+            </p>
           </div>
         </div>
         {/* Image à droite */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
-            src="/images/ImgSi/SI3.webp"
+            src="/images/ImgSi/SI4.webp"
             alt="Dessin de main qui masse"
             width={600}
             height={600}
@@ -130,7 +142,7 @@ export const Detox1Seance = () => {
 // Fonction pour mettre en gras automatiquement certaines parties du texte
 function highlightImportant(text: string) {
   const boldWords = [
-    "Perte d'une taille",
+    "1 à 2 tailles en moins",
     "Relance la circulation",
     "la qualité et de la fermeté de la peau qui dure dans le temps",
   ];

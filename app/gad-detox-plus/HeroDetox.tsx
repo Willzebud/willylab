@@ -9,7 +9,7 @@ export const HeroDetox = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6">
-            Le GAD Detox +
+            Le GAD Detox Plus
           </h1>
           <div className="w-full lg:w-1/2 flex justify-center md:hidden lg:hidden rounded-xl shadow-lg">
             <Image
@@ -21,7 +21,7 @@ export const HeroDetox = () => {
             />
           </div>
           <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-justify pt-[40px] lg:pt-[5px]">
-            Le GAD® Détox Plus combine l&rsquo;effet immédiat du drainage
+            Le GAD® Détox + combine l&rsquo;effet immédiat du drainage
             lymphatique au résultat durable du GAD®. Le Massage GAD® agit sur la
             circulation veineuse, le déstockage des graisses et la tonicité de
             la peau, avec des effets persistants.

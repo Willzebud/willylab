@@ -17,11 +17,11 @@ export const WhatDetox = () => {
               alt="Dessin de main qui masse"
               width={600}
               height={200}
-              className="w-[150px] md:w-[200px] lg:w-[400px] h-auto object-contain"
+              className="w-[200px] md:w-[200px] lg:w-[400px] h-auto object-contain"
             />
           </div>
           <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-justify">
-            Le GAD® Détox Plus a été mis en place pour allier l&rsquo;effet
+            Le GAD® Détox + a été mis en place pour allier l&rsquo;effet
             immédiat du drainage lymphatique à l&rsquo;effet durable et visible
             du massage GAD®. Le drainage profond offre un résultat instantané
             sur le retour veineux et lymphatique qui dure 24 à 48h, tandis que
