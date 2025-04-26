@@ -15,7 +15,12 @@ const config: Config = {
     },
     extend: {
       screens: {
-        ipadPro: "1025px", // Breakpoint juste au-dessus de l'iPad Pro
+        sm: "640px",
+        md: "768px",
+        ipadPro: "900px", // ou une autre valeur selon ton besoin
+        lg: "1100px", // désormais lg = desktop
+        xl: "1280px",
+        "2xl": "1536px",
       },
       colors: {
         brand: {
