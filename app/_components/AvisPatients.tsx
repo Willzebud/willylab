@@ -19,7 +19,11 @@ export const AvisPatients = () => {
 
   // 👉 Fonction pour ouvrir YouTube dans un nouvel onglet
   const openYouTubeVideo = (url: string) => {
-    window.open(url, "_blank");
+    if (window.innerWidth < 1024) {
+      window.location.href = url;
+    } else {
+      window.open(url, "_blank");
+    }
   };
 
   const data = [

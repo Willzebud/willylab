@@ -6,7 +6,11 @@ import { Section } from "../_components/Section";
 export const TemoiVideo = () => {
   // Fonction pour ouvrir YouTube en plein écran (dans un nouvel onglet)
   const openYouTubeVideo = (url: string) => {
-    window.open(url, "_blank"); // _blank => ouvre un nouvel onglet
+    if (window.innerWidth < 1024) {
+      window.location.href = url;
+    } else {
+      window.open(url, "_blank");
+    }
   };
 
   return (
