@@ -17,7 +17,7 @@ const questions = [
   {
     question: "Comment se déroule la cure Detox + Express ?",
     answer:
-      "On commence avec un premier rdv bilan personnalisé suivi d'une séance GAD® Detox Plus. Ce bilan permet de faire un diagnostic complet sur votre santé vous conseiller au mieux pour votre alimentation et votre activité physique et adapter les séances de massage à vos objectifs et à votre type de cellulite. \nCe rdv d’1h15 comprend une prise de mesure, du poids, des photos et se termine par un massage GAD® Detox + de 45 min.",
+      "On commence avec un premier rdv bilan personnalisé suivi d'une séance GAD® Detox Plus. Ce bilan permet de faire un diagnostic complet sur votre santé vous conseiller au mieux pour votre alimentation et votre activité physique et adapter les séances de massage à vos objectifs et à votre type de cellulite. \nCe rdv d’1h15 comprend une prise de mesure, du poids, des photos et se termine par un massage GAD® Detox + de 45 min. \nLa Cure Detox + Express vous accompagne et vous encourage tout au long des 3 semaines. À raison de 2 séances de 45min par semaine.",
   },
 ];
 
@@ -36,7 +36,7 @@ export const Detox7Seance = () => {
 
   return (
     <Section className="pt-[100px]">
-      <div className="relative z-0 w-full mx-auto overflow-hidden xl:w-[80%] max-w-[95%] min-h-[400px] flex flex-col lg:flex-row items-center justify-between lg:gap-8">
+      <div className="relative z-0 w-full mx-auto overflow-hidden xl:w-[80%] max-w-[95%] min-h-[400px] flex flex-col lg:flex-row items-start justify-between lg:gap-8">
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-[50px]">
