@@ -12,12 +12,12 @@ const questions = [
   {
     question: "Que comprend-elle ?",
     answer:
-      "Après votre premier Rdv Bilan la Cure Signature comprend un bilan intermédiaire ainsi qu’un Bilan Final. Le suivi est personnalisé avec un réajustement de la fréquence des séances si besoin. Le massage GAD est effectué sur les jambes, les cuisses, les hanches et le ventre. Chaque massage se termine par un massage drainant et relaxant pour vous que repartez 100% détendu(e).",
+      "Après votre premier Rdv Bilan la Cure Signature comprend un bilan intermédiaire ainsi qu’un Bilan Final. Le suivi est personnalisé avec un réajustement de la fréquence des séances si besoin. Le massage GAD est effectué sur les jambes, les cuisses, les hanches et le ventre. \nChaque massage se termine par un massage drainant et relaxant pour vous que repartez 100% détendu(e).",
   },
   {
     question: "Comment se déroule la cure Express ?",
     answer:
-      "On commence avec un premier rdv bilan personnalisé suivi d'une séance GAD®. Ce bilan permet de faire un diagnostic complet sur votre santé vous conseiller au mieux pour votre alimentation et votre activité physique et adapter les séances de massage à vos objectifs et à votre type de cellulite. Ce rdv d’1h15 comprend une prise de mesure, du poids, des photos et se termine par un massage GAD de 45 min. La Cure Express vous accompagne et vous encourage tout au long des 3 semaines. À raison de 2 séances de 45min par semaine.",
+      "On commence avec un premier rdv bilan personnalisé suivi d'une séance GAD®. Ce bilan permet de faire un diagnostic complet sur votre santé vous conseiller au mieux pour votre alimentation et votre activité physique et adapter les séances de massage à vos objectifs et à votre type de cellulite. \nCe rdv d’1h15 comprend une prise de mesure, du poids, des photos et se termine par un massage GAD de 45 min. \nLa Cure Signature vous accompagne et vous encourage tout au long des 7 semaines. À raison de 2 séances de 45 min par semaine.",
   },
 ];
 
