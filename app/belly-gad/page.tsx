@@ -11,7 +11,7 @@ import { CheckBelly } from "./CheckBelly";
 import { BellySeance } from "./BellySeance";
 import { BellyXSeance } from "./BellyXSeance";
 
-export default function DetoxPlusPage() {
+export default function BellyGadPage() {
   return (
     <main>
       <Header />

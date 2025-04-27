@@ -140,17 +140,24 @@ export const Header = () => {
 
             {/* Tarifs */}
             <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group">
-              <p className="text-brand-primary group-hover:text-brand-dark">
-                Tarifs
-              </p>
+              <Link href="/tarifs">
+                <p className="text-brand-primary group-hover:text-brand-dark">
+                  Tarifs
+                </p>
+              </Link>
             </div>
 
             {/* Rendez-vous */}
-            <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group">
+            <a
+              href="https://www.doctolib.fr/osteopathe/carnoux-en-provence/ophelie-ribiere/booking/places?specialityId=10&telehealth=false&bookingFunnelSource=profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group"
+            >
               <p className="text-brand-primary group-hover:text-brand-dark">
                 Rendez-vous
               </p>
-            </div>
+            </a>
           </div>
 
           {/* Burger Icon Mobile */}
@@ -250,7 +257,7 @@ export const Header = () => {
             </ul>
           </div>
           <div>
-            <Link href="">
+            <Link href="/tarifs">
               <h2 className="text-lg font-bold text-brand-primary cursor-pointer transition hover:text-brand-dark">
                 Tarifs
               </h2>
