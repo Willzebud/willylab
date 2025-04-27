@@ -129,9 +129,11 @@ export const Header = () => {
                       Le GAD® Detox +
                     </p>
                   </Link>
-                  <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer">
-                    Le Belly GAD®
-                  </p>
+                  <Link href="/belly-gad">
+                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer">
+                      Le Belly GAD®
+                    </p>
+                  </Link>
                 </div>
               )}
             </div>
@@ -240,7 +242,7 @@ export const Header = () => {
                   Le GAD® Detox +
                 </li>
               </Link>
-              <Link href="">
+              <Link href="/belly-gad">
                 <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2">
                   Le Belly GAD®
                 </li>

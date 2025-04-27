@@ -10,7 +10,7 @@ const soins = [
     description: "Le soin pour allier l’utile à l’agréable",
     image: "/images/ImgSoins/1.webp",
     href: "/soin-signature-gad",
-    alt: "Image de l'offre : Soin Signature GAD",
+    alt: "Image de l'offre : Soin Signature GAD®",
   },
   {
     title: "Le GAD Detox +",

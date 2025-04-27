@@ -41,13 +41,13 @@ export const Gad1Seance = () => {
             <div className="w-full lg:w-1/2 flex justify-center lg:hidden mb-[40px]">
               <Image
                 src="/images/ImgSi/SI3.webp"
-                alt="Dessin de main qui masse"
+                alt="Image de l'offre : GAD® 1 séance"
                 width={600}
                 height={200}
                 className="w-[150px] md:w-[200px] lg:w-[400px] h-auto object-contain"
               />
             </div>
-            <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-center pb-[50px]">
+            <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-justify pb-[50px]">
               Idéal pour découvrir le Massage GAD®.
             </p>
           </div>
@@ -88,7 +88,7 @@ export const Gad1Seance = () => {
                 </button>
 
                 {openIndex === index && (
-                  <div className="mt-2 text-brand-dark text-base md:text-lg font-light">
+                  <div className="mt-2 text-brand-dark text-base md:text-lg font-light text-justify">
                     {item.answer.split("\n").map((line, i) => (
                       <p key={i} className="mb-3">
                         {line}
@@ -121,7 +121,7 @@ export const Gad1Seance = () => {
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
             src="/images/ImgSi/SI3.webp"
-            alt="Dessin de main qui masse"
+            alt="Image de l'offre : GAD® 1 séance"
             width={600}
             height={600}
             className="w-[250px] md:w-[400px] lg:w-[300px] h-auto object-contain hidden lg:block"

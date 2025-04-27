@@ -77,7 +77,7 @@ export const FAQ = () => {
               </button>
 
               {openIndex === index && (
-                <div className="mt-2 text-brand-dark text-base md:text-lg font-light">
+                <div className="mt-2 text-brand-dark text-base md:text-lg font-light text-justify">
                   {item.answer.split("\n").map((line, i) => (
                     <p key={i} className="mb-3">
                       {line}

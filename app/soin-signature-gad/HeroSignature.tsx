@@ -14,7 +14,7 @@ export const HeroSignature = () => {
           <div className="w-full lg:w-1/2 flex justify-center md:hidden lg:hidden rounded-xl shadow-lg">
             <Image
               src="/images/ImgSoins/1.webp"
-              alt="Dessin de main qui masse"
+              alt="Image de l'offre : Soin Signature GAD®"
               width={600}
               height={200}
               className="object-cover w-full h-[260px] md:h-[300px] lg:h-[320px] rounded-xl shadow-lg"
@@ -39,7 +39,7 @@ export const HeroSignature = () => {
         <div className="w-full lg:w-1/2 flex justify-center rounded-xl shadow-lg">
           <Image
             src="/images/ImgSoins/1.webp"
-            alt="Dessin de main qui masse"
+            alt="Image de l'offre : Soin Signature GAD®"
             width={600}
             height={600}
             className="object-cover w-full h-[260px] md:h-[300px] lg:h-[320px] hidden md:block lg:block rounded-xl shadow-lg"

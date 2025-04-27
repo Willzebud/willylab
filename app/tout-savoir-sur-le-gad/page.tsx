@@ -14,6 +14,7 @@ export default function ToutSavoirPage() {
       <Header />
       <Spacing />
       <HeroGad />
+      <Spacing />
       <CelluliteSection />
       <Spacing />
       <EtudeClinique />
