@@ -15,7 +15,7 @@ import { VoiciLogoIcon } from "./icons/VoiciLogoIcon";
 export function Magazine() {
   return (
     <div className="flex flex-col items-center h-auto antialiased bg-brand-cream overflow-hidden">
-      <h2 className="text-xl text-brand-dark md:text-3xl lg:text-xl font-bold text-center mb-4">
+      <h2 className="text-xl font-playfair text-brand-dark md:text-3xl lg:text-xl font-bold text-center mb-4">
         Ils parlent du GAD®
       </h2>
       <InfiniteMovingCards items={logos} direction="right" speed="slow" />

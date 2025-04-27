@@ -6,7 +6,7 @@ export const Lieu = () => {
   return (
     <Section>
       <div className="relative z-0 w-full mx-auto overflow-hidden xl:w-[80%] max-w-[95%] min-h-[200px]">
-        <h2 className="text-2xl md:text-3xl py-4 lg:text-4xl text-center text-brand-primary mb-4 lg:mb-12">
+        <h2 className="text-2xl md:text-3xl py-4 lg:text-4xl text-center text-brand-primary mb-4 lg:mb-12 font-afrah">
           Où nous trouver
         </h2>
         {/* Colonne texte */}
@@ -21,7 +21,7 @@ export const Lieu = () => {
               href="https://www.google.com/maps?q=avenue+de+Verdun,+13400+Aubagne"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-base text-justify sm:text-xl text-brand-dark mb-4 text-center w-[90%] hover:text-brand-primary"
+              className="text-base text-justify sm:text-xl text-brand-dark mb-4 text-center w-[90%] hover:text-brand-primary font-playfair"
             >
               Cabinet Aubagne
               <br />
@@ -31,7 +31,7 @@ export const Lieu = () => {
           </div>
 
           <div
-            className="bg-brand-cream border border-2 border-brand-primary w-[300px] md:w-[400px] lg:w-[350px] h-auto py-4 px-6 flex items-center justify-center text-center"
+            className="bg-brand-cream border border-2 border-brand-primary w-[300px] md:w-[400px] lg:w-[350px] h-auto py-4 px-6 flex items-center justify-center text-center font-playfair"
             style={{
               borderRadius: "94% 6% 94% 6% / 5% 92% 8% 95% ",
             }}

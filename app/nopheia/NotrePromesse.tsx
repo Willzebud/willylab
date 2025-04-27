@@ -20,16 +20,16 @@ export const NotrePromesse = () => {
             }}
           />
           <div className="bg-brand-primary flex flex-col items-center justify-center gap-4 w-full">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-cream">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-cream font-afrah">
               Notre Promesse
             </h2>
-            <p className="text-base sm:text-xl text-center text-brand-cream mt-4 px-4 py-4 lg:pr-8 sm:pb-4 lg:pb-8">
+            <p className="font-playfair text-base sm:text-xl text-center text-brand-cream mt-4 px-4 py-4 lg:pr-8 sm:pb-4 lg:pb-8">
               Accompagner chaque femme dans une démarche de transformation
               douce, consciente et respectueuse. Pas pour correspondre à un
               idéal, mais pour se rapprocher de soi, reprendre confiance et se
               sentir belle dans sa peau.
             </p>
-            <p className="font-bold text-brand-cream text-lg md:text-xl text-center">
+            <p className="font-bold text-brand-cream text-lg md:text-xl text-center font-playfair">
               Yourself is more
             </p>
           </div>

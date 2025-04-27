@@ -102,11 +102,11 @@ export const Introduction = () => {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between lg:gap-8 pt-[50px]">
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6 font-afrah">
             Les résultats du massage GAD
           </h1>
 
-          <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-justify">
+          <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-justify font-playfair">
             Accompagnés d&rsquo;une activité physique modérée ainsi qu&rsquo;une
             alimentation équilibrée (Recommandée par le Programme National
             Nutrition Santé), l&rsquo;étude Clinique démontre bien que le

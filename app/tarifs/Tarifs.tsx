@@ -9,7 +9,9 @@ export const Tarifs = () => {
         <div className="flex flex-col max-w-5xl mx-auto px-4">
           {/* Titre principal */}
           <div className="text-center">
-            <h2 className="text-2xl text-brand-primary">Cure GAD®</h2>
+            <h2 className="text-4xl lg:text-4xl text-brand-primary font-afrah">
+              Cure GAD®
+            </h2>
           </div>
 
           {/* Tableau */}
@@ -17,46 +19,54 @@ export const Tarifs = () => {
             <table className="w-full table-auto">
               <thead>
                 <tr>
-                  <th className="text-left text-brand-dark text-xl font-bold pb-4">
+                  <th className="font-playfair text-left text-brand-dark text-xl font-bold pb-4">
                     Séance
                   </th>
-                  <th className="text-right text-brand-dark text-xl font-bold pb-4">
+                  <th className="font-playfair text-right text-brand-dark text-xl font-bold pb-4">
                     Prix
                   </th>
                 </tr>
               </thead>
               <tbody className="border-t border-brand-primary">
                 <tr>
-                  <td className="py-4 text-brand-dark font-semibold break-words">
+                  <td className="font-playfair py-4 text-brand-dark font-semibold break-words">
                     1 séance
                   </td>
-                  <td className="py-4 text-brand-dark font-semibold text-right break-words">
+                  <td className="font-playfair py-4 text-brand-dark font-semibold text-right break-words">
                     130€
                   </td>
                 </tr>
                 <tr>
-                  <td className="py-4 text-brand-dark break-words">
+                  <td className="font-playfair py-4 text-brand-dark break-words">
                     Cure Express | 7 séances
                   </td>
                   <td className="py-4 text-brand-dark text-right break-words">
                     <div className="flex flex-col items-end">
-                      <span className="font-semibold">115€/séance</span>
-                      <span className="text-sm">805€ au total*</span>
-                      <span className="text-sm text-brand-primary">
+                      <span className="font-playfair font-semibold">
+                        115€/séance
+                      </span>
+                      <span className="font-playfair text-sm">
+                        805€ au total*
+                      </span>
+                      <span className="font-playfair text-sm text-brand-primary">
                         Économisez 105€*
                       </span>
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <td className="py-4 text-brand-dark break-words">
+                  <td className="font-playfair py-4 text-brand-dark break-words">
                     Cure Signature | 14 séances
                   </td>
                   <td className="py-4 text-brand-dark text-right break-words">
                     <div className="flex flex-col items-end">
-                      <span className="font-semibold">100€/séance</span>
-                      <span className="text-sm">1400€ au total*</span>
-                      <span className="text-sm text-brand-primary">
+                      <span className="font-playfair font-semibold">
+                        100€/séance
+                      </span>
+                      <span className="font-playfair text-sm">
+                        1400€ au total*
+                      </span>
+                      <span className="font-playfair text-sm text-brand-primary">
                         Économisez 420€*
                       </span>
                     </div>
@@ -70,7 +80,7 @@ export const Tarifs = () => {
             {/* Groupe prix + bouton */}
             <div className="flex flex-col items-center justify-center gap-4 lg:items-center lg:gap-8">
               {/* Texte sous le prix (sur mobile/tablette seulement) */}
-              <p className="text-brand-dark text-sm text-center block">
+              <p className="font-playfair text-brand-dark text-sm text-center block">
                 * Possibilité de payer en plusieurs fois sans frais
               </p>
               {/* Bouton */}
@@ -80,7 +90,7 @@ export const Tarifs = () => {
                 rel="noopener noreferrer"
                 className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group"
               >
-                <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition whitespace-nowrap">
+                <button className="font-playfair bg-brand-primary hover:bg-brand-dark text-white font-semibold py-2 px-6 rounded-md transition whitespace-nowrap">
                   Rendez-vous
                 </button>
               </a>

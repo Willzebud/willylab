@@ -16,7 +16,7 @@ export const TemoiVideo = () => {
   return (
     <Section className="py-20 bg-cover bg-center bg-no-repeat">
       <div className="w-full flex flex-col justify-center mb-10">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-12">
+        <h2 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-12">
           Elles témoignent
         </h2>
       </div>

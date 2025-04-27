@@ -32,11 +32,11 @@ export const Drainage = () => {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between lg:gap-8">
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6">
+          <h1 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6">
             Reprend-on tout après un drainage ?
           </h1>
 
-          <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-justify">
+          <p className="font-playfair text-lg md:text-xl text-brand-dark leading-relaxed text-justify">
             Le GAD® continue d&rsquo;agir jusqu&rsquo;à 3 mois après la dernière
             séance. Il faut bien évidemment entretenir les résultats en venant
             faire des séances d&rsquo;entretien ou, comme certaines, reprendre

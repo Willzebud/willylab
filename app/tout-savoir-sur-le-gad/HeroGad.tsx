@@ -8,7 +8,7 @@ export const HeroGad = () => {
       <div className="relative z-0 w-full mx-auto overflow-hidden xl:w-[80%] max-w-[95%] min-h-[400px] flex flex-col lg:flex-row items-center justify-between lg:gap-8">
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6 font-afrah">
             Qu’est-ce que le GAD® ?
           </h1>
           <div className="w-full lg:w-1/2 flex justify-center lg:hidden">
@@ -20,7 +20,7 @@ export const HeroGad = () => {
               className="w-[150px] md:w-[200px] lg:w-[400px] h-auto object-contain"
             />
           </div>
-          <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-justify">
+          <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-justify font-playfair">
             Créé par Anne Cali, c&apos;est une méthode unique basée sur un
             massage manuel très profond qui consiste à saisir les tissus de la
             peau avec la paume de la main que l&apos;on va mettre sous pression

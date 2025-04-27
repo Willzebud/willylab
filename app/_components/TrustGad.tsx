@@ -19,10 +19,10 @@ export const TrustGad = () => {
 
       {/* Contenu centré */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 sm:px-6">
-        <h2 className="font-bold text-xl sm:text-3xl text-brand-cream leading-tight mb-4 md:px-6">
+        <h2 className="text-xl sm:text-3xl text-brand-cream leading-tight mb-4 md:px-6 font-afrah">
           Plus de 4 000 patients.es ont fait confiance au GAD®
         </h2>
-        <p className="text-base sm:text-xl text-brand-cream max-w-[90%] sm:max-w-3xl text-justify sm:px-2">
+        <p className="text-base sm:text-xl text-brand-cream max-w-[90%] sm:max-w-3xl text-justify sm:px-2 font-playfair">
           Le GAD® est une méthode drainante et anti-cellulite révolutionnaire.
           Un geste très profond qui combine les effets d’un palper rouler et
           d’un drainage profond. 3 fois plus profond et efficace qu’un massage
@@ -30,7 +30,7 @@ export const TrustGad = () => {
         </p>
         <Link href="/tout-savoir-sur-le-gad">
           <div className="w-full flex justify-center mt-5">
-            <p className="text-lg md:text-2xl lg:text-xl text-brand-cream hover:text-brand-dark transition cursor-pointer underline pb-4 md:pb-0">
+            <p className="text-lg md:text-2xl lg:text-xl text-brand-cream hover:text-brand-dark transition cursor-pointer underline pb-4 md:pb-0 font-playfair">
               En savoir plus
             </p>
           </div>

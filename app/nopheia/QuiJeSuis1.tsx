@@ -8,7 +8,7 @@ export const QuiJeSuis1 = () => {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 py-12 flex flex-col lg:flex-row items-center justify-between gap-6">
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6 font-afrah">
             Nopheïa
           </h1>
 
@@ -29,7 +29,7 @@ export const QuiJeSuis1 = () => {
             </div>
           </div>
 
-          <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-justify">
+          <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-justify font-playfair">
             Chez Nopheïa, nous croyons en une beauté qui ne cherche pas à
             transformer, mais à révéler. <br />
             <br /> Une beauté naturelle, bienveillante et profondément

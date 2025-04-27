@@ -34,7 +34,7 @@ export const Gad1Seance = () => {
       <div className="relative z-0 w-full mx-auto overflow-hidden xl:w-[80%] max-w-[95%] min-h-[400px] flex flex-col lg:flex-row items-start justify-between lg:gap-8">
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-[50px]">
+          <h1 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-[50px]">
             1 séance - Cure GAD®
           </h1>
           <div>
@@ -47,7 +47,7 @@ export const Gad1Seance = () => {
                 className="w-[150px] md:w-[200px] lg:w-[400px] h-auto object-contain"
               />
             </div>
-            <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-justify pb-[50px]">
+            <p className="font-playfair text-lg md:text-xl text-brand-dark leading-relaxed text-justify pb-[50px]">
               Idéal pour découvrir le Massage GAD®.
             </p>
           </div>
@@ -66,7 +66,7 @@ export const Gad1Seance = () => {
                   className="w-8 h-8"
                 />
               </div>
-              <p className="text-brand-dark text-base md:text-lg">
+              <p className="font-playfair text-brand-dark text-base md:text-lg">
                 {highlightImportant(point)}
               </p>
             </div>
@@ -78,17 +78,17 @@ export const Gad1Seance = () => {
               <div key={index} className="border-b border-brand-primary pb-4">
                 <button
                   onClick={() => toggle(index)}
-                  className={`w-full text-left text-lg md:text-xl font-light tracking-wide transition-all duration-300 ease-in-out hover:text-brand-primary ${
+                  className={`font-playfair w-full text-left text-lg md:text-xl font-light tracking-wide transition-all duration-300 ease-in-out hover:text-brand-primary ${
                     openIndex === index
-                      ? "text-brand-primary"
-                      : "text-brand-dark"
+                      ? "text-brand-primary font-playfair"
+                      : "text-brand-dark font-playfair"
                   }`}
                 >
                   {item.question}
                 </button>
 
                 {openIndex === index && (
-                  <div className="mt-2 text-brand-dark text-base md:text-lg font-light text-justify">
+                  <div className="font-playfair mt-2 text-brand-dark text-base md:text-lg font-light text-justify">
                     {item.answer.split("\n").map((line, i) => (
                       <p key={i} className="mb-3">
                         {line}
@@ -108,11 +108,11 @@ export const Gad1Seance = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
+                <button className="font-playfair bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
                   Rendez-vous
                 </button>
               </a>
-              <p className="text-brand-primary font-bold text-2xl mt-4 lg:mt-0">
+              <p className="font-playfair text-brand-primary text-2xl mt-4 lg:mt-0">
                 130€ PAR SÉANCE
               </p>
             </div>

@@ -8,10 +8,10 @@ export const Methode = () => {
       <div className="relative z-0 w-full mx-auto overflow-hidden xl:w-[80%] max-w-[95%] min-h-[600px] flex flex-col lg:flex-row items-center justify-between">
         {/* Colonne texte */}
         <div className="z-10 w-full lg:w-1/2 lg:pr-8">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-12">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-12 font-afrah">
             Pourquoi cette Méthode ?
           </h2>
-          <p className="text-base sm:text-xl text-justify text-brand-dark mt-4">
+          <p className="text-base sm:text-xl text-justify text-brand-dark mt-4 font-playfair">
             Notre méthode minceur utilise un geste exclusif le GAD®, qui
             s&rsquo;effectue avec la paume de la main. Les résultats obtenus
             sont ceux d&rsquo;un drainage lymphatique profond combiné à un
@@ -28,9 +28,8 @@ export const Methode = () => {
               href="https://annecali.com/wp-content/uploads/2024/08/Me%CC%81thode-Anne-CALI-Presse-avec-annexe-1.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition text-center"
             >
-              <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
+              <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition font-playfair">
                 Voir l’étude clinique
               </button>
             </a>
@@ -38,7 +37,7 @@ export const Methode = () => {
         </div>
 
         {/* Colonne bulles */}
-        <div className="relative z-10 w-full lg:w-1/2 flex flex-col items-center justify-center gap-4 px-4 sm:px-6 mt-10 md:mt-10 mb-10 lg:mb-0">
+        <div className="relative z-10 w-full lg:w-1/2 flex flex-col items-center justify-center gap-4 px-4 sm:px-6 mt-10 md:mt-10 mb-10 lg:mb-0 font-playfair">
           {[
             "Une méthode validée par une étude scientifique.",
             "En 15 séances, c'est en moyenne : -8cm Taille | -4cm cuisses | -33% graisse corporelle",
@@ -64,7 +63,7 @@ export const Methode = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold px-6 rounded-md transition">
+                <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold px-6 rounded-md transition font-playfair">
                   Voir l&rsquo;étude clinique
                 </button>
               </a>

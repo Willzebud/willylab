@@ -32,7 +32,7 @@ const soins = [
 export const NosSoins = () => {
   return (
     <Section className="py-20 bg-brand-cream">
-      <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-12">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-12 font-afrah">
         Nos Soins
       </h2>
 
@@ -54,10 +54,12 @@ export const NosSoins = () => {
                   className="object-cover w-full h-[260px] md:h-[300px] lg:h-[320px]"
                 />
               </div>
-              <h3 className="mt-4 text-lg font-semibold text-brand-dark group-hover:text-brand-primary transition">
+              <h3 className="mt-4 text-lg font-semibold text-brand-dark group-hover:text-brand-primary transition font-playfair">
                 {soin.title}
               </h3>
-              <p className="mt-2 text-sm text-brand-dark">{soin.description}</p>
+              <p className="mt-2 text-sm text-brand-dark font-playfair">
+                {soin.description}
+              </p>
             </Link>
           ))}
         </div>

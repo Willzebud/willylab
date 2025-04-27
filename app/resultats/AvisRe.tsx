@@ -48,10 +48,10 @@ export const AvisRe = () => {
                 key={index}
                 className="keen-slider__slide flex flex-col items-center text-center gap-4"
               >
-                <div className="text-brand-primary text-lg font-semibold">
+                <div className="font-afrah text-brand-primary text-lg font-semibold text-4xl">
                   {avis.name}
                 </div>
-                <p className="text-2xl italic text-brand-dark max-w-xl">
+                <p className="font-playfair text-2xl italic text-brand-dark max-w-xl mt-10">
                   “{avis.quote}”
                 </p>
               </div>

@@ -60,7 +60,7 @@ export const FAQ = () => {
   return (
     <Section>
       <div className="relative z-0 w-full mx-auto xl:w-[80%] max-w-[95%] min-h-[200px]">
-        <h2 className="text-2xl md:text-3xl py-4 lg:text-4xl text-center text-brand-primary mb-4 lg:mb-12">
+        <h2 className="text-2xl md:text-3xl py-4 lg:text-4xl text-center text-brand-primary mb-4 lg:mb-12 font-afrah">
           Les questions fréquentes
         </h2>
 
@@ -69,7 +69,7 @@ export const FAQ = () => {
             <div key={index} className="border-b border-brand-primary pb-4">
               <button
                 onClick={() => toggle(index)}
-                className={`w-full text-left text-lg md:text-xl font-light tracking-wide transition-all duration-300 ease-in-out hover:text-brand-primary ${
+                className={`w-full text-left text-lg md:text-xl font-light tracking-wide transition-all duration-300 ease-in-out hover:text-brand-primary font-playfair ${
                   openIndex === index ? "text-brand-primary" : "text-brand-dark"
                 }`}
               >
@@ -77,7 +77,7 @@ export const FAQ = () => {
               </button>
 
               {openIndex === index && (
-                <div className="mt-2 text-brand-dark text-base md:text-lg font-light text-justify">
+                <div className="mt-2 text-brand-dark text-base md:text-lg font-light text-justify font-playfair">
                   {item.answer.split("\n").map((line, i) => (
                     <p key={i} className="mb-3">
                       {line}

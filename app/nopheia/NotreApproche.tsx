@@ -6,7 +6,7 @@ export const NotreApproche = () => {
   return (
     <Section>
       <div className="w-full max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-16">
+        <h2 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-16">
           Notre approche
         </h2>
 
@@ -39,7 +39,7 @@ export const NotreApproche = () => {
           ].map(({ src, alt, title, text }, i) => (
             <div
               key={i}
-              className="flex flex-col lg:flex-row items-center gap-4 text-center sm:text-left md:text-left"
+              className="flex flex-col lg:flex-row items-center gap-4 text-center sm:text-left md:text-left font-playfair"
             >
               <Image
                 src={src}

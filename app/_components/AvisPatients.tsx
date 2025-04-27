@@ -35,7 +35,7 @@ export const AvisPatients = () => {
   return (
     <Section className="py-20 bg-cover bg-center bg-no-repeat">
       <div className="w-full flex flex-col justify-center mb-10">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-12">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-12 font-afrah">
           Elles partagent leur expérience
         </h2>
       </div>
@@ -80,10 +80,10 @@ export const AvisPatients = () => {
                 key={index}
                 className="keen-slider__slide flex flex-col items-center text-center gap-4"
               >
-                <div className="text-brand-primary text-lg font-semibold">
+                <div className="text-brand-primary text-4xl text-lg font-semibold font-afrah pb-10">
                   {avis.name}
                 </div>
-                <p className="text-2xl italic text-brand-dark max-w-xl">
+                <p className="text-2xl italic text-brand-dark max-w-xl font-playfair">
                   “{avis.quote}”
                 </p>
               </div>
@@ -95,7 +95,7 @@ export const AvisPatients = () => {
       {/* 👉 Bouton "Consultez les résultats" */}
       <div className="mt-16 lg:mt-20 flex justify-center">
         <Link href="/resultats">
-          <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
+          <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition font-playfair">
             Consultez les résultats
           </button>
         </Link>

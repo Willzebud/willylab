@@ -35,7 +35,7 @@ export const Header = () => {
             <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-brand-primary bg-transparent cursor-pointer transition hover:border-brand-dark hover:bg-brand-dark" />
           </Link>
           <div className="h-auto w-auto">
-            <p className="text-brand-dark">NOPHEÏA</p>
+            <p className="text-brand-dark font-afrah">NOPHEÏA</p>
           </div>
         </div>
 
@@ -57,7 +57,7 @@ export const Header = () => {
           </a>
 
           <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group ipadPro:hidden">
-            <p className="text-brand-primary group-hover:text-brand-dark">
+            <p className="text-brand-primary group-hover:text-brand-dark font-playfair">
               Rendez-vous
             </p>
           </div>
@@ -73,8 +73,8 @@ export const Header = () => {
                 <p
                   className={`transition ${
                     openNosMethodes
-                      ? "text-brand-dark" // Menu ouvert ➔ couleur dark fixe
-                      : "text-brand-primary group-hover:text-brand-dark" // Menu fermé ➔ couleur normale
+                      ? "text-brand-dark font-playfair" // Menu ouvert ➔ couleur dark fixe
+                      : "text-brand-primary group-hover:text-brand-dark font-playfair" // Menu fermé ➔ couleur normale
                   }`}
                 >
                   Nos méthodes
@@ -83,17 +83,17 @@ export const Header = () => {
               {openNosMethodes && (
                 <div className="absolute left-0 top-full mt-2 flex flex-col bg-brand-cream shadow-lg rounded-md w-56 py-2">
                   <Link href="/tout-savoir-sur-le-gad">
-                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer">
+                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
                       Qu&apos;est ce que le GAD® ?
                     </p>
                   </Link>
                   <Link href="/nopheia">
-                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer">
+                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
                       Nopheïa
                     </p>
                   </Link>
                   <Link href="/resultats">
-                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer">
+                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
                       Les Résultats
                     </p>
                   </Link>
@@ -110,8 +110,8 @@ export const Header = () => {
                 <p
                   className={`transition ${
                     openMesSoins
-                      ? "text-brand-dark" // Menu ouvert ➔ couleur dark
-                      : "text-brand-primary group-hover:text-brand-dark" // Menu fermé ➔ couleur normale
+                      ? "text-brand-dark font-playfair" // Menu ouvert ➔ couleur dark
+                      : "text-brand-primary group-hover:text-brand-dark font-playfair" // Menu fermé ➔ couleur normale
                   }`}
                 >
                   Nos soins
@@ -120,17 +120,17 @@ export const Header = () => {
               {openMesSoins && (
                 <div className="absolute left-0 top-full mt-2 flex flex-col bg-brand-cream shadow-lg rounded-md w-56 py-2">
                   <Link href="/soin-signature-gad">
-                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer">
+                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
                       Soin Signature GAD®
                     </p>
                   </Link>
                   <Link href="/gad-detox-plus">
-                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer">
+                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
                       Le GAD® Detox +
                     </p>
                   </Link>
                   <Link href="/belly-gad">
-                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer">
+                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
                       Le Belly GAD®
                     </p>
                   </Link>
@@ -141,7 +141,7 @@ export const Header = () => {
             {/* Tarifs */}
             <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group">
               <Link href="/tarifs">
-                <p className="text-brand-primary group-hover:text-brand-dark">
+                <p className="text-brand-primary group-hover:text-brand-dark font-playfair">
                   Tarifs
                 </p>
               </Link>
@@ -154,7 +154,7 @@ export const Header = () => {
               rel="noopener noreferrer"
               className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group"
             >
-              <p className="text-brand-primary group-hover:text-brand-dark">
+              <p className="text-brand-primary group-hover:text-brand-dark font-playfair">
                 Rendez-vous
               </p>
             </a>

@@ -22,7 +22,7 @@ export const Precision = () => {
           <div className="bg-brand-dark w-full px-6 flex flex-col items-center justify-between gap-10">
             {/* Texte à gauche */}
             <div className="w-full">
-              <p className="text-base sm:text-xl text-center text-brand-cream mt-4 px-4 py-4 lg:pr-8 sm:pb-4 lg:pb-8">
+              <p className="font-playfair text-base sm:text-xl text-center text-brand-cream mt-4 px-4 py-4 lg:pr-8 sm:pb-4 lg:pb-8">
                 Sans douleur, cette technique de massage utilise le Stretching
                 Cellulaire pour activer les cellules paresseuses et offre des
                 résultats durables.

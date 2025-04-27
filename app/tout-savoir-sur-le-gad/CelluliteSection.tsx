@@ -7,16 +7,16 @@ export const CelluliteSection = () => {
       <div className="max-w-7xl mx-autorelative z-0 w-full mx-auto overflow-hidden xl:w-[80%] max-w-[95%] min-h-[400px]">
         {/* Partie Titre + Texte */}
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 mb-12">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary w-full lg:w-1/2">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary w-full lg:w-1/2 font-afrah">
             C’est quoi la cellulite ?
           </h2>
           <div className="text-brand-dark text-lg text-justify md:text-xl w-full lg:w-1/2 leading-relaxed">
-            <p className="mb-4">
+            <p className="mb-4 font-playfair">
               La cellulite est formée par une augmentation de cellules
               graisseuses qui compriment le réseau sanguin et entraînent un
               capitonnage de la peau.
             </p>
-            <p className="text-sm md:text-base text-brand-dark text-justify">
+            <p className="text-sm md:text-base text-brand-dark text-justify font-playfair">
               Le Massage GAD® permet d’activer la circulation sanguine et
               lymphatique pour éliminer et déstocker les amas graisseux. En
               conséquence, l’aspect de la cellulite diminue, en plus d’une perte
@@ -36,10 +36,10 @@ export const CelluliteSection = () => {
               height={300}
               className="w-full h-auto max-w-sm"
             />
-            <h3 className="mt-4 font-semibold text-brand-dark">
+            <h3 className="mt-4 font-semibold text-brand-dark font-playfair">
               Une peau avec de la cellulite
             </h3>
-            <p className="text-sm text-brand-dark mt-2">
+            <p className="text-sm text-brand-dark mt-2 font-playfair">
               Les adipocytes en excès
               <br />
               compriment le réseau sanguin
@@ -57,10 +57,10 @@ export const CelluliteSection = () => {
               height={300}
               className="w-full h-auto max-w-sm"
             />
-            <h3 className="mt-4 font-semibold text-brand-dark">
+            <h3 className="mt-4 font-semibold text-brand-dark font-playfair">
               Une peau normale et lisse
             </h3>
-            <p className="text-sm text-brand-dark mt-2">
+            <p className="text-sm text-brand-dark mt-2 font-playfair">
               Les adipocytes sont en quantité limitée,
               <br />
               le flux sanguin est facilité.

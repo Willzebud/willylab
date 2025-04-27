@@ -9,6 +9,8 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
+      playfair: ["'Playfair Display'", "serif"],
+      afrah: ["Afrah", "sans-serif"],
       sans: ["var(--font-geist-sans)"],
       mono: ["var(--font-geist-mono)"],
       caption: ["var(--font-caption)"],

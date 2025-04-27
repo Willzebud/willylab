@@ -8,7 +8,7 @@ export const EffetsPositifs = () => {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 py-12">
         <div className="max-w-6xl mx-auto text-center">
           {/* Titre */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6 font-afrah">
             Les actions de ce massage minceur
           </h2>
 
@@ -23,13 +23,13 @@ export const EffetsPositifs = () => {
                 height={80}
                 className="mb-4"
               />
-              <h3 className="font-semibold text-brand-dark mb-2">
+              <h3 className="font-semibold text-brand-dark mb-2 font-playfair">
                 Une action sur la circulation sanguine
               </h3>
-              <p className="text-sm text-brand-dark">
+              <p className="text-sm text-brand-dark font-playfair">
                 et donc une amélioration du retour veineux et lymphatique.
                 <br />
-                <span className="font-semibold">
+                <span className="font-semibold font-playfair">
                   Une perte moyenne de 0,5cm par séance liée au drainage de
                   l’eau.
                 </span>
@@ -45,15 +45,15 @@ export const EffetsPositifs = () => {
                 height={80}
                 className="mb-4"
               />
-              <h3 className="font-semibold text-brand-dark mb-2">
+              <h3 className="font-semibold text-brand-dark mb-2 font-playfair">
                 Une action sur les cellules graisseuses
               </h3>
-              <p className="text-sm text-brand-dark">
+              <p className="text-sm text-brand-dark font-playfair">
                 qui va les vidanger et les éliminer en profondeur grâce au
                 phénomène de lipolyse. On observe aussi une réduction moyenne de
                 33% de l’hypoderme.
                 <br />
-                <span className="font-semibold">
+                <span className="font-semibold font-playfair">
                   À partir de la 5ème séance, la peau se lisse.
                 </span>
               </p>
@@ -68,14 +68,14 @@ export const EffetsPositifs = () => {
                 height={80}
                 className="mb-4"
               />
-              <h3 className="font-semibold text-brand-dark mb-2">
+              <h3 className="font-semibold text-brand-dark mb-2 font-playfair">
                 Une action sur les fibroblastes,
               </h3>
-              <p className="text-sm text-brand-dark">
+              <p className="text-sm text-brand-dark font-playfair">
                 les cellules qui sont responsables de la production des fibres
                 d’élastine et de collagène.
                 <br />
-                <span className="font-semibold">
+                <span className="font-semibold font-playfair">
                   La peau est tonifiée et plus ferme, la peau d’orange diminue.
                 </span>
               </p>

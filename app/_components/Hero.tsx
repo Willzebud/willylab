@@ -33,7 +33,7 @@ export const Hero = () => {
               borderRadius: "66% 34% 67% 33% / 40% 65% 35% 60%",
             }}
           >
-            <h1 className="text-brand-cream text-lg md:text-2xl lg:text-4xl font-bold text-center">
+            <h1 className="text-brand-cream font-afrah text-lg md:text-2xl lg:text-4xl text-center">
               Découvrez le massage révolutionnaire, drainant et anticellulite :
               Le GAD®
             </h1>
