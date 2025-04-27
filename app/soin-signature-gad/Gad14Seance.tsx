@@ -112,11 +112,15 @@ export const Gad14Seance = () => {
           <div className="mt-12 w-full flex flex-col items-center justify-center lg:flex-none gap-4">
             {/* Groupe bouton + prix */}
             <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
-              <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
+              <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition whitespace-nowrap">
                 Rendez-vous
               </button>
               <p className="text-brand-primary font-bold text-2xl mt-4 lg:mt-0">
-                100€ PAR SÉANCE / Économisez 420€ au total
+                100€ PAR SÉANCE /
+                <span className="font-normal text-lg">
+                  {" "}
+                  Économisez 420€ au total
+                </span>
               </p>
             </div>
 
