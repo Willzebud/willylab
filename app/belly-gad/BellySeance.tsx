@@ -5,24 +5,29 @@ import { useState } from "react";
 
 const questions = [
   {
-    question: "Pour qui est cette cure ?",
+    question: "Qu'est-ce qui rend le massage Le Belly GAD® unique ?",
     answer:
-      "Idéale pour celles et ceux qui souhaitent découvrir le DAD® Detox + et ses bienfaits.",
+      "Le massage « Le Belly GAD® » se distingue grâce à la combinaison unique de deux techniques de massage puissantes : le Chi Nei Tsang et le massage GAD®. Ce massage offre une expérience complète de bien-être en associant les bienfaits du Chi Nei Tsang, qui apaise l’esprit, détoxifie et draine l’abdomen, avec les avantages ciblés du massage GAD®, qui élimine la rétention d’eau, réduit la graisse, et améliore la tonicité de la peau. En résulte une perte de centimètres notable, tout en offrant une sensation de légèreté abdominale et une reconnexion aux émotions.",
   },
   {
-    question: "Que comprend-elle ?",
+    question:
+      "Les résultats sont ils immédiats après une séance de Belly GAD® ?",
     answer:
-      "Un bilan complet ainsi qu’une séance de massage GAD® Detox +. Le suivi est personnalisé avec un réajustement de la fréquence des séances si besoin. Le massage GAD® Detox + est effectué sur les cuisses, les fesses, le ventre, les bras et les hanches. Chaque massage se termine par un massage drainant et relaxant pour que vous repartez 100% détendu(e).",
+      "Les techniques drainantes associées au GAD® vont aider à réduire la rétention d’eau ce qui a pour conséquence une perte de cm très importante et visible au niveau de l’abdomen allant jusqu’à 2 tailles en une séance. Les techniques du massage Chi Nei Tsang vont quand à elles provoquer un apaisement émotionnel et une amélioration de la digestion après une seule séance. Cependant, pour des résultats plus durables, plusieurs séances peuvent être nécessaires.",
+  },
+  {
+    question: "Est-ce que ce massage convient à tout le monde ?",
+    answer:
+      "Oui, le Massage Le Belly GAD® est adapté à la plupart des personnes en quête de perte de cm immédiat, de relaxation, d’amélioration du transit et de la qualité de peau de l’abdomen et de soulagement des tensions abdominales. Cependant, si vous avez des problèmes de santé spécifiques, il est recommandé de consulter votre médecin avant de réserver une séance.",
+  },
+  {
+    question: "Combien de temps dure une séance de massage Le Belly GAD® ?",
+    answer:
+      "Une séance typique de massage « Le Belly GAD® » dure 1 heure. Cette durée permet au thérapeute de travailler de manière approfondie sur tout l’abdomen.",
   },
 ];
 
-export const Detox1Seance = () => {
-  const points = [
-    "Perte d'une taille en moyenne apres la 1ere séance",
-    "Relance la circulation sanguine et lymphatique",
-    "Amélioration de la qualité et de la fermeté de la peau qui dure dans le temps",
-  ];
-
+export const BellySeance = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggle = (index: number) => {
@@ -35,45 +40,20 @@ export const Detox1Seance = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-[50px]">
-            1 séance - Cure GAD® Detox Plus
+            Séance Cure Belly GAD®
           </h1>
-          <div>
-            <div className="w-full lg:w-1/2 flex justify-center lg:hidden mb-[40px]">
-              <Image
-                src="/images/ImgSi/SI3.webp"
-                alt="Image de l'offre : GAD® Detox plus 1 séance"
-                width={600}
-                height={200}
-                className="w-[150px] md:w-[200px] lg:w-[400px] h-auto object-contain"
-              />
-            </div>
-            <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-justify pb-[50px]">
-              Idéal pour découvrir le Massage GAD® Detox +.
-            </p>
+          <div className="w-full lg:w-1/2 flex justify-center lg:hidden mb-[40px]">
+            <Image
+              src="/images/ImgSi/SI3.webp"
+              alt="Image de l'offre : Belly GAD® 1 séance"
+              width={600}
+              height={200}
+              className="w-[150px] md:w-[200px] lg:w-[400px] h-auto object-contain"
+            />
           </div>
-          {/* Check */}
-          {points.map((point, index) => (
-            <div
-              key={index}
-              className="flex items-start gap-4 border-b border-brand-primary pt-6 pb-6"
-            >
-              <div className="flex-shrink-0">
-                <Image
-                  src="/images/Check.webp"
-                  alt="Check"
-                  width={32}
-                  height={32}
-                  className="w-8 h-8"
-                />
-              </div>
-              <p className="text-brand-dark text-base md:text-lg">
-                {highlightImportant(point)}
-              </p>
-            </div>
-          ))}
 
           {/* FAQ */}
-          <div className="space-y-6 pt-[100px]">
+          <div className="space-y-6">
             {questions.map((item, index) => (
               <div key={index} className="border-b border-brand-primary pb-4">
                 <button
@@ -107,7 +87,7 @@ export const Detox1Seance = () => {
                 Rendez-vous
               </button>
               <p className="text-brand-primary font-bold text-2xl mt-4 lg:mt-0">
-                150€ PAR SÉANCE
+                140€ PAR SÉANCE
               </p>
             </div>
           </div>
@@ -116,7 +96,7 @@ export const Detox1Seance = () => {
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
             src="/images/ImgSi/SI3.webp"
-            alt="Image de l'offre : GAD® Detox plus 1 séance"
+            alt="Image de l'offre : Belly GAD® 1 séance"
             width={600}
             height={600}
             className="w-[250px] md:w-[400px] lg:w-[300px] h-auto object-contain hidden lg:block"
@@ -126,19 +106,3 @@ export const Detox1Seance = () => {
     </Section>
   );
 };
-
-// Fonction pour mettre en gras automatiquement certaines parties du texte
-function highlightImportant(text: string) {
-  const boldWords = [
-    "Perte d'une taille",
-    "Relance la circulation",
-    "la qualité et de la fermeté de la peau qui dure dans le temps",
-  ];
-
-  let formattedText = text;
-  boldWords.forEach((word) => {
-    formattedText = formattedText.replace(word, `<strong>${word}</strong>`);
-  });
-
-  return <span dangerouslySetInnerHTML={{ __html: formattedText }} />;
-}

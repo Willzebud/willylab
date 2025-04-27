@@ -115,7 +115,7 @@ export const Detox7Seance = () => {
                 135€ PAR SÉANCE
                 <span className="font-normal text-lg">
                   {" "}
-                  / Économisez 420€ au total
+                  / Économisez 105€ au total
                 </span>
               </p>
 

@@ -35,7 +35,7 @@ export const Gad1Seance = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-[50px]">
-            1 séance - Cure Gad®
+            1 séance - Cure GAD®
           </h1>
           <div>
             <div className="w-full lg:w-1/2 flex justify-center lg:hidden mb-[40px]">
