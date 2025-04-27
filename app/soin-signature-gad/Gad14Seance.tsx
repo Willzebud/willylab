@@ -109,23 +109,31 @@ export const Gad14Seance = () => {
             ))}
           </div>
 
-          <div className="mt-12 w-full flex flex-col items-center justify-center lg:flex-none gap-4">
-            {/* Groupe bouton + prix */}
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+          <div className="mt-12 w-full flex flex-col items-center justify-center md:flex-none lg:flex-none gap-4">
+            {/* Groupe prix + bouton */}
+            <div className="flex flex-col items-center justify-center gap-4 md:flex-row lg:flex-row lg:items-center lg:gap-8">
+              {/* Prix */}
+              <p className="text-brand-primary font-bold text-2xl">
+                100€ PAR SÉANCE
+                <span className="font-normal text-lg">
+                  {" "}
+                  / Économisez 420€ au total
+                </span>
+              </p>
+
+              {/* Texte sous le prix (sur mobile/tablette seulement) */}
+              <p className="text-brand-dark text-sm text-center block md:hidden lg:hidden">
+                * Possibilité de payer en plusieurs fois sans frais
+              </p>
+
+              {/* Bouton */}
               <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition whitespace-nowrap">
                 Rendez-vous
               </button>
-              <p className="text-brand-primary font-bold text-2xl mt-4 lg:mt-0">
-                100€ PAR SÉANCE /
-                <span className="font-normal text-lg">
-                  {" "}
-                  Économisez 420€ au total
-                </span>
-              </p>
             </div>
 
-            {/* Texte sous bouton (toujours centré) */}
-            <p className="text-brand-dark text-sm text-center mt-4">
+            {/* Texte sous bouton (uniquement en desktop) */}
+            <p className="text-brand-dark text-sm text-center hidden md:block lg:block mt-4">
               * Possibilité de payer en plusieurs fois sans frais
             </p>
           </div>

@@ -14,7 +14,7 @@ export const WhatDetox = () => {
           <div className="w-full lg:w-1/2 flex justify-center lg:hidden">
             <Image
               src="/images/ImgSi/SI1.webp"
-              alt="Dessin de main qui masse"
+              alt="Dessin d'une femme allongée et enveloppée de serviettes'"
               width={600}
               height={200}
               className="w-[200px] md:w-[200px] lg:w-[400px] h-auto object-contain"
@@ -39,7 +39,7 @@ export const WhatDetox = () => {
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
             src="/images/ImgSi/SI1.webp"
-            alt="Dessin de main qui masse"
+            alt="Dessin d'une femme allongée et enveloppée de serviettes"
             width={600}
             height={600}
             className="w-[250px] md:w-[400px] lg:w-[400px] h-auto object-contain hidden lg:block"

@@ -100,9 +100,9 @@ export const Gad1Seance = () => {
             ))}
           </div>
 
-          <div className="mt-12 w-full flex flex-col items-center justify-center lg:flex-none gap-4">
+          <div className="mt-12 w-full flex flex-col items-center justify-center md:flex-none lg:flex-none gap-4">
             {/* Groupe bouton + prix */}
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+            <div className="flex flex-col-reverse md:flex-row-reverse lg:flex-row-reverse items-center justify-center gap-8">
               <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
                 Rendez-vous
               </button>
@@ -110,11 +110,6 @@ export const Gad1Seance = () => {
                 130€ PAR SÉANCE
               </p>
             </div>
-
-            {/* Texte sous bouton (toujours centré) */}
-            <p className="text-brand-dark text-sm text-center mt-4">
-              * Possibilité de payer en 2, 3 ou 4 fois sans frais
-            </p>
           </div>
         </div>
         {/* Image à droite */}
