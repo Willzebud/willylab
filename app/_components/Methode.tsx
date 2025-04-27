@@ -24,9 +24,16 @@ export const Methode = () => {
 
           {/* 👉 Bouton visible uniquement sur desktop */}
           <div className="w-full hidden lg:flex justify-center mt-12">
-            <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
-              Voir l’étude clinique
-            </button>
+            <a
+              href="https://annecali.com/wp-content/uploads/2024/08/Me%CC%81thode-Anne-CALI-Presse-avec-annexe-1.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition text-center"
+            >
+              <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
+                Voir l’étude clinique
+              </button>
+            </a>
           </div>
         </div>
 
@@ -52,9 +59,15 @@ export const Methode = () => {
           {/* 👉 Bouton visible uniquement sur mobile/tablette */}
           <div className="w-full flex justify-center mt-5 lg:hidden block">
             <div className="mt-6">
-              <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
-                Voir l&rsquo;étude clinique
-              </button>
+              <a
+                href="https://annecali.com/wp-content/uploads/2024/08/Me%CC%81thode-Anne-CALI-Presse-avec-annexe-1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold px-6 rounded-md transition">
+                  Voir l&rsquo;étude clinique
+                </button>
+              </a>
             </div>
           </div>
         </div>

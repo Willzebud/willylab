@@ -125,9 +125,15 @@ export const Gad7Seance = () => {
               </p>
 
               {/* Bouton */}
-              <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition whitespace-nowrap">
-                Rendez-vous
-              </button>
+              <a
+                href="https://www.doctolib.fr/osteopathe/carnoux-en-provence/ophelie-ribiere/booking/places?specialityId=10&telehealth=false&bookingFunnelSource=profile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition whitespace-nowrap">
+                  Rendez-vous
+                </button>
+              </a>
             </div>
 
             {/* Texte sous bouton (uniquement en desktop) */}

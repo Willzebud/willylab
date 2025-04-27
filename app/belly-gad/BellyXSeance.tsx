@@ -34,9 +34,15 @@ export const BellyXSeance = () => {
               <p className="text-brand-dark text-sm text-center">
                 * Possibilité de payer en plusieurs fois sans frais
               </p>
-              <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition whitespace-nowrap">
-                Rendez-vous
-              </button>
+              <a
+                href="https://www.doctolib.fr/osteopathe/carnoux-en-provence/ophelie-ribiere/booking/places?specialityId=10&telehealth=false&bookingFunnelSource=profile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition whitespace-nowrap">
+                  Rendez-vous
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -69,9 +75,15 @@ export const BellyXSeance = () => {
               <p className="text-brand-dark text-sm text-center">
                 * Possibilité de payer en plusieurs fois sans frais
               </p>
-              <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition whitespace-nowrap">
-                Rendez-vous
-              </button>
+              <a
+                href="https://www.doctolib.fr/osteopathe/carnoux-en-provence/ophelie-ribiere/booking/places?specialityId=10&telehealth=false&bookingFunnelSource=profile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition whitespace-nowrap">
+                  Rendez-vous
+                </button>
+              </a>
             </div>
           </div>
         </div>

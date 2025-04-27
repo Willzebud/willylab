@@ -33,9 +33,15 @@ export const EtudeClinique = () => {
           </p>
           <div className="w-full flex justify-center mt-5">
             <div className="mt-12">
-              <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
-                Consultez l’étude clinique
-              </button>
+              <a
+                href="https://annecali.com/wp-content/uploads/2024/08/Me%CC%81thode-Anne-CALI-Presse-avec-annexe-1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
+                  Consultez l’étude clinique
+                </button>
+              </a>
             </div>
           </div>
         </div>

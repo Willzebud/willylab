@@ -24,7 +24,7 @@ const soins = [
     description:
       "Massage du ventre qui apaise l’esprit, détoxifie et draine l’abdomen",
     image: "/images/ImgSoins/3.webp",
-    href: "#belly-gad",
+    href: "/belly-gad",
     alt: "Image de l'offre : Belly Gad",
   },
 ];

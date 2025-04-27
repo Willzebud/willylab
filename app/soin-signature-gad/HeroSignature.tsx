@@ -29,9 +29,15 @@ export const HeroSignature = () => {
           </p>
           {/* 👉 Bouton visible uniquement sur desktop */}
           <div className="w-full hidden md:flex lg:flex justify-center mt-12">
-            <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
-              Réservez un premier bilan
-            </button>
+            <a
+              href="https://www.doctolib.fr/osteopathe/carnoux-en-provence/ophelie-ribiere/booking/places?specialityId=10&telehealth=false&bookingFunnelSource=profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
+                Réservez un premier bilan
+              </button>
+            </a>
           </div>
         </div>
 
