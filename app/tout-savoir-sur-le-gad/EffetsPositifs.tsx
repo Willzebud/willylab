@@ -81,13 +81,6 @@ export const EffetsPositifs = () => {
               </p>
             </div>
           </div>
-
-          {/* Bouton */}
-          <div className="mt-16 lg:mt-20">
-            <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
-              Consultez les résultats de l’étude
-            </button>
-          </div>
         </div>
       </div>
     </Section>

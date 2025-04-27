@@ -16,7 +16,7 @@ const soins = [
     title: "Le GAD Detox +",
     description: "Pour des résultats encore plus immédiats",
     image: "/images/ImgSoins/2.webp",
-    href: "#gad-detox",
+    href: "/gad-detox-plus",
     alt: "Image de l'offre : GAD Detox +",
   },
   {

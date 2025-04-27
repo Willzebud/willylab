@@ -111,7 +111,7 @@ export const Gad7Seance = () => {
             {/* Groupe bouton + prix */}
             <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
               <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
-                Réservez un premier RDV
+                Rendez-vous
               </button>
               <p className="text-brand-primary font-bold text-2xl mt-4 lg:mt-0">
                 115€ PAR SÉANCE / Économisez 105€ au total

@@ -34,7 +34,7 @@ export const EtudeClinique = () => {
           <div className="w-full flex justify-center mt-5">
             <div className="mt-12">
               <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition">
-                Consultez l’étude complète
+                Consultez l’étude clinique
               </button>
             </div>
           </div>

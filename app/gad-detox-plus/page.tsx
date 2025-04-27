@@ -10,6 +10,7 @@ import { PrecisionDetox } from "./PrecisionDetox";
 import { WhatDetox } from "./WhatDetox";
 import { Detox7Seance } from "./Detox7Seance";
 import { Detox14Seance } from "./Detox14Seance";
+import { AvisRe } from "../resultats/AvisRe";
 
 export default function DetoxPlusPage() {
   return (
@@ -27,6 +28,8 @@ export default function DetoxPlusPage() {
       <Detox7Seance />
       <Spacing />
       <Detox14Seance />
+      <Spacing />
+      <AvisRe />
       <Footer />
     </main>
   );

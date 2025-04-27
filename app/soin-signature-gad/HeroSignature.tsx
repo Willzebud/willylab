@@ -4,7 +4,7 @@ import { Section } from "../_components/Section";
 
 export const HeroSignature = () => {
   return (
-    <Section className="pt-[80px] lg:pt-[100px]">
+    <Section className="pt-[80px] lg:pt-[50px]">
       <div className="relative z-0 w-full mx-auto overflow-hidden xl:w-[80%] max-w-[95%] min-h-[400px] flex flex-col md:flex-row lg:flex-row items-center justify-between md:gap-10 lg:gap-20">
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
