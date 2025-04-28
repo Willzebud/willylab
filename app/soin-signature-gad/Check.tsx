@@ -43,20 +43,3 @@ export const Check = () => {
     </Section>
   );
 };
-
-// Fonction pour mettre en gras automatiquement certaines parties du texte
-function highlightImportant(text: string) {
-  const boldWords = [
-    "Relance la circulation",
-    "Perte de centimètres",
-    "amélioration de la qualité de la peau",
-    "Expérience de massage",
-  ];
-
-  let formattedText = text;
-  boldWords.forEach((word) => {
-    formattedText = formattedText.replace(word, `<strong>${word}</strong>`);
-  });
-
-  return <span dangerouslySetInnerHTML={{ __html: formattedText }} />;
-}

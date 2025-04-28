@@ -153,20 +153,3 @@ export const Gad14Seance = () => {
     </Section>
   );
 };
-
-// Fonction pour mettre en gras automatiquement certaines parties du texte
-function highlightImportant(text: string) {
-  const boldWords = [
-    "1 à 2 tailles en moins",
-    "Relance la circulation",
-    "Forte diminution",
-    "fermeté de la peau",
-  ];
-
-  let formattedText = text;
-  boldWords.forEach((word) => {
-    formattedText = formattedText.replace(word, `<strong>${word}</strong>`);
-  });
-
-  return <span dangerouslySetInnerHTML={{ __html: formattedText }} />;
-}

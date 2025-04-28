@@ -69,9 +69,7 @@ export const Detox1Seance = () => {
                   className="w-8 h-8"
                 />
               </div>
-              <p className="text-brand-dark text-base md:text-lg font-playfair">
-                {highlightImportant(point)}
-              </p>
+              <p className="text-brand-dark text-base md:text-lg font-playfair"></p>
             </div>
           ))}
 
@@ -136,19 +134,3 @@ export const Detox1Seance = () => {
     </Section>
   );
 };
-
-// Fonction pour mettre en gras automatiquement certaines parties du texte
-function highlightImportant(text: string) {
-  const boldWords = [
-    "Perte d'une taille",
-    "Relance la circulation",
-    "la qualité et de la fermeté de la peau qui dure dans le temps",
-  ];
-
-  let formattedText = text;
-  boldWords.forEach((word) => {
-    formattedText = formattedText.replace(word, `<strong>${word}</strong>`);
-  });
-
-  return <span dangerouslySetInnerHTML={{ __html: formattedText }} />;
-}

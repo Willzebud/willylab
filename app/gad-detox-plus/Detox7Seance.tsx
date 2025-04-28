@@ -57,8 +57,8 @@ export const Detox7Seance = () => {
 
           <p className="font-playfair text-lg md:text-xl text-brand-dark leading-relaxed text-justify pb-[50px]">
             Cette cure détoxifiante minceur permet en 7 séances de retrouver une
-            allure dynamique et d'éliminer la rétention d'eau ainsi que la
-            cellulite durablement.
+            allure dynamique et d&rsquo;éliminer la rétention d&rsquo;eau ainsi
+            que la cellulite durablement.
           </p>
 
           {/* Points */}
@@ -76,9 +76,7 @@ export const Detox7Seance = () => {
                   className="w-8 h-8"
                 />
               </div>
-              <p className="text-brand-dark text-base md:text-lg font-playfair">
-                {highlightImportant(point)}
-              </p>
+              <p className="text-brand-dark text-base md:text-lg font-playfair"></p>
             </div>
           ))}
 
@@ -159,19 +157,3 @@ export const Detox7Seance = () => {
     </Section>
   );
 };
-
-// Fonction pour mettre en gras automatiquement certaines parties du texte
-function highlightImportant(text: string) {
-  const boldWords = [
-    "1 à 2 tailles en moins",
-    "Relance la circulation",
-    "la qualité et de la fermeté de la peau qui dure dans le temps",
-  ];
-
-  let formattedText = text;
-  boldWords.forEach((word) => {
-    formattedText = formattedText.replace(word, `<strong>${word}</strong>`);
-  });
-
-  return <span dangerouslySetInnerHTML={{ __html: formattedText }} />;
-}

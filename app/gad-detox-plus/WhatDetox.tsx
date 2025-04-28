@@ -37,7 +37,8 @@ export const WhatDetox = () => {
           <p className="font-playfair text-base sm:text-xl text-justify text-brand-dark mt-4">
             Enveloppé dans des serviettes éponges humides et chaudes, vous êtes
             immédiatement transporté dans une atmosphère cocooning. Vous
-            profitez pleinement d'un massage à la fois efficace et relaxant.
+            profitez pleinement d&rsquo;un massage à la fois efficace et
+            relaxant.
           </p>
         </div>
 
