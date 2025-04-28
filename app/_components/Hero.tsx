@@ -11,8 +11,10 @@ export const Hero = () => {
           {/* Logo */}
           <div className="flex-shrink-0 md:mb-0">
             <div
-              className="relative w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden shadow-lg"
+              className="relative shadow-lg overflow-hidden"
               style={{
+                width: "224px", // << largeur fixe (correspond à ta taille la plus grande)
+                height: "224px", // << hauteur fixe
                 borderRadius: "66% 34% 67% 33% / 40% 65% 35% 60%",
               }}
             >
@@ -21,7 +23,7 @@ export const Hero = () => {
                 alt="Logo de la marque Nopheïa"
                 fill
                 priority
-                sizes="(max-width: 640px) 160px, (max-width: 1024px) 192px, 224px"
+                sizes="224px"
                 className="object-cover"
               />
             </div>
@@ -35,7 +37,7 @@ export const Hero = () => {
             }}
           >
             <h1 className="text-brand-cream font-afrah text-lg md:text-2xl lg:text-4xl text-center">
-              Découvrez le massage révolutionnaire, drainant, amincissan et
+              Découvrez le massage révolutionnaire, drainant, amincissant et
               anticellulite : Le GAD®
             </h1>
           </div>
