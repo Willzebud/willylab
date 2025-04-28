@@ -28,7 +28,7 @@ export const HeroBelly = () => {
             l&rsquo;esprit, le Belly GAD® est bien plus qu&rsquo;un simple
             massage abdominal. Ce soin d&rsquo;exception associe les bienfaits
             du Chi Nei Tsang, issu de la médecine traditionnelle chinoise, à
-            l'efficacité drainante et amincissante unique du massage GAD®.
+            l&rsquo;efficacité drainante et amincissante unique du massage GAD®.
           </p>
 
           {/* 👉 Bouton desktop */}
