@@ -1,5 +1,6 @@
 import { Footer } from "../_components/Footer";
 import { Header } from "../_components/Header";
+import { Spacing } from "../Spacing";
 import { AvisRe } from "./AvisRe";
 import { Details } from "./Details";
 import { Drainage } from "./Drainage";
@@ -13,6 +14,7 @@ export default function ResultatsPage() {
       <Introduction />
       <Details />
       <Drainage />
+      <Spacing />
       <TemoiVideo />
       <AvisRe />
       <Footer />

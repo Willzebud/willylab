@@ -87,7 +87,7 @@ export const AvisPatients = () => {
   return (
     <Section className="py-20 bg-cover bg-center bg-no-repeat">
       <div className="w-full flex flex-col justify-center mb-10">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-12 font-afrah">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary lg:mb-12 font-afrah">
           Elles partagent leur expérience
         </h2>
       </div>
@@ -98,7 +98,7 @@ export const AvisPatients = () => {
           onClick={() =>
             openYouTubeVideo("https://www.youtube.com/watch?v=VjVdu-oY8sA")
           }
-          className="relative group w-[280px] md:w-[320px] aspect-[9/16] overflow-hidden shadow-lg rounded-xl bg-brand-dark cursor-pointer"
+          className="mb-[50px] lg:mb-[0px] relative group w-[280px] md:w-[320px] aspect-[9/16] overflow-hidden shadow-lg rounded-xl bg-brand-dark cursor-pointer"
         >
           <iframe
             src="https://www.youtube.com/embed/VjVdu-oY8sA"
