@@ -33,7 +33,7 @@ export const Header = () => {
         <div className="relative flex items-center space-x-2">
           <Link href="/">
             <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-brand-primary bg-transparent cursor-pointer transition hover:border-brand-dark hover:bg-brand-dark flex items-center justify-center">
-              <span className="sr-only">Retour à l'accueil</span>
+              <span className="sr-only">Retour à l&rsquo;accueil</span>
             </div>
           </Link>
           <div className="h-auto w-auto">
