@@ -5,6 +5,8 @@ import { useKeenSlider } from "keen-slider/react";
 import { Section } from "./Section";
 import Link from "next/link";
 import { useState } from "react";
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
+import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
 export const AvisPatients = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -93,40 +95,42 @@ export const AvisPatients = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
-        {/* Vidéo YouTube */}
+        {/* Bloc vidéo Youtube (clic pour ouvrir) */}
         <div
           onClick={() =>
             openYouTubeVideo("https://www.youtube.com/watch?v=VjVdu-oY8sA")
           }
           className="mb-[50px] lg:mb-[0px] relative group w-[280px] md:w-[320px] aspect-[9/16] overflow-hidden shadow-lg rounded-xl bg-brand-dark cursor-pointer"
         >
-          <iframe
-            src="https://www.youtube.com/embed/VjVdu-oY8sA"
+          <LiteYouTubeEmbed
+            id="VjVdu-oY8sA"
             title="Avis patiente Nopheïa"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="w-full h-full object-cover pointer-events-none"
+            poster="hqdefault"
+            adNetwork={false}
+            cookie={false}
+            noCookie={false}
+            webp
+            wrapperClass="yt-lite rounded-xl w-full h-full"
+            playerClass="lty-playbtn"
+            iframeClass=""
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
+          {/* Astuce : on bloque l'interaction directement sur le LiteEmbed */}
+          <div className="absolute inset-0 z-10"></div>
         </div>
 
         {/* Témoignages */}
         <div className="relative max-w-2xl w-full px-4 flex flex-col items-center">
-          {/* Navigation + Name */}
           <div className="flex items-center justify-center gap-6 mb-8">
-            {/* Flèche précédente */}
             <button
               onClick={() => instanceRef.current?.prev()}
               className="text-6xl text-brand-primary hover:text-brand-dark transition"
             >
               ‹
             </button>
-
-            {/* Name */}
             <div className="font-afrah text-brand-primary text-4xl font-semibold min-w-[150px] text-center">
               {data[currentSlide]?.name}
             </div>
-
-            {/* Flèche suivante */}
             <button
               onClick={() => instanceRef.current?.next()}
               className="text-6xl text-brand-primary hover:text-brand-dark transition"
@@ -135,7 +139,6 @@ export const AvisPatients = () => {
             </button>
           </div>
 
-          {/* Slides */}
           <div ref={sliderRef} className="keen-slider w-full">
             {data.map((avis, index) => (
               <div
@@ -151,7 +154,7 @@ export const AvisPatients = () => {
         </div>
       </div>
 
-      {/* Bouton */}
+      {/* Bouton résultats */}
       <div className="mt-16 lg:mt-20 flex justify-center">
         <Link href="/resultats">
           <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition font-playfair">

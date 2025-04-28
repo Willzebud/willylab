@@ -2,6 +2,8 @@
 
 import "keen-slider/keen-slider.min.css";
 import { Section } from "../_components/Section";
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
+import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
 export const TemoiVideo = () => {
   // Fonction pour ouvrir YouTube en plein écran (dans un nouvel onglet)
@@ -29,13 +31,19 @@ export const TemoiVideo = () => {
           }
           className="relative group w-[280px] md:w-[320px] aspect-[9/16] overflow-hidden shadow-lg rounded-xl bg-brand-dark cursor-pointer"
         >
-          <iframe
-            src="https://www.youtube.com/embed/VjVdu-oY8sA"
-            title="Avis patiente Nopheïa"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="w-full h-full object-cover pointer-events-none" // << Attention ici
+          <LiteYouTubeEmbed
+            id="VjVdu-oY8sA"
+            title="Avis patiente Nopheïa 1"
+            poster="hqdefault"
+            adNetwork={false}
+            cookie={false}
+            webp
+            wrapperClass="yt-lite rounded-xl w-full h-full"
+            playerClass="lty-playbtn"
+            iframeClass=""
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
+          <div className="absolute inset-0 z-10"></div>
         </div>
 
         {/* Vidéo 2 */}
@@ -45,13 +53,19 @@ export const TemoiVideo = () => {
           }
           className="relative group w-[280px] md:w-[320px] aspect-[9/16] overflow-hidden shadow-lg rounded-xl bg-brand-dark cursor-pointer"
         >
-          <iframe
-            src="https://www.youtube.com/embed/gnSDpHjyP7Q"
-            title="Avis patiente Nopheïa"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="w-full h-full object-cover pointer-events-none" // << Pareil ici
+          <LiteYouTubeEmbed
+            id="gnSDpHjyP7Q"
+            title="Avis patiente Nopheïa 2"
+            poster="hqdefault"
+            adNetwork={false}
+            cookie={false}
+            webp
+            wrapperClass="yt-lite rounded-xl w-full h-full"
+            playerClass="lty-playbtn"
+            iframeClass=""
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
+          <div className="absolute inset-0 z-10"></div>
         </div>
       </div>
     </Section>
