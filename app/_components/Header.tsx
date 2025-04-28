@@ -227,37 +227,39 @@ export const Header = () => {
             <h2 className="text-lg font-bold text-brand-dark">Nos méthodes</h2>
             <ul className="space-y-2">
               <Link href="/tout-savoir-sur-le-gad">
-                <li className="cursor-pointer text-brand-primary cursor-pointer transition hover:text-brand-dark pt-2">
+                <li className="cursor-pointer text-brand-primary cursor-pointer transition hover:text-brand-dark pt-2 font-playfair">
                   Qu&apos;est ce que le GAD® ?
                 </li>
               </Link>
               <Link href="/nopheia">
-                <li className="cursor-pointer text-brand-primary cursor-pointer transition hover:text-brand-dark pt-2">
+                <li className="cursor-pointer text-brand-primary cursor-pointer transition hover:text-brand-dark pt-2 font-playfair">
                   Nopheïa
                 </li>
               </Link>
               <Link href="/resultats">
-                <li className="cursor-pointer text-brand-primary cursor-pointer transition hover:text-brand-dark pt-2">
+                <li className="cursor-pointer text-brand-primary cursor-pointer transition hover:text-brand-dark pt-2 font-playfair">
                   Les résultats
                 </li>
               </Link>
             </ul>
           </div>
           <div>
-            <h2 className="text-lg font-bold text-brand-dark">Nos soins</h2>
+            <h2 className="text-lg font-bold text-brand-dark font-playfair">
+              Nos soins
+            </h2>
             <ul className="space-y-2">
               <Link href="/soin-signature-gad">
-                <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2">
+                <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2 font-playfair">
                   Soin Signature GAD®
                 </li>
               </Link>
               <Link href="/gad-detox-plus">
-                <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2">
+                <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2 font-playfair">
                   Le GAD® Detox +
                 </li>
               </Link>
               <Link href="/belly-gad">
-                <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2">
+                <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2 font-playfair">
                   Le Belly GAD®
                 </li>
               </Link>
@@ -265,7 +267,7 @@ export const Header = () => {
           </div>
           <div>
             <Link href="/tarifs">
-              <h2 className="text-lg font-bold text-brand-primary cursor-pointer transition hover:text-brand-dark">
+              <h2 className="text-lg font-bold text-brand-primary cursor-pointer transition hover:text-brand-dark font-playfair">
                 Tarifs
               </h2>
             </Link>

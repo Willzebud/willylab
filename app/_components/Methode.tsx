@@ -63,7 +63,7 @@ export const Methode = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold px-6 rounded-md transition font-playfair">
+                <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-2 px-6 rounded-md transition font-playfair">
                   Voir l&rsquo;étude clinique
                 </button>
               </a>

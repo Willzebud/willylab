@@ -11,17 +11,18 @@ export const Hero = () => {
           {/* Logo */}
           <div className="flex-shrink-0 md:mb-0">
             <div
-              className="relative shadow-lg overflow-hidden"
+              className="relative shadow-lg overflow-hidden rounded-full"
               style={{
-                width: "224px", // << largeur fixe (correspond à ta taille la plus grande)
-                height: "224px", // << hauteur fixe
+                width: "224px",
+                height: "224px",
                 borderRadius: "66% 34% 67% 33% / 40% 65% 35% 60%",
               }}
             >
               <Image
                 src="/images/Logo.webp"
                 alt="Logo de la marque Nopheïa"
-                fill
+                width={224}
+                height={224}
                 priority
                 sizes="224px"
                 className="object-cover"

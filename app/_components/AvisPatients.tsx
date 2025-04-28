@@ -20,10 +20,12 @@ export const AvisPatients = () => {
   });
 
   const openYouTubeVideo = (url: string) => {
-    if (window.innerWidth < 1024) {
-      window.location.href = url;
-    } else {
-      window.open(url, "_blank");
+    if (typeof window !== "undefined") {
+      if (window.innerWidth < 1024) {
+        window.location.href = url;
+      } else {
+        window.open(url, "_blank");
+      }
     }
   };
 
@@ -95,13 +97,9 @@ export const AvisPatients = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
-        {/* Bloc vidéo Youtube (clic pour ouvrir) */}
-        <div
-          onClick={() =>
-            openYouTubeVideo("https://www.youtube.com/watch?v=VjVdu-oY8sA")
-          }
-          className="mb-[50px] lg:mb-[0px] relative group w-[280px] md:w-[320px] aspect-[9/16] overflow-hidden shadow-lg rounded-xl bg-brand-dark cursor-pointer"
-        >
+        {/* Bloc vidéo Youtube */}
+        <div className="relative mb-[50px] lg:mb-0 w-[280px] md:w-[320px] aspect-[9/16] overflow-hidden shadow-lg rounded-xl bg-brand-dark">
+          {/* Lite Youtube Embed */}
           <LiteYouTubeEmbed
             id="VjVdu-oY8sA"
             title="Avis patiente Nopheïa"
@@ -113,10 +111,14 @@ export const AvisPatients = () => {
             wrapperClass="yt-lite rounded-xl w-full h-full"
             playerClass="lty-playbtn"
             iframeClass=""
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
-          {/* Astuce : on bloque l'interaction directement sur le LiteEmbed */}
-          <div className="absolute inset-0 z-10"></div>
+          {/* Couche clickable au-dessus */}
+          <div
+            className="absolute inset-0 z-10 cursor-pointer"
+            onClick={() =>
+              openYouTubeVideo("https://www.youtube.com/watch?v=VjVdu-oY8sA")
+            }
+          ></div>
         </div>
 
         {/* Témoignages */}
@@ -154,8 +156,8 @@ export const AvisPatients = () => {
         </div>
       </div>
 
-      {/* Bouton résultats */}
-      <div className="mt-16 lg:mt-20 flex justify-center">
+      {/* Bouton Résultats */}
+      <div className="mt-4 lg:mt-20 flex justify-center">
         <Link href="/resultats">
           <button className="bg-brand-primary hover:bg-brand-dark text-white font-semibold py-3 px-6 rounded-md transition font-playfair">
             Consultez les résultats
