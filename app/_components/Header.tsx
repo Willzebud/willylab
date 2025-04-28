@@ -56,12 +56,17 @@ export const Header = () => {
             </div>
           </a>
 
-          <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group ipadPro:hidden">
-            <p className="text-brand-primary group-hover:text-brand-dark font-playfair">
-              Rendez-vous
-            </p>
-          </div>
-
+          <a
+            href="https://www.doctolib.fr/osteopathe/carnoux-en-provence/ophelie-ribiere/booking/places?specialityId=10&telehealth=false&bookingFunnelSource=profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group ipadPro:hidden">
+              <p className="text-brand-primary group-hover:text-brand-dark font-playfair">
+                Rendez-vous
+              </p>
+            </div>
+          </a>
           {/* Menu items */}
           <div className="hidden ipadPro:flex relative items-center space-x-4">
             {/* Nos méthodes */}

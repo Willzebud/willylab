@@ -40,7 +40,7 @@ export const QuiJeSuis = () => {
             </div>
             <div className="flex flex-col">
               <p className="text-base sm:text-xl text-justify text-brand-cream mt-4 px-4 py-4 lg:pr-8 sm:pb-4 lg:pb-8 font-playfair">
-                Nopheïa est une marque fondée par Ophélie Montalto, ostéopathe
+                Nopheïa est une marque fondée par Ophélie ROCHE, ostéopathe
                 diplômée d&rsquo;État et ambassadrice de la méthode GAD® depuis
                 3 ans. <br />
                 <br />

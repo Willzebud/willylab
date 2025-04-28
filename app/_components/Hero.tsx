@@ -34,8 +34,8 @@ export const Hero = () => {
             }}
           >
             <h1 className="text-brand-cream font-afrah text-lg md:text-2xl lg:text-4xl text-center">
-              Découvrez le massage révolutionnaire, drainant et anticellulite :
-              Le GAD®
+              Découvrez le massage révolutionnaire, drainant, amincissan et
+              anticellulite : Le GAD®
             </h1>
           </div>
         </div>
