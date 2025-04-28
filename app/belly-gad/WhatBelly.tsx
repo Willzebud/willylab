@@ -11,36 +11,38 @@ export const WhatBelly = () => {
           <h1 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-10">
             Le Belly GAD®, c&rsquo;est quoi ?
           </h1>
-          <div className="w-full lg:w-1/2 flex justify-center lg:hidden">
+
+          {/* Image mobile */}
+          <div className="w-full lg:w-1/2 flex justify-center lg:hidden mb-6">
             <Image
               src="/images/ImgBe/BE1.webp"
-              alt="Dessin de mains qui massent'"
+              alt="Dessin de mains qui massent"
               width={600}
               height={200}
               className="w-[200px] md:w-[200px] lg:w-[400px] h-auto object-contain"
             />
           </div>
+
+          {/* Texte */}
           <p className="font-playfair text-lg md:text-xl text-brand-dark leading-relaxed text-justify">
-            Les techniques du massage Chi Nei Tsang sont conçues pour apaiser
-            l&rsquo;esprit en libérant les tensions émotionnelles qui peuvent
-            s&rsquo;accumuler dans les organes de l&rsquo;abdomen. Grâce au
-            travail ciblé sur chaque organe, notamment le foie, la rate, les
-            intestins, vous ressentirez un profond apaisement intérieur. Les
-            émotions négatives qui se sont logées dans ces organes trouvent une
-            voie pour se libérer, favorisant ainsi un équilibre émotionnel.
+            Inspiré du massage Chi Nei Tsang, le Belly GAD® agit directement sur
+            les organes de l’abdomen pour libérer les tensions physiques et
+            émotionnelles accumulées. En ciblant notamment le foie, la rate et
+            les intestins, il permet un apaisement profond, une reconnexion à
+            soi et un équilibre émotionnel retrouvé.
           </p>
+
           <p className="font-playfair text-base sm:text-xl text-justify text-brand-dark mt-4">
-            Il permet également d&rsquo;améliorer le transit intestinal, draine
-            et détoxifie l&rsquo;organisme. Il élimine la rétention d&rsquo;eau
-            avec une forte perte en cm assurée. De plus, il élimine le gras et
-            améliore la tonicité de la peau grâce au GAD®. Une perte
-            jusqu&rsquo;à 2 tailles en 1 séance avec une sensation de légèreté
-            abdominale et une sensation de bien être assurée grâce à une
-            reconnexion à ses émotions.
+            Ce soin améliore également le transit intestinal, draine, détoxifie
+            l’organisme, et élimine la rétention d’eau avec des pertes de
+            centimètres visibles dès la première séance. Grâce à la synergie
+            avec le massage GAD®, il affine la silhouette, tonifie la peau et
+            procure une sensation immédiate de légèreté abdominale, avec une
+            perte pouvant aller jusqu’à 2 tailles !
           </p>
         </div>
 
-        {/* Image à droite */}
+        {/* Image desktop */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
             src="/images/ImgBe/BE1.webp"

@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { Section } from "../_components/Section";
 
@@ -12,7 +13,7 @@ export const QuiJeSuis2 = () => {
             Qui je suis
           </h2>
 
-          {/* Image pour mobile */}
+          {/* Image Mobile */}
           <div className="lg:hidden w-full flex justify-center mb-6 pt-4">
             <div
               className="relative bg-brand-dark overflow-hidden shadow-lg w-[250px] h-[250px] sm:w-[300px] sm:h-[300px]"
@@ -24,14 +25,17 @@ export const QuiJeSuis2 = () => {
                 src="/images/Sis.webp"
                 alt="Photo d'Ophélie ROCHE"
                 fill
+                sizes="(max-width: 640px) 250px, (max-width: 768px) 300px"
                 className="object-cover"
+                priority
               />
             </div>
           </div>
 
           <p className="text-lg md:text-xl text-brand-dark leading-relaxed text-justify font-playfair md:pt-10">
-            Bonjour,&nbsp;&nbsp;je suis Ophélie ROCHE 😊 <br /> <br /> En tant
-            qu&rsquo;ostéopathe, je considère mes patient(e)s dans leur
+            Bonjour,&nbsp;&nbsp;je suis Ophélie ROCHE 😊 <br />
+            <br />
+            En tant qu&rsquo;ostéopathe, je considère mes patient(e)s dans leur
             intégralité. Chaque séance est basée sur une écoute attentive et
             bienveillante afin d&rsquo;adapter ma prise en charge à leur douleur
             et mal-être. Soucieuse de répondre à davantage de leur besoin sur le
@@ -44,7 +48,7 @@ export const QuiJeSuis2 = () => {
           </p>
         </div>
 
-        {/* Image pour desktop */}
+        {/* Image Desktop */}
         <div
           className="hidden lg:flex justify-center bg-brand-dark relative shadow-lg w-[400px] h-[400px] overflow-hidden"
           style={{
@@ -53,9 +57,11 @@ export const QuiJeSuis2 = () => {
         >
           <Image
             src="/images/Sis.webp"
-            alt="Photo d'Ophélie Montalto"
+            alt="Photo d'Ophélie ROCHE"
             fill
+            sizes="400px"
             className="object-cover"
+            priority
           />
         </div>
       </div>

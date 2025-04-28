@@ -7,9 +7,9 @@ export const CheckDetox = () => {
   const points = [
     "Tous les bénéfices de notre massage amincissant GAD®",
     "Relance la circulation sanguine et lymphatique",
-    "Perte d'une taille en moyenne apres la 1ere séance",
-    "Perte de centimètres et amélioration de la qualité de la peau qui dure dans le temps",
-    "Massage Cocooning avec serviettes chaudes et manœuvres enveloppantes",
+    "Perte d'une taille en moyenne après la 1re séance",
+    "Perte de centimètres et amélioration durable de la qualité de la peau",
+    "Massage cocooning avec serviettes chaudes et manœuvres enveloppantes",
   ];
 
   return (
@@ -28,7 +28,7 @@ export const CheckDetox = () => {
               <div className="flex-shrink-0">
                 <Image
                   src="/images/Check.webp"
-                  alt="Check"
+                  alt="Icône de validation"
                   width={32}
                   height={32}
                   className="w-8 h-8"

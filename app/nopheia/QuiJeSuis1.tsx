@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { Section } from "../_components/Section";
 
@@ -12,10 +13,10 @@ export const QuiJeSuis1 = () => {
             Nopheïa
           </h1>
 
-          {/* Image pour mobile */}
+          {/* Image mobile */}
           <div className="lg:hidden w-full flex justify-center mb-6">
             <div
-              className="bg-brand-dark relative w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] overflow-hidden shadow-lg"
+              className="relative bg-brand-dark w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] overflow-hidden shadow-lg"
               style={{
                 borderRadius: "66% 34% 75% 25% / 34% 68% 32% 66%",
               }}
@@ -24,7 +25,9 @@ export const QuiJeSuis1 = () => {
                 src="/images/Logo.webp"
                 alt="Logo de la marque Nopheïa"
                 fill
+                sizes="(max-width: 640px) 200px, (max-width: 768px) 300px"
                 className="object-contain"
+                priority
               />
             </div>
           </div>
@@ -34,7 +37,7 @@ export const QuiJeSuis1 = () => {
             transformer, mais à révéler. <br />
             <br /> Une beauté naturelle, bienveillante et profondément
             respectueuse du corps féminin. <br />
-            <br /> Fondée par Ophélie ROCHE, ostéopathe diplômée d&rsquo;État et
+            <br /> Fondée par Ophélie ROCHE, ostéopathe diplômée d&apos;État et
             ambassadrice de la méthode GAD®, Nopheïa accompagne depuis plusieurs
             années les femmes qui souhaitent atténuer leur cellulite, redessiner
             leur silhouette et retrouver une peau plus lisse et plus tonique,
@@ -42,9 +45,9 @@ export const QuiJeSuis1 = () => {
           </p>
         </div>
 
-        {/* Image pour desktop */}
+        {/* Image desktop */}
         <div
-          className="hidden lg:flex justify-center bg-brand-dark relative shadow-lg max-w-[400px] w-full h-auto p-4 overflow-hidden"
+          className="hidden lg:flex justify-center bg-brand-dark relative shadow-lg max-w-[400px] w-full p-4 overflow-hidden"
           style={{
             borderRadius: "66% 34% 75% 25% / 34% 68% 32% 66%",
           }}
@@ -54,7 +57,9 @@ export const QuiJeSuis1 = () => {
             alt="Logo de la marque Nopheïa"
             width={300}
             height={300}
+            sizes="(min-width: 1024px) 300px"
             className="object-contain"
+            priority
           />
         </div>
       </div>

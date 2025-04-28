@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { Section } from "../_components/Section";
 import { useState } from "react";
@@ -7,20 +8,20 @@ const questions = [
   {
     question: "Pour qui est cette cure ?",
     answer:
-      "Idéale pour celles et ceux qui souhaitent découvrir le DAD® Detox + et ses bienfaits.",
+      "Idéale pour celles et ceux qui souhaitent découvrir le GAD® Detox Plus et ses bienfaits.",
   },
   {
     question: "Que comprend-elle ?",
     answer:
-      "Un bilan complet ainsi qu’une séance de massage GAD® Detox +. Le suivi est personnalisé avec un réajustement de la fréquence des séances si besoin. Le massage GAD® Detox + est effectué sur les cuisses, les fesses, le ventre, les bras et les hanches. Chaque massage se termine par un massage drainant et relaxant pour que vous repartez 100% détendu(e).",
+      "Un bilan complet ainsi qu’une séance de massage GAD® Detox Plus. Le suivi est personnalisé avec un réajustement de la fréquence des séances si besoin. Le massage est effectué sur les cuisses, les fesses, le ventre, les bras et les hanches. Chaque séance se termine par un massage drainant et relaxant pour que vous repartiez 100% détendu(e).",
   },
 ];
 
 export const Detox1Seance = () => {
   const points = [
-    "Perte d'une taille en moyenne apres la 1ere séance",
+    "Perte d'une taille en moyenne après la 1re séance",
     "Relance la circulation sanguine et lymphatique",
-    "Amélioration de la qualité et de la fermeté de la peau qui dure dans le temps",
+    "Amélioration de la qualité et de la fermeté de la peau durable",
   ];
 
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -37,21 +38,23 @@ export const Detox1Seance = () => {
           <h1 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-[50px]">
             1 séance - Cure GAD® Detox Plus
           </h1>
-          <div>
-            <div className="w-full lg:w-1/2 flex justify-center lg:hidden mb-[40px]">
-              <Image
-                src="/images/ImgSi/SI3.webp"
-                alt="Image de l'offre : GAD® Detox plus 1 séance"
-                width={600}
-                height={200}
-                className="w-[150px] md:w-[200px] lg:w-[400px] h-auto object-contain"
-              />
-            </div>
-            <p className="font-playfair text-lg md:text-xl text-brand-dark leading-relaxed text-justify pb-[50px]">
-              Idéal pour découvrir le Massage GAD® Detox +.
-            </p>
+
+          {/* Image mobile */}
+          <div className="w-full lg:w-1/2 flex justify-center lg:hidden mb-[40px]">
+            <Image
+              src="/images/ImgSi/SI3.webp"
+              alt="Image de l'offre : GAD® Detox Plus 1 séance"
+              width={600}
+              height={200}
+              className="w-[150px] md:w-[200px] lg:w-[400px] h-auto object-contain"
+            />
           </div>
-          {/* Check */}
+
+          <p className="font-playfair text-lg md:text-xl text-brand-dark leading-relaxed text-justify pb-[50px]">
+            Idéal pour découvrir le Massage GAD® Detox Plus.
+          </p>
+
+          {/* Points */}
           {points.map((point, index) => (
             <div
               key={index}
@@ -60,13 +63,13 @@ export const Detox1Seance = () => {
               <div className="flex-shrink-0">
                 <Image
                   src="/images/Check.webp"
-                  alt="Check"
+                  alt="Icône de validation"
                   width={32}
                   height={32}
                   className="w-8 h-8"
                 />
               </div>
-              <p className="text-brand-dark text-base md:text-lg">
+              <p className="text-brand-dark text-base md:text-lg font-playfair">
                 {highlightImportant(point)}
               </p>
             </div>
@@ -80,8 +83,8 @@ export const Detox1Seance = () => {
                   onClick={() => toggle(index)}
                   className={`font-playfair w-full text-left text-lg md:text-xl font-light tracking-wide transition-all duration-300 ease-in-out hover:text-brand-primary ${
                     openIndex === index
-                      ? "text-brand-primary font-playfair"
-                      : "text-brand-dark font-playfair"
+                      ? "text-brand-primary"
+                      : "text-brand-dark"
                   }`}
                 >
                   {item.question}
@@ -100,8 +103,8 @@ export const Detox1Seance = () => {
             ))}
           </div>
 
-          <div className="mt-12 w-full flex flex-col items-center justify-center md:flex-none lg:flex-none gap-4">
-            {/* Groupe bouton + prix */}
+          {/* Bouton + prix */}
+          <div className="mt-12 w-full flex flex-col items-center justify-center gap-4">
             <div className="flex flex-col-reverse md:flex-row-reverse lg:flex-row-reverse items-center justify-center gap-8">
               <a
                 href="https://www.doctolib.fr/osteopathe/carnoux-en-provence/ophelie-ribiere/booking/places?specialityId=10&telehealth=false&bookingFunnelSource=profile"
@@ -118,11 +121,12 @@ export const Detox1Seance = () => {
             </div>
           </div>
         </div>
-        {/* Image à droite */}
+
+        {/* Image desktop */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
             src="/images/ImgSi/SI3.webp"
-            alt="Image de l'offre : GAD® Detox plus 1 séance"
+            alt="Image de l'offre : GAD® Detox Plus 1 séance"
             width={600}
             height={600}
             className="w-[250px] md:w-[400px] lg:w-[300px] h-auto object-contain hidden lg:block"

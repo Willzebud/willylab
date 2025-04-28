@@ -14,16 +14,16 @@ export const Drainage = () => {
 
   const images = [
     {
-      titre: "/images/ImgRe/Ecart/IME1.webp",
-      alt: "Image patitente plusieurs mois après la fin de la cure GAD®",
+      src: "/images/ImgRe/Ecart/IME1.webp",
+      alt: "Image patiente plusieurs mois après la fin de la cure GAD®",
     },
     {
-      titre: "/images/ImgRe/Ecart/IME2.webp",
-      alt: "Image patitente 2 mois après la fin de la cure GAD®",
+      src: "/images/ImgRe/Ecart/IME2.webp",
+      alt: "Image patiente 2 mois après la fin de la cure GAD®",
     },
     {
-      titre: "/images/ImgRe/Ecart/IME3.webp",
-      alt: "Image patitente 6 mois après la fin de la cure GAD®",
+      src: "/images/ImgRe/Ecart/IME3.webp",
+      alt: "Image patiente 6 mois après la fin de la cure GAD®",
     },
   ];
 
@@ -46,22 +46,8 @@ export const Drainage = () => {
           </p>
         </div>
 
-        <div className="relative max-w-xl w-full px-4 mx-auto">
-          {/* Flèches */}
-          <button
-            onClick={() => instanceRef.current?.prev()}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 text-6xl text-brand-primary"
-          >
-            ‹
-          </button>
-          <button
-            onClick={() => instanceRef.current?.next()}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 text-6xl text-brand-primary"
-          >
-            ›
-          </button>
-
-          {/* Slides */}
+        {/* Slider d'images */}
+        <div className="relative max-w-xl w-full px-4 mx-auto mt-10 lg:mt-0">
           <div ref={sliderRef} className="keen-slider">
             {images.map((img, index) => (
               <div
@@ -69,15 +55,31 @@ export const Drainage = () => {
                 className="keen-slider__slide flex flex-col items-center text-center gap-4"
               >
                 <Image
-                  src={img.titre} // Chemin d'image valide
-                  alt={img.alt} // Texte alternatif
-                  width={800}
+                  src={img.src}
+                  alt={img.alt}
+                  width={600}
                   height={800}
-                  className="rounded-[40px] object-contain w-[400px] h-[500px] md:w-[500px] md:h-[700px] lg:w-[600px] lg:h-[700px]"
+                  className="rounded-[40px] object-contain w-[300px] md:w-[400px] lg:w-[500px] h-auto"
+                  sizes="(max-width: 640px) 300px, (max-width: 1024px) 400px, 500px"
+                  priority={index === 0}
                 />
               </div>
             ))}
           </div>
+
+          {/* Flèches */}
+          <button
+            onClick={() => instanceRef.current?.prev()}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 text-4xl md:text-6xl text-brand-primary"
+          >
+            ‹
+          </button>
+          <button
+            onClick={() => instanceRef.current?.next()}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 text-4xl md:text-6xl text-brand-primary"
+          >
+            ›
+          </button>
         </div>
       </div>
     </Section>

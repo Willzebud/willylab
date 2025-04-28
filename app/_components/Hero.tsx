@@ -20,6 +20,7 @@ export const Hero = () => {
                 src="/images/Logo.webp"
                 alt="Logo de la marque Nopheïa"
                 fill
+                priority
                 sizes="(max-width: 640px) 160px, (max-width: 1024px) 192px, 224px"
                 className="object-cover"
               />

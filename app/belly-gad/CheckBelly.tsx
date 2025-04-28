@@ -6,9 +6,9 @@ import Image from "next/image";
 export const CheckBelly = () => {
   const points = [
     "Tous les bénéfices énergétiques du massage Chi Nei Tsang et du massage amincissant GAD®",
-    "Réduction de la rétention d'eau et de la cellulite sur le ventre",
-    "Amélioration de la tonicité de la peau de l’abdomen",
-    "Diminution de la graisse corporelle de l’abdomen",
+    "Réduction de la rétention d’eau et de la cellulite abdominale",
+    "Amélioration de la tonicité abdominale",
+    "Diminution de la graisse abdominale",
     "Une perte jusqu’à 2 tailles en 1 séance avec une sensation de légèreté",
   ];
 
@@ -48,15 +48,16 @@ export const CheckBelly = () => {
 // Fonction pour mettre en gras automatiquement certaines parties du texte
 function highlightImportant(text: string) {
   const boldWords = [
-    "la rétention d'eau et de la cellulite sur le ventre",
-    "la tonicité de la peau de l’abdomen",
-    "la graisse corporelle de l’abdomen",
-    "Une perte jusqu’à 2 tailles",
+    "réduction de la rétention d’eau et de la cellulite abdominale",
+    "amélioration de la tonicité abdominale",
+    "diminution de la graisse abdominale",
+    "une perte jusqu’à 2 tailles",
   ];
 
   let formattedText = text;
   boldWords.forEach((word) => {
-    formattedText = formattedText.replace(word, `<strong>${word}</strong>`);
+    const regex = new RegExp(word, "i"); // insensible à la casse
+    formattedText = formattedText.replace(regex, `<strong>${word}</strong>`);
   });
 
   return <span dangerouslySetInnerHTML={{ __html: formattedText }} />;

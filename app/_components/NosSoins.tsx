@@ -51,6 +51,7 @@ export const NosSoins = () => {
                   alt={soin.alt}
                   width={500}
                   height={380}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover w-full h-[260px] md:h-[300px] lg:h-[320px]"
                 />
               </div>
