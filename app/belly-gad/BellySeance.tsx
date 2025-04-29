@@ -103,14 +103,17 @@ export const BellySeance = () => {
           </div>
         </div>
         {/* Image desktop */}
-        <div className="relative w-[300px] h-[300px] hidden lg:block">
-          <Image
-            src="/images/ImgSi/SI3.webp"
-            alt="Image de l'offre : GAD® Detox Plus 1 séance"
-            fill
-            sizes="(min-width: 1024px) 300px"
-            className="object-contain"
-          />
+        <div className="w-full lg:w-1/2 flex justify-center hidden md:flex">
+          <div className="relative w-full max-w-md h-[320px] rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="/images/ImgSoins/2.webp"
+              alt="Image de l'offre : Soin Signature GAD®"
+              fill
+              sizes="(max-width: 1024px) 50vw, 600px"
+              className="object-cover rounded-xl"
+              priority
+            />
+          </div>
         </div>
       </div>
     </Section>

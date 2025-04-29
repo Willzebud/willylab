@@ -13,14 +13,16 @@ export const HeroBelly = () => {
           </h1>
 
           {/* Image mobile */}
-          <div className="relative w-[150px] md:w-[200px] h-[150px] md:h-[200px]">
-            <Image
-              src="/images/ImgSi/SI3.webp"
-              alt="Image de l'offre : GAD® Detox Plus 1 séance"
-              fill
-              sizes="(max-width: 768px) 200px"
-              className="object-contain"
-            />
+          <div className="w-full flex justify-center md:hidden mb-6">
+            <div className="relative w-full max-w-xs h-[260px] overflow-hidden rounded-xl shadow-lg">
+              <Image
+                src="/images/ImgSoins/3.webp"
+                alt="Image de l'offre : GAD Detox +"
+                fill
+                sizes="(max-width: 768px) 100vw, 600px"
+                className="object-cover rounded-xl"
+              />
+            </div>
           </div>
 
           <p className="font-playfair text-lg md:text-xl text-brand-dark leading-relaxed text-justify pt-[40px] lg:pt-[5px]">
@@ -46,14 +48,17 @@ export const HeroBelly = () => {
         </div>
 
         {/* Image desktop */}
-        <div className="relative w-[300px] h-[300px] hidden lg:block">
-          <Image
-            src="/images/ImgSi/SI3.webp"
-            alt="Image de l'offre : GAD® Detox Plus 1 séance"
-            fill
-            sizes="(min-width: 1024px) 300px"
-            className="object-contain"
-          />
+        <div className="w-full lg:w-1/2 flex justify-center hidden md:flex">
+          <div className="relative w-full max-w-md h-[320px] rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="/images/ImgSoins/3.webp"
+              alt="Image de l'offre : Soin Signature GAD®"
+              fill
+              sizes="(max-width: 1024px) 50vw, 600px"
+              className="object-cover rounded-xl"
+              priority
+            />
+          </div>
         </div>
       </div>
     </Section>
