@@ -25,6 +25,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="icon" href="/images/Logo.webp" type="image/webp" />
+        <link rel="apple-touch-icon" href="/images/Logo.webp" />
+        <link rel="canonical" href="https://www.nopheia.fr/" />
+        <link rel="image_src" href="https://www.nopheia.fr/images/Logo.webp" />
+
+        {/* Pré-chargement DNS pour Vercel */}
+        <link rel="preconnect" href="https://vercel.live" />
+        <link rel="dns-prefetch" href="https://vercel.live" />
+
+        {/* Données structurées pour le SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Nopheïa",
+              url: "https://www.nopheia.fr",
+              logo: "https://www.nopheia.fr/images/Logo.webp",
+            }),
+          }}
+        />
+      </head>
       <body
         className={cn(
           GeistSans.variable, // Applique la police GeistSans
