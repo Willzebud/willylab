@@ -48,14 +48,15 @@ export const HeroDetox = () => {
         </div>
 
         {/* Image desktop */}
-        <div className="w-full lg:w-1/2 hidden md:flex justify-center rounded-xl shadow-lg">
-          <div className="relative w-full max-w-md h-[300px] lg:h-[320px] overflow-hidden rounded-xl">
+        <div className="w-full lg:w-1/2 flex justify-center hidden md:flex">
+          <div className="relative w-full max-w-md h-[320px] rounded-xl overflow-hidden shadow-lg">
             <Image
               src="/images/ImgSoins/2.webp"
-              alt="Image de l'offre : GAD Detox +"
+              alt="Image de l'offre : Soin Signature GAD®"
               fill
-              sizes="(min-width: 768px) 400px, 600px"
+              sizes="(max-width: 1024px) 50vw, 600px"
               className="object-cover rounded-xl"
+              priority
             />
           </div>
         </div>

@@ -13,13 +13,13 @@ export const HeroBelly = () => {
           </h1>
 
           {/* Image mobile */}
-          <div className="w-full lg:w-1/2 flex justify-center md:hidden rounded-xl shadow-lg mb-6">
+          <div className="relative w-[150px] md:w-[200px] h-[150px] md:h-[200px]">
             <Image
-              src="/images/ImgSoins/3.webp"
-              alt="Image de l'offre : Belly GAD®"
-              width={600}
-              height={200}
-              className="object-cover w-full h-[260px] md:h-[300px] lg:h-[320px] rounded-xl shadow-lg"
+              src="/images/ImgSi/SI3.webp"
+              alt="Image de l'offre : GAD® Detox Plus 1 séance"
+              fill
+              sizes="(max-width: 768px) 200px"
+              className="object-contain"
             />
           </div>
 
@@ -46,13 +46,13 @@ export const HeroBelly = () => {
         </div>
 
         {/* Image desktop */}
-        <div className="w-full lg:w-1/2 flex justify-center rounded-xl shadow-lg">
+        <div className="relative w-[300px] h-[300px] hidden lg:block">
           <Image
-            src="/images/ImgSoins/3.webp"
-            alt="Image de l'offre : Belly GAD®"
-            width={600}
-            height={600}
-            className="object-cover w-full h-[260px] md:h-[300px] lg:h-[320px] hidden md:block rounded-xl shadow-lg"
+            src="/images/ImgSi/SI3.webp"
+            alt="Image de l'offre : GAD® Detox Plus 1 séance"
+            fill
+            sizes="(min-width: 1024px) 300px"
+            className="object-contain"
           />
         </div>
       </div>

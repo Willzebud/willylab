@@ -45,14 +45,16 @@ export const Detox7Seance = () => {
           </h1>
 
           {/* Image mobile */}
-          <div className="w-full lg:w-1/2 flex justify-center lg:hidden mb-[40px]">
-            <Image
-              src="/images/ImgSi/SI4.webp"
-              alt="Image de l'offre : GAD® Detox Plus 7 séances"
-              width={600}
-              height={200}
-              className="w-[150px] md:w-[200px] lg:w-[400px] h-auto object-contain"
-            />
+          <div className="w-full flex justify-center lg:hidden mb-10">
+            <div className="relative w-[150px] md:w-[200px] h-[150px] md:h-[200px]">
+              <Image
+                src="/images/ImgSi/SI4.webp"
+                alt="Image de l'offre : GAD® 7 séances"
+                fill
+                sizes="(max-width: 768px) 200px"
+                className="object-contain"
+              />
+            </div>
           </div>
 
           <p className="font-playfair text-lg md:text-xl text-brand-dark leading-relaxed text-justify pb-[50px]">
@@ -144,14 +146,16 @@ export const Detox7Seance = () => {
         </div>
 
         {/* Image desktop */}
-        <div className="w-full lg:w-1/2 flex justify-center">
-          <Image
-            src="/images/ImgSi/SI4.webp"
-            alt="Image de l'offre : GAD® Detox Plus 7 séances"
-            width={600}
-            height={600}
-            className="w-[250px] md:w-[400px] lg:w-[300px] h-auto object-contain hidden lg:block"
-          />
+        <div className="w-full lg:w-1/2 hidden lg:flex justify-center">
+          <div className="relative w-[300px] h-[300px]">
+            <Image
+              src="/images/ImgSi/SI4.webp"
+              alt="Image de l'offre : GAD® 7 séances"
+              fill
+              sizes="(min-width: 1024px) 300px"
+              className="object-contain"
+            />
+          </div>
         </div>
       </div>
     </Section>
