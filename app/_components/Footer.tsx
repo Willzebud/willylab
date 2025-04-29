@@ -18,7 +18,7 @@ export const Footer = () => {
         </h3>
 
         <div className="space-y-4 text-base md:text-lg">
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex align-items gap-2">
             <Phone className="w-5 h-5" />
             <a href="tel:0633278363" className="hover:underline font-playfair">
               06 33 27 83 63
