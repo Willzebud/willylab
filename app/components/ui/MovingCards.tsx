@@ -14,6 +14,7 @@ export const InfiniteMovingCards = ({
     quote: React.ReactNode;
     name: string;
     title: string;
+    href?: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -85,9 +86,20 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               />
-              <span className="relative z-20 text-sm leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
-                {item.quote}
-              </span>
+              {item.href ? (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative z-20 inline-block text-sm leading-[1.6] font-normal text-neutral-800 dark:text-gray-100"
+                >
+                  {item.quote}
+                </a>
+              ) : (
+                <span className="relative z-20 text-sm leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
+                  {item.quote}
+                </span>
+              )}
             </blockquote>
           </li>
         ))}

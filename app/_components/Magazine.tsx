@@ -25,6 +25,36 @@ export function Magazine() {
 
 const logos = [
   {
+    quote: <VoiciLogoIcon size={120} />,
+    name: "",
+    title: "",
+    href: "https://www.voici.fr/beaute/minceur-ces-3-methodes-permettent-daffiner-votre-silhouette-et-de-diminuer-la-cellulite-efficacement-753811",
+  },
+  {
+    quote: <GalaLogoIcon size={120} />,
+    name: "",
+    title: "",
+    href: " https://www.gala.fr/beaute/tendances_beaute/comment-combattre-les-graisses-apres-60-ans_531643#",
+  },
+  {
+    quote: <GraziaLogoIcon size={120} />,
+    name: "",
+    title: "",
+    href: "https://www.grazia.fr/beaute/adresses-beaute/methode-anne-cali-voici-la-technique-de-massage-revolutionnaire-pour-une-silhouette-tonique-et-debarrassee-de-la-cellulite-709624.html",
+  },
+  {
+    quote: <LeFigaroLogoIcon size={130} />,
+    name: "",
+    title: "",
+    href: "https://madame.lefigaro.fr/bien-etre/massages-palper-rouler-madotherapie-trois-techniques-pour-remodeler-sa-silhouette-220221-195189",
+  },
+
+  {
+    quote: <LeMondeLogoIcon size={100} />,
+    name: "",
+    title: "",
+  },
+  {
     quote: <Europe1LogoIcon size={120} />,
     name: "",
     title: "",
@@ -35,43 +65,21 @@ const logos = [
     title: "",
   },
   {
-    quote: <VoiciLogoIcon size={120} />,
-    name: "",
-    title: "",
-  },
-  {
-    quote: <GalaLogoIcon size={120} />,
-    name: "",
-    title: "",
-  },
-  {
-    quote: <GraziaLogoIcon size={120} />,
-    name: "",
-    title: "",
-  },
-  {
-    quote: <LeFigaroLogoIcon size={130} />,
-    name: "",
-    title: "",
-  },
-  {
-    quote: <LeMondeLogoIcon size={100} />,
-    name: "",
-    title: "",
-  },
-  {
     quote: <LePointLogoIcon size={120} />,
     name: "",
     title: "",
+    href: "https://www.lepoint.fr/art-de-vivre/paris-ci-par-la-pourquoi-tout-le-monde-se-presse-chez-anne-cali-08-09-2022-2489146_4.php#11",
   },
   {
     quote: <LesEchosLogoIcon size={120} />,
     name: "",
     title: "",
+    href: "https://serielimitee.lesechos.fr/beaute/soins-beaute/healthy-monday-bien-choisir-son-massage-1901647",
   },
   {
     quote: <ElleLogoIcon size={110} />,
     name: "",
     title: "",
+    href: " https://www.elle.fr/Minceur/Dossiers-minceur/Le-massage-anti-cellulite-pourquoi-ca-marche-2700957",
   },
 ];
