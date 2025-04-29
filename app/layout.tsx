@@ -13,8 +13,9 @@ const AnekTelugu = Anek_Telugu({
 
 // Métadonnées de la page
 export const metadata: Metadata = {
-  title: "Ophélie Ribière Ostéopathe",
-  description: "Ophélie Ribière Ostéopathe",
+  title: "Nopheïa | Yourself is More",
+  description:
+    "Nopheïa accompagne toutes les femmes qui souhaitent estomper leur cellulite, redessiner leur silhouette et retrouver une peau plus lisse et tonique avec une approche 100% naturelle et bienveillante.",
 };
 
 export default function RootLayout({
