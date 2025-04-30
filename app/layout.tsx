@@ -26,8 +26,15 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link rel="icon" href="/images/Logo.webp" type="image/webp" />
+        <link
+          rel="icon"
+          href="/images/Logo.webp"
+          type="image/webp"
+          sizes="48x48"
+        />
+        <link rel="shortcut icon" href="/images/Logo.webp" />
         <link rel="apple-touch-icon" href="/images/Logo.webp" />
+
         <link rel="canonical" href="https://www.nopheia.fr/" />
         <link rel="image_src" href="https://www.nopheia.fr/images/Logo.webp" />
 
