@@ -39,6 +39,11 @@ export default function RootLayout({
         <link rel="canonical" href="https://www.nopheia.fr/" />
         <link rel="image_src" href="https://www.nopheia.fr/images/Logo.webp" />
 
+        <meta
+          property="og:image"
+          content="https://www.nopheia.fr/images/Logo.webp"
+        />
+
         {/* Pré-chargement DNS pour Vercel */}
         <link rel="preconnect" href="https://vercel.live" />
         <link rel="dns-prefetch" href="https://vercel.live" />
@@ -52,7 +57,12 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Nopheïa",
               url: "https://www.nopheia.fr",
-              logo: "https://www.nopheia.fr/images/Logo.webp",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://www.nopheia.fr/images/Logo.webp",
+                width: 192,
+                height: 192,
+              },
             }),
           }}
         />
