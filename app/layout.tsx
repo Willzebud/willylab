@@ -13,7 +13,7 @@ const AnekTelugu = Anek_Telugu({
 
 // Métadonnées de la page
 export const metadata: Metadata = {
-  title: "Nopheïa | Massage GAD® – Aubagne & Aix-en-Provence",
+  title: "Nopheïa | Massage GAD® – Aubagne & Aix en Provence",
   description:
     "Nopheïa vous propose le massage GAD® : une méthode 100% manuelle, drainante et anticellulite pour lisser la peau, redessiner la silhouette et relancer la circulation. À Aubagne et Mimet - Aix-en-Provence.",
 };
