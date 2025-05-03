@@ -28,15 +28,18 @@ export default function RootLayout({
       <head>
         <link
           rel="icon"
-          href="/images/Logo.webp"
-          type="image/webp"
+          href="/images/LogoGoogle.png"
+          type="image/png"
           sizes="48x48"
         />
-        <link rel="shortcut icon" href="/images/Logo.webp" />
-        <link rel="apple-touch-icon" href="/images/Logo.webp" />
+        <link rel="apple-touch-icon" href="/images/LogoGoogle.png" />
+        <link rel="shortcut icon" href="/images/LogoGoogle.png" />
 
         <link rel="canonical" href="https://www.nopheia.fr/" />
-        <link rel="image_src" href="https://www.nopheia.fr/images/Logo.webp" />
+        <link
+          rel="image_src"
+          href="https://www.nopheia.fr/images/LogoGoogle.png"
+        />
 
         <meta
           property="og:image"
