@@ -1,9 +1,9 @@
 # *
 User-agent: *
-Allow: /logo.webp
+Allow: /images/
 
 # Host
-Host: https://www.nopheia.fr/
+Host: https://nopheia.fr/
 
 # Sitemaps
-Sitemap: https://www.nopheia.fr/sitemap.xml
+Sitemap: https://nopheia.fr/sitemap.xml

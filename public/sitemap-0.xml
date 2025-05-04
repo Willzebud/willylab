@@ -5,49 +5,49 @@
   xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
 >
   <url>
-    <loc>https://www.nopheia.fr/</loc>
+    <loc>https://nopheia.fr/</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.nopheia.fr/tout-savoir-sur-le-gad</loc>
+    <loc>https://nopheia.fr/tout-savoir-sur-le-gad</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.nopheia.fr/nopheia</loc>
+    <loc>https://nopheia.fr/nopheia</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.nopheia.fr/resultats</loc>
+    <loc>https://nopheia.fr/resultats</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.nopheia.fr/soin-signature-gad</loc>
+    <loc>https://nopheia.fr/soin-signature-gad</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.nopheia.fr/gad-detox-plus</loc>
+    <loc>https://nopheia.fr/gad-detox-plus</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.nopheia.fr/belly-gad</loc>
+    <loc>https://nopheia.fr/belly-gad</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.nopheia.fr/tarifs</loc>
+    <loc>https://nopheia.fr/tarifs</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
