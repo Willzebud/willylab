@@ -26,16 +26,9 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link
-          rel="icon"
-          href="/images/LogoGoogle.png"
-          type="image/png"
-          sizes="48x48"
-        />
-        <link rel="apple-touch-icon" href="/images/LogoGoogle.png" />
-        <link rel="shortcut icon" href="/images/LogoGoogle.png" />
+        <link rel="icon" href="/images/LogoGoogle.png" type="image/png" />
 
-        <link rel="canonical" href="https://www.nopheia.fr/" />
+        <link rel="canonical" href="https://nopheia.fr/" />
         <link
           rel="image_src"
           href="https://www.nopheia.fr/images/LogoGoogle.png"
@@ -43,7 +36,7 @@ export default function RootLayout({
 
         <meta
           property="og:image"
-          content="https://www.nopheia.fr/images/Logo.webp"
+          content="https://nopheia.fr/images/LogoGoogle.png"
         />
 
         {/* Pré-chargement DNS pour Vercel */}
@@ -61,9 +54,9 @@ export default function RootLayout({
               url: "https://www.nopheia.fr",
               logo: {
                 "@type": "ImageObject",
-                url: "https://www.nopheia.fr/images/Logo.webp",
-                width: 192,
-                height: 192,
+                url: "https://www.nopheia.fr/images/LogoGoogle.png",
+                width: 48,
+                height: 48,
               },
             }),
           }}
