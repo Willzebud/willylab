@@ -1,9 +1,12 @@
 # *
 User-agent: *
-Allow: /images/
+Allow: /images/LogoGoogle.png
 
 # Host
 Host: https://nopheia.fr/
 
 # Sitemaps
 Sitemap: https://nopheia.fr/sitemap.xml
+
+# Logo
+Sitemap: https://nopheia.fr/images/LogoGoogle.png
