@@ -15,7 +15,7 @@ const AnekTelugu = Anek_Telugu({
 export const metadata: Metadata = {
   title: "Nopheïa | Massage Drainant – Aubagne & Aix en Provence",
   description:
-    "Nopheïa vous propose le massage GAD® : une méthode drainante, anticellulite et 100% manuelle pour lisser la peau, redessiner la silhouette et relancer la circulation. À Aubagne et Mimet - Aix-en-Provence.",
+    "Nopheïa vous propose le massage GAD® : une méthode drainante, anticellulite pour lisser la peau, redessiner la silhouette et relancer la circulation. À Aubagne et Mimet - Aix-en-Provence.",
 };
 
 export default function RootLayout({
