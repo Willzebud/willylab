@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import type { Metadata } from "next";
 import { Anek_Telugu } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const AnekTelugu = Anek_Telugu({
@@ -54,11 +55,13 @@ export default function RootLayout({
         />
 
         {/* Google Ads Conversion Tracking */}
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-388768948"
-        ></script>
-        <script
+        ></Script>
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
