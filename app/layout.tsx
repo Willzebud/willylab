@@ -54,6 +54,19 @@ export default function RootLayout({
           }}
         />
 
+        {/* Preload DNS for Vercel */}
+        <link rel="preconnect" href="https://vercel.live" />
+        <link rel="dns-prefetch" href="https://vercel.live" />
+      </head>
+      <body
+        className={cn(
+          GeistSans.variable,
+          GeistMono.variable,
+          AnekTelugu.variable,
+          "font-sans h-full bg-brand-cream text-foreground"
+        )}
+      >
+        {children}
         {/* Google Ads Conversion Tracking */}
         <Script
           async
@@ -71,20 +84,6 @@ export default function RootLayout({
             `,
           }}
         />
-
-        {/* Preload DNS for Vercel */}
-        <link rel="preconnect" href="https://vercel.live" />
-        <link rel="dns-prefetch" href="https://vercel.live" />
-      </head>
-      <body
-        className={cn(
-          GeistSans.variable,
-          GeistMono.variable,
-          AnekTelugu.variable,
-          "font-sans h-full bg-brand-cream text-foreground"
-        )}
-      >
-        {children}
       </body>
     </html>
   );
