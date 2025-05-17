@@ -1,3 +1,4 @@
+// layout.tsx
 import { cn } from "@/lib/utils";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
@@ -5,45 +6,35 @@ import type { Metadata } from "next";
 import { Anek_Telugu } from "next/font/google";
 import "./globals.css";
 
-// Définir la police Anek Telugu avec une variable CSS personnalisée
 const AnekTelugu = Anek_Telugu({
   subsets: ["latin"],
-  variable: "--font-caption", // Utilisée pour la légende (caption)
+  variable: "--font-caption",
 });
 
-// Métadonnées de la page
 export const metadata: Metadata = {
-  title: "Nopheïa | Massage Drainant – Aubagne & Aix en Provence",
+  title: "Nopheïa | Drainage Lymphatique – Aubagne & Aix en Provence",
   description:
     "Nopheïa vous propose le massage GAD® : une méthode drainante, anticellulite pour lisser la peau, redessiner la silhouette et relancer la circulation. À Aubagne et Mimet - Aix-en-Provence.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr">
       <head>
+        {/* Favicon */}
         <link rel="icon" href="/images/LogoGoogle.png" type="image/png" />
 
+        {/* Canonical & SEO */}
         <link rel="canonical" href="https://nopheia.fr/" />
-        <link
-          rel="image_src"
-          href="https://www.nopheia.fr/images/LogoGoogle.png"
-        />
-
+        <link rel="image_src" href="https://nopheia.fr/images/LogoGoogle.png" />
         <meta
           property="og:image"
           content="https://nopheia.fr/images/LogoGoogle.png"
         />
 
-        {/* Pré-chargement DNS pour Vercel */}
-        <link rel="preconnect" href="https://vercel.live" />
-        <link rel="dns-prefetch" href="https://vercel.live" />
-
-        {/* Données structurées pour le SEO */}
+        {/* Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -51,10 +42,10 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Nopheïa",
-              url: "https://www.nopheia.fr",
+              url: "https://nopheia.fr",
               logo: {
                 "@type": "ImageObject",
-                url: "https://www.nopheia.fr/images/LogoGoogle.png",
+                url: "https://nopheia.fr/images/LogoGoogle.png",
                 width: 48,
                 height: 48,
               },
@@ -62,7 +53,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* Google tag (gtag.js) */}
+        {/* Google Ads Conversion Tracking */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-388768948"
@@ -70,20 +61,24 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'AW-388768948');
-      `,
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-388768948');
+            `,
           }}
         />
+
+        {/* Preload DNS for Vercel */}
+        <link rel="preconnect" href="https://vercel.live" />
+        <link rel="dns-prefetch" href="https://vercel.live" />
       </head>
       <body
         className={cn(
-          GeistSans.variable, // Applique la police GeistSans
-          GeistMono.variable, // Applique la police GeistMono
-          AnekTelugu.variable, // Applique la police AnekTelugu
-          "font-sans h-full bg-brand-cream text-foreground" // Styles globaux pour le layout
+          GeistSans.variable,
+          GeistMono.variable,
+          AnekTelugu.variable,
+          "font-sans h-full bg-brand-cream text-foreground"
         )}
       >
         {children}

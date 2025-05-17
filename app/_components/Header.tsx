@@ -62,6 +62,11 @@ export const Header = () => {
             href="https://www.doctolib.fr/osteopathe/carnoux-en-provence/ophelie-ribiere/booking/places?specialityId=10&telehealth=false&bookingFunnelSource=profile"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => {
+              window.gtag?.("event", "conversion", {
+                send_to: "AW-388768948/XLW_CPzTw8gaELTJsLkB",
+              });
+            }}
           >
             <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group ipadPro:hidden">
               <p className="text-brand-primary group-hover:text-brand-dark font-playfair">
@@ -160,6 +165,11 @@ export const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group"
+              onClick={() => {
+                window.gtag?.("event", "conversion", {
+                  send_to: "AW-388768948/XLW_CPzTw8gaELTJsLkB",
+                });
+              }}
             >
               <p className="text-brand-primary group-hover:text-brand-dark font-playfair">
                 Rendez-vous
