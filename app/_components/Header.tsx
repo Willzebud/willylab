@@ -143,7 +143,7 @@ export const Header = () => {
                   </Link>
                   <Link href="/belly-gad">
                     <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
-                      Le Belly GAD®
+                      Stomac Lift
                     </p>
                   </Link>
                 </div>
@@ -270,7 +270,7 @@ export const Header = () => {
               </Link>
               <Link href="/belly-gad">
                 <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2 font-playfair">
-                  Le Belly GAD®
+                  Stomac Lift
                 </li>
               </Link>
             </ul>

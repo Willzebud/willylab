@@ -5,25 +5,25 @@ import { useState } from "react";
 
 const questions = [
   {
-    question: "Qu'est-ce qui rend le massage Le Belly GAD® unique ?",
+    question: "Qu'est-ce qui rend le massage notre Stomac Lift unique ?",
     answer:
-      "Le massage « Le Belly GAD® » se distingue grâce à la combinaison unique de deux techniques de massage puissantes : le Chi Nei Tsang et le massage GAD®. Ce massage offre une expérience complète de bien-être en associant les bienfaits du Chi Nei Tsang, qui apaise l’esprit, détoxifie et draine l’abdomen, avec les avantages ciblés du massage GAD®, qui élimine la rétention d’eau, réduit la graisse, et améliore la tonicité de la peau. En résulte une perte de centimètres notable, tout en offrant une sensation de légèreté abdominale et une reconnexion aux émotions.",
+      "Il se distingue grâce à la combinaison unique de deux techniques de massage puissantes : le Chi Nei Tsang et le massage GAD®. Ce massage offre une expérience complète de bien-être en associant les bienfaits du Chi Nei Tsang, qui apaise l’esprit, détoxifie et draine l’abdomen, avec les avantages ciblés du massage GAD®, qui élimine la rétention d’eau, réduit la graisse, et améliore la tonicité de la peau. En résulte une perte de centimètres notable, tout en offrant une sensation de légèreté abdominale et une reconnexion aux émotions.",
   },
   {
     question:
-      "Les résultats sont ils immédiats après une séance de Belly GAD® ?",
+      "Les résultats sont ils immédiats après une séance de notre Stomac Lift",
     answer:
       "Les techniques drainantes associées au GAD® vont aider à réduire la rétention d’eau ce qui a pour conséquence une perte de cm très importante et visible au niveau de l’abdomen allant jusqu’à 2 tailles en une séance. Les techniques du massage Chi Nei Tsang vont quand à elles provoquer un apaisement émotionnel et une amélioration de la digestion après une seule séance. Cependant, pour des résultats plus durables, plusieurs séances peuvent être nécessaires.",
   },
   {
     question: "Est-ce que ce massage convient à tout le monde ?",
     answer:
-      "Oui, le Massage Le Belly GAD® est adapté à la plupart des personnes en quête de perte de cm immédiat, de relaxation, d’amélioration du transit et de la qualité de peau de l’abdomen et de soulagement des tensions abdominales. Cependant, si vous avez des problèmes de santé spécifiques, il est recommandé de consulter votre médecin avant de réserver une séance.",
+      "Oui, notre Stomac Lift est adapté à la plupart des personnes en quête de perte de cm immédiat, de relaxation, d’amélioration du transit et de la qualité de peau de l’abdomen et de soulagement des tensions abdominales. Cependant, si vous avez des problèmes de santé spécifiques, il est recommandé de consulter votre médecin avant de réserver une séance.",
   },
   {
-    question: "Combien de temps dure une séance de massage Le Belly GAD® ?",
+    question: "Combien de temps dure une séance de massage notre Stomac Lift",
     answer:
-      "Une séance typique de massage « Le Belly GAD® » dure 1 heure. Cette durée permet au thérapeute de travailler de manière approfondie sur tout l’abdomen.",
+      "Une séance typique de massage dure 1 heure. Cette durée permet au thérapeute de travailler de manière approfondie sur tout l’abdomen.",
   },
 ];
 
@@ -40,7 +40,7 @@ export const BellySeance = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-[50px]">
-            Séance Cure Belly GAD®
+            Séance Stomac Lift
           </h1>
 
           {/* Image mobile */}

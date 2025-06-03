@@ -9,7 +9,7 @@ export const WhatBelly = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-10">
-            Le Belly GAD®, c&rsquo;est quoi ?
+            Notre Stomac Lift, c&rsquo;est quoi ?
           </h1>
 
           {/* Image mobile */}
@@ -25,8 +25,8 @@ export const WhatBelly = () => {
 
           {/* Texte */}
           <p className="font-playfair text-lg md:text-xl text-brand-dark leading-relaxed text-justify">
-            Inspiré du massage Chi Nei Tsang, le Belly GAD® agit directement sur
-            les organes de l’abdomen pour libérer les tensions physiques et
+            Inspiré du massage Chi Nei Tsang, notre Stomac Lift agit directement
+            sur les organes de l’abdomen pour libérer les tensions physiques et
             émotionnelles accumulées. En ciblant notamment le foie, la rate et
             les intestins, il permet un apaisement profond, une reconnexion à
             soi et un équilibre émotionnel retrouvé.

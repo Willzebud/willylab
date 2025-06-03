@@ -9,7 +9,7 @@ export const BellyXSeance = () => {
         {/* Premier bloc */}
         <div className="w-full md:w-[45%] flex flex-col items-center">
           <h1 className="font-afrah text-2xl lg:font-bold text-center text-brand-primary mb-[50px]">
-            Cure Belly GAD® express en 7 séances
+            Cure Stomac Lift express en 7 séances
           </h1>
           <div className="flex justify-center md:mb-[40px]">
             <Image
@@ -50,7 +50,7 @@ export const BellyXSeance = () => {
         {/* Deuxième bloc */}
         <div className="w-full md:w-[45%] flex flex-col items-center pt-[100px] md:pt-0">
           <h1 className="font-afrah text-2xl lg:font-bold text-center text-brand-primary mb-[50px]">
-            Cure Belly GAD® signature en 14 séances
+            Cure Stomac Lift signature en 14 séances
           </h1>
           <div className="flex justify-center md:mb-[40px]">
             <Image

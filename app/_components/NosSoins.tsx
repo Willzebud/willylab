@@ -20,7 +20,7 @@ const soins = [
     alt: "Image de l'offre : GAD Detox +",
   },
   {
-    title: "Le Belly Gad",
+    title: "Stomac Lift",
     description:
       "Massage du ventre qui apaise l’esprit, détoxifie et draine l’abdomen",
     image: "/images/ImgSoins/3.webp",

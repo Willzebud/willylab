@@ -9,7 +9,7 @@ export const HeroBelly = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6">
-            Le Belly GAD®
+            Stomac Lift
           </h1>
 
           {/* Image mobile */}
@@ -27,7 +27,7 @@ export const HeroBelly = () => {
 
           <p className="font-playfair text-lg md:text-xl text-brand-dark leading-relaxed text-justify pt-[40px] lg:pt-[5px]">
             Au croisement du bien-être et de l&rsquo;harmonie entre le corps et
-            l&rsquo;esprit, le Belly GAD® est bien plus qu&rsquo;un simple
+            l&rsquo;esprit, Notre Stomac Lift est bien plus qu&rsquo;un simple
             massage abdominal. Ce soin d&rsquo;exception associe les bienfaits
             du Chi Nei Tsang, issu de la médecine traditionnelle chinoise, à
             l&rsquo;efficacité drainante et amincissante unique du massage GAD®.
