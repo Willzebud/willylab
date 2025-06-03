@@ -13,10 +13,10 @@ const questions = [
   {
     question: "Que comprend-elle ?",
     answer:
-      "Après votre premier Rdv Bilan, la Cure Detox Plus Express comprend un Bilan Final pour mesurer vos résultats. Le suivi est personnalisé avec un réajustement de la fréquence des séances si besoin. Le massage GAD® Detox Plus est effectué sur les cuisses, les fesses, le ventre, les bras et les hanches. Chaque massage se termine par un drainage relaxant pour que vous repartiez 100% détendu(e).",
+      "Après votre premier Rdv Bilan, la Cure Express comprend un Bilan Final pour mesurer vos résultats. Le suivi est personnalisé avec un réajustement de la fréquence des séances si besoin. Le massage GAD® Detox Plus est effectué sur les cuisses, les fesses, le ventre, les bras et les hanches. Chaque massage se termine par un drainage relaxant pour que vous repartiez 100% détendu(e).",
   },
   {
-    question: "Comment se déroule la cure Detox Plus Express ?",
+    question: "Comment se déroule la cure Express ?",
     answer:
       "On commence avec un premier rendez-vous bilan personnalisé suivi d'une séance GAD® Detox Plus. Ce bilan permet de réaliser un diagnostic complet de votre santé, de vous conseiller sur votre alimentation et votre activité physique, et d’adapter les séances à vos objectifs et à votre type de cellulite. \nCe rendez-vous d’1h15 comprend une prise de mesures, du poids, des photos, et se termine par un massage GAD® Detox Plus de 45 minutes. \nLa Cure Detox Plus Express vous accompagne et vous encourage tout au long des 3 semaines, à raison de 2 séances de 45 minutes par semaine.",
   },
@@ -41,7 +41,7 @@ export const Detox7Seance = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-[50px]">
-            Cure Detox Plus Express en 7 séances
+            Cure Express en 7 séances
           </h1>
 
           {/* Image mobile */}
@@ -78,7 +78,9 @@ export const Detox7Seance = () => {
                   className="w-8 h-8"
                 />
               </div>
-              <p className="text-brand-dark text-base md:text-lg font-playfair"></p>
+              <p className="text-brand-dark text-base md:text-lg font-playfair">
+                {point}
+              </p>
             </div>
           ))}
 

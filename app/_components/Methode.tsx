@@ -9,10 +9,10 @@ export const Methode = () => {
         {/* Colonne texte */}
         <div className="z-10 w-full lg:w-1/2 lg:pr-8">
           <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-12 font-afrah">
-            Pourquoi cette Méthode ?
+            Pourquoi ce Massage ?
           </h2>
           <p className="text-base sm:text-xl text-justify text-brand-dark mt-4 font-playfair">
-            Notre méthode minceur utilise un geste exclusif le GAD®, qui
+            Ce massage minceur utilise un geste exclusif le GAD®, qui
             s&rsquo;effectue avec la paume de la main. Les résultats obtenus
             sont ceux d&rsquo;un drainage lymphatique profond combiné à un
             palper rouler profond. Ce massage a une triple action sur la
@@ -39,7 +39,7 @@ export const Methode = () => {
         {/* Colonne bulles */}
         <div className="relative z-10 w-full lg:w-1/2 flex flex-col items-center justify-center gap-4 px-4 sm:px-6 mt-10 md:mt-10 mb-10 lg:mb-0 font-playfair">
           {[
-            "Une méthode validée par une étude scientifique.",
+            "Un massage validé par une étude scientifique.",
             "En 15 séances, c'est en moyenne : -8cm Taille | -4cm cuisses | -33% graisse corporelle",
             "Des résultats visibles dès la 1ère séance : perte moyenne de 0,5cm par séance",
             "Des bilans et des prises de mesures toutes les 5 séances",

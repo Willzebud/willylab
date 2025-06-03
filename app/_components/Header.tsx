@@ -133,12 +133,12 @@ export const Header = () => {
                 <div className="absolute left-0 top-full mt-2 flex flex-col bg-brand-cream shadow-lg rounded-md w-56 py-2">
                   <Link href="/soin-signature-gad">
                     <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
-                      Soin Signature GAD®
+                      Massage Drainant GAD®
                     </p>
                   </Link>
                   <Link href="/gad-detox-plus">
                     <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
-                      Le GAD® Detox +
+                      Massage Drainant & Detox +
                     </p>
                   </Link>
                   <Link href="/belly-gad">
@@ -262,12 +262,12 @@ export const Header = () => {
             <ul className="space-y-2">
               <Link href="/soin-signature-gad">
                 <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2 font-playfair">
-                  Soin Signature GAD®
+                  MAssage Drainant GAD®
                 </li>
               </Link>
               <Link href="/gad-detox-plus">
                 <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2 font-playfair">
-                  Le GAD® Detox +
+                  MAssage Drainant & Detox +
                 </li>
               </Link>
               <Link href="/belly-gad">

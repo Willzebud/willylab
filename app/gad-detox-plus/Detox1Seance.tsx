@@ -36,7 +36,7 @@ export const Detox1Seance = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-[50px]">
-            1 séance - Cure GAD® Detox Plus
+            1 séance - Massage Drainant & Detox Plus
           </h1>
 
           {/* Image mobile */}
@@ -53,7 +53,7 @@ export const Detox1Seance = () => {
           </div>
 
           <p className="font-playfair text-lg md:text-xl text-brand-dark leading-relaxed text-justify pb-[50px]">
-            Idéal pour découvrir le Massage GAD® Detox Plus.
+            Idéal pour découvrir notre Massage Drainant & Detox Plus.
           </p>
 
           {/* Points */}
@@ -71,7 +71,9 @@ export const Detox1Seance = () => {
                   className="w-8 h-8"
                 />
               </div>
-              <p className="text-brand-dark text-base md:text-lg font-playfair"></p>
+              <p className="text-brand-dark text-base md:text-lg font-playfair">
+                {point}
+              </p>
             </div>
           ))}
 

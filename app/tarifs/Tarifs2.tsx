@@ -10,7 +10,7 @@ export const Tarifs2 = () => {
           {/* Titre principal */}
           <div className="text-center">
             <h2 className="font-afrah text-4xl text-brand-primary">
-              Cure GAD® Detox Plus
+              Massage Drainant & Detox Plus
             </h2>
           </div>
 

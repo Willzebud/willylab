@@ -35,7 +35,7 @@ export const Gad1Seance = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-[50px]">
-            1 séance - Cure GAD®
+            1 séance - Massage Drainant GAD®
           </h1>
 
           {/* Image mobile */}

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const Check = () => {
   const points = [
-    "Tous les bénéfices de notre massage amincissant GAD®",
+    "Tous les bénéfices de notre massage drainant et amincissant GAD®",
     "Relance de la circulation sanguine et lymphatique",
     "Perte de centimètres et amélioration de la qualité de la peau durable",
     "Expérience de massage inédite et relaxante",

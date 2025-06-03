@@ -24,9 +24,9 @@ export const TrustGad = () => {
           Plus de 4 000 patients.es ont fait confiance au GAD®
         </h2>
         <p className="text-base sm:text-xl text-brand-cream max-w-[90%] sm:max-w-3xl text-justify sm:px-2 font-playfair">
-          Le GAD® est une méthode drainante et anti-cellulite révolutionnaire.
-          Un geste très profond qui combine les effets d’un palper rouler et
-          d’un drainage profond. 3 fois plus profond et efficace qu’un massage
+          Le GAD® est un massage drainant et anti-cellulite révolutionnaire. Un
+          geste très profond qui combine les effets d’un palper rouler et d’un
+          drainage profond. 3 fois plus profond et efficace qu’un massage
           classique.
         </p>
         <Link href="/tout-savoir-sur-le-gad">

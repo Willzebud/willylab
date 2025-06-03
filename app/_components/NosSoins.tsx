@@ -6,14 +6,14 @@ import { Section } from "./Section";
 
 const soins = [
   {
-    title: "Soin Signature GAD",
+    title: "Massage Drainant GAD®",
     description: "Le soin pour allier l’utile à l’agréable",
     image: "/images/ImgSoins/1.webp",
     href: "/soin-signature-gad",
     alt: "Image de l'offre : Soin Signature GAD®",
   },
   {
-    title: "Le GAD Detox +",
+    title: "Massage Drainant & Detox +",
     description: "Pour des résultats encore plus immédiats",
     image: "/images/ImgSoins/2.webp",
     href: "/gad-detox-plus",

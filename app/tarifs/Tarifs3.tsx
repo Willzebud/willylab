@@ -10,7 +10,7 @@ export const Tarifs3 = () => {
           {/* Titre principal */}
           <div className="text-center">
             <h2 className="text-4xl text-brand-primary font-afrah">
-              Cure Belly GAD®
+              Stomac Lift
             </h2>
           </div>
 

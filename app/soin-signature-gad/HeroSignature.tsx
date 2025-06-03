@@ -9,7 +9,7 @@ export const HeroSignature = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-6">
-            Notre soin signature le GAD®
+            Notre Massage Drainant GAD®
           </h1>
 
           {/* Image pour mobile */}

@@ -10,7 +10,7 @@ export const WhatDetox = () => {
         {/* Texte à gauche */}
         <div className="w-full lg:w-1/2">
           <h1 className="font-afrah text-2xl md:text-3xl lg:text-4xl text-center text-brand-primary mb-10">
-            Le GAD® Detox Plus, c&rsquo;est quoi ?
+            Notre Massage Drainant & Detox Plus, c&rsquo;est quoi ?
           </h1>
 
           {/* Image mobile */}
@@ -27,12 +27,12 @@ export const WhatDetox = () => {
           </div>
 
           <p className="font-playfair text-lg md:text-xl text-brand-dark leading-relaxed text-justify">
-            Le GAD® Détox + a été mis en place pour allier l&rsquo;effet
-            immédiat du drainage lymphatique à l&rsquo;effet durable et visible
-            du massage GAD®. Le drainage profond offre un résultat instantané
-            sur le retour veineux et lymphatique qui dure 24 à 48h, tandis que
-            le GAD® montre ses premiers résultats au bout de 24 à 48h, et ses
-            effets persistent plusieurs semaines.
+            Il a été créé pour allier l&rsquo;effet immédiat du drainage
+            lymphatique à l&rsquo;effet durable et visible du massage GAD®. Le
+            drainage profond offre un résultat instantané sur le retour veineux
+            et lymphatique qui dure 24 à 48h, tandis que le GAD® montre ses
+            premiers résultats au bout de 24 à 48h, et ses effets persistent
+            plusieurs semaines.
           </p>
           <p className="font-playfair text-base sm:text-xl text-justify text-brand-dark mt-4">
             Enveloppé dans des serviettes éponges humides et chaudes, vous êtes

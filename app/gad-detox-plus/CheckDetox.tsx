@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const CheckDetox = () => {
   const points = [
-    "Tous les bénéfices de notre massage amincissant GAD®",
+    "Tous les bénéfices de notre massage drainant et amincissant GAD®",
     "Relance la circulation sanguine et lymphatique",
     "Perte d'une taille en moyenne après la 1re séance",
     "Perte de centimètres et amélioration durable de la qualité de la peau",
