@@ -234,7 +234,9 @@ export const Header = () => {
         {/* Contenu mobile */}
         <div className="p-4 space-y-6 ml-4">
           <div>
-            <h2 className="text-lg font-bold text-brand-dark">Nos méthodes</h2>
+            <h2 className="text-lg font-bold text-brand-dark font-playfair">
+              Nos méthodes
+            </h2>
             <ul className="space-y-2">
               <Link href="/tout-savoir-sur-le-gad">
                 <li className="cursor-pointer text-brand-primary cursor-pointer transition hover:text-brand-dark pt-2 font-playfair">
