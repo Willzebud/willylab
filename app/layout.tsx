@@ -3,13 +3,14 @@ import { cn } from "@/lib/utils";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import type { Metadata } from "next";
-import { Anek_Telugu } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { Anek_Telugu } from "next/font/google";
 
+// Font principale : Playfair Display
 const AnekTelugu = Anek_Telugu({
   subsets: ["latin"],
-  variable: "--font-caption",
+  variable: "--font-caption", // Utilisée pour la légende (caption)
 });
 
 export const metadata: Metadata = {
@@ -63,7 +64,7 @@ export default function RootLayout({
           GeistSans.variable,
           GeistMono.variable,
           AnekTelugu.variable,
-          "font-sans h-full bg-brand-cream text-foreground"
+          "font-playfair h-full bg-[hsl(var(--background))] text-[hsl(var(--foreground))]"
         )}
       >
         {children}

@@ -2,65 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif, "Afrah";
-  src: url("/fonts/afrah/font.woff2") format("woff2"),
-    url("/fonts/afrah/font.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
+/* UTILITAIRES PERSO */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
+/* VARIABLES CSS */
 @layer base {
   :root {
-    --background: 137 63% 98%;
-    --foreground: 137 72% 4%;
-    --muted: 137 23% 93%;
-    --muted-foreground: 137 1% 29%;
-    --popover: 137 63% 97%;
-    --popover-foreground: 137 72% 3%;
-    --card: 137 63% 97%;
-    --card-foreground: 137 72% 3%;
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --primary: 137 45% 65%;
-    --primary-foreground: 137 45% 5%;
-    --secondary: 137 12% 86%;
-    --secondary-foreground: 137 12% 26%;
-    --accent: 137 18% 76%;
-    --accent-foreground: 137 18% 16%;
-    --destructive: 9 97% 36%;
-    --destructive-foreground: 0 0% 100%;
-    --ring: 137 45% 65%;
-    --chart-1: 137 45% 65%;
-    --chart-2: 137 12% 86%;
-    --chart-3: 137 18% 76%;
-    --chart-4: 137 12% 89%;
-    --chart-5: 137 48% 65%;
+    /* Couleurs personnalisées */
+    --bleu-clair: 208 100% 91%; /* #CAE9FF */
+    --bleu-moyen: 204 67% 61%; /* #5FA8D3 */
+    --bleu-fonce: 205 55% 25%; /* #1B4965 */
+    --jaune: 45 100% 48%; /* #F4B400 */
+
+    /* Système de design */
+    --background: var(--bleu-clair);
+    --foreground: var(--bleu-fonce);
+    --primary: var(--jaune);
+    --primary-foreground: 0 0% 100%;
     --radius: 0.5rem;
-    --brand-primary: 24 72% 53%;
-    --brand-dark: 17 44% 45%;
-    --brand-medium: 17 44% 61%;
-    --brand-light: 20 56% 76%;
-    --brand-cream: 30 100% 95%;
   }
 }
 
+/* BASE */
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-brand-cream text-foreground;
+    @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
   }
 }
 
+/* ANIMATIONS */
 @keyframes scroll {
   0% {
     transform: translateX(0%);

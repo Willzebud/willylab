@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 const config: Config = {
   darkMode: ["class"],
@@ -9,8 +10,6 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      playfair: ["'Playfair Display'", "serif"],
-      afrah: ["Afrah", "sans-serif"],
       sans: ["var(--font-geist-sans)"],
       mono: ["var(--font-geist-mono)"],
       caption: ["var(--font-caption)"],
@@ -19,59 +18,32 @@ const config: Config = {
       screens: {
         sm: "640px",
         md: "768px",
-        ipadPro: "900px", // ou une autre valeur selon ton besoin
-        lg: "1100px", // désormais lg = desktop
+        ipadPro: "900px",
+        lg: "1100px",
         xl: "1280px",
         "2xl": "1536px",
       },
       colors: {
+        bleu: {
+          fonce: "#1B4965",
+          moyen: "#5FA8D3",
+          clair: "#CAE9FF",
+        },
+        jaune: {
+          dynamique: "#F4B400",
+        },
         brand: {
-          primary: "hsl(var(--brand-primary))",
-          dark: "hsl(var(--brand-dark))",
-          medium: "hsl(var(--brand-medium))",
-          light: "hsl(var(--brand-light))",
-          cream: "hsl(var(--brand-cream))",
+          primary: "#F4B400",
+          dark: "#1B4965",
+          medium: "#5FA8D3",
+          light: "#CAE9FF",
+          cream: "#CAE9FF", // utilisé dans layout & globals.css
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        chart: {
-          "1": "hsl(var(--chart-1))",
-          "2": "hsl(var(--chart-2))",
-          "3": "hsl(var(--chart-3))",
-          "4": "hsl(var(--chart-4))",
-          "5": "hsl(var(--chart-5))",
-        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,6 +52,20 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    tailwindcssAnimate,
+    function ({
+      addUtilities,
+    }: {
+      addUtilities: (utilities: Record<string, { hyphens: string }>) => void;
+    }) {
+      addUtilities({
+        ".hyphens-auto": { hyphens: "auto" },
+        ".hyphens-none": { hyphens: "none" },
+        ".hyphens-manual": { hyphens: "manual" },
+      });
+    },
+  ],
 };
+
 export default config;

@@ -6,6 +6,7 @@ import { InstaIcon } from "./icons/Insta";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,13 +33,16 @@ export const Header = () => {
         {/* Logo */}
         <div className="relative flex items-center space-x-2">
           <Link href="/">
-            <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-brand-primary bg-transparent cursor-pointer transition hover:border-brand-dark hover:bg-brand-dark flex items-center justify-center">
-              <span className="sr-only">Retour à l&rsquo;accueil</span>
-            </div>
+            <Image
+              src="/images/Logo.webp"
+              alt="Logo de la marque Nopheïa"
+              width={120}
+              height={120}
+              priority
+              sizes="224px"
+              className="object-cover"
+            />
           </Link>
-          <div className="h-auto w-auto">
-            <p className="text-brand-dark font-afrah">NOPHEÏA</p>
-          </div>
         </div>
 
         {/* Menu Desktop */}
@@ -53,7 +57,7 @@ export const Header = () => {
             <div className="group w-16 h-16 md:w-16 md:h-4 lg:w-12 lg:h-12 rounded-full bg-transparent flex items-center justify-center cursor-pointer transition">
               <InstaIcon
                 size={30}
-                className="text-brand-primary transition group-hover:text-brand-dark"
+                className="text-brand-background transition group-hover:text-brand-primary"
               />
             </div>
           </a>
@@ -69,7 +73,7 @@ export const Header = () => {
             }}
           >
             <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group ipadPro:hidden">
-              <p className="text-brand-primary group-hover:text-brand-dark font-playfair">
+              <p className="text-brand-dark group-hover:text-brand-primary font-playfair">
                 Rendez-vous
               </p>
             </div>
@@ -85,8 +89,8 @@ export const Header = () => {
                 <p
                   className={`transition ${
                     openNosMethodes
-                      ? "text-brand-dark font-playfair" // Menu ouvert ➔ couleur dark fixe
-                      : "text-brand-primary group-hover:text-brand-dark font-playfair" // Menu fermé ➔ couleur normale
+                      ? "text-brand-primary font-playfair" // Menu ouvert ➔ couleur dark fixe
+                      : "text-brand-dark group-hover:text-brand-primary font-playfair" // Menu fermé ➔ couleur normale
                   }`}
                 >
                   Nos méthodes
@@ -122,8 +126,8 @@ export const Header = () => {
                 <p
                   className={`transition ${
                     openMesSoins
-                      ? "text-brand-dark font-playfair" // Menu ouvert ➔ couleur dark
-                      : "text-brand-primary group-hover:text-brand-dark font-playfair" // Menu fermé ➔ couleur normale
+                      ? "text-brand-primary font-playfair" // Menu ouvert ➔ couleur dark
+                      : "text-brand-dark group-hover:text-brand-primary font-playfair" // Menu fermé ➔ couleur normale
                   }`}
                 >
                   Nos soins
@@ -153,7 +157,7 @@ export const Header = () => {
             {/* Tarifs */}
             <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group">
               <Link href="/tarifs">
-                <p className="text-brand-primary group-hover:text-brand-dark font-playfair">
+                <p className="text-brand-dark group-hover:text-brand-primary font-playfair">
                   Tarifs
                 </p>
               </Link>
@@ -171,7 +175,7 @@ export const Header = () => {
                 });
               }}
             >
-              <p className="text-brand-primary group-hover:text-brand-dark font-playfair">
+              <p className="text-brand-dark group-hover:text-brand-primary font-playfair">
                 Rendez-vous
               </p>
             </a>
@@ -180,13 +184,13 @@ export const Header = () => {
           {/* Burger Icon Mobile */}
           <div className="relative flex items-center ipadPro:hidden">
             <div
-              className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-brand-primary bg-brand-cream cursor-pointer transition hover:border-brand-dark hover:bg-brand-dark flex items-center justify-center group"
+              className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-brand-dark bg-brand-background cursor-pointer transition hover:border-brand-primary hover:bg-brand-primary flex items-center justify-center group"
               onClick={toggleMenu}
             >
-              <div className="space-y-[2px] flex flex-col items-center group-hover:bg-brand-dark">
-                <span className="w-1 h-1 bg-brand-primary rounded-full group-hover:bg-brand-cream"></span>
-                <span className="w-1 h-1 bg-brand-primary rounded-full group-hover:bg-brand-cream"></span>
-                <span className="w-1 h-1 bg-brand-primary rounded-full group-hover:bg-brand-cream"></span>
+              <div className="space-y-[2px] flex flex-col items-center group-hover:bg-brand-primary">
+                <span className="w-1 h-1 bg-brand-dark rounded-full group-hover:bg-brand-light"></span>
+                <span className="w-1 h-1 bg-brand-dark rounded-full group-hover:bg-brand-light"></span>
+                <span className="w-1 h-1 bg-brand-dark rounded-full group-hover:bg-brand-light"></span>
               </div>
             </div>
           </div>
@@ -219,7 +223,7 @@ export const Header = () => {
         initial={{ y: "-100%" }}
         animate={{ y: isMenuOpen ? "0%" : "-100%" }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className="fixed top-0 left-0 w-full h-[26rem] bg-brand-cream shadow-lg z-40 ipadPro:hidden"
+        className="fixed top-0 left-0 w-full h-[26rem] bg-brand-light shadow-lg z-40 ipadPro:hidden"
       >
         {/* Bouton fermer */}
         <div className="flex justify-end p-4">
@@ -239,17 +243,17 @@ export const Header = () => {
             </h2>
             <ul className="space-y-2">
               <Link href="/tout-savoir-sur-le-gad">
-                <li className="cursor-pointer text-brand-primary cursor-pointer transition hover:text-brand-dark pt-2 font-playfair">
+                <li className="cursor-pointer text-brand-dark cursor-pointer transition hover:text-brand-primary pt-2 font-playfair">
                   Qu&apos;est ce que le GAD® ?
                 </li>
               </Link>
               <Link href="/nopheia">
-                <li className="cursor-pointer text-brand-primary cursor-pointer transition hover:text-brand-dark pt-2 font-playfair">
+                <li className="cursor-pointer text-brand-dark cursor-pointer transition hover:text-brand-primary pt-2 font-playfair">
                   Nopheïa
                 </li>
               </Link>
               <Link href="/resultats">
-                <li className="cursor-pointer text-brand-primary cursor-pointer transition hover:text-brand-dark pt-2 font-playfair">
+                <li className="cursor-pointer text-brand-dark cursor-pointer transition hover:text-brand-primary pt-2 font-playfair">
                   Les résultats
                 </li>
               </Link>
@@ -261,17 +265,17 @@ export const Header = () => {
             </h2>
             <ul className="space-y-2">
               <Link href="/soin-signature-gad">
-                <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2 font-playfair">
+                <li className="cursor-pointer text-brand-dark transition hover:text-brand-primary pt-2 font-playfair">
                   MAssage Drainant GAD®
                 </li>
               </Link>
               <Link href="/gad-detox-plus">
-                <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2 font-playfair">
+                <li className="cursor-pointer text-brand-dark transition hover:text-brand-primarybrand-dark pt-2 font-playfair">
                   MAssage Drainant & Detox +
                 </li>
               </Link>
               <Link href="/belly-gad">
-                <li className="cursor-pointer text-brand-primary transition hover:text-brand-dark pt-2 font-playfair">
+                <li className="cursor-pointer text-brand-dark transition hover:text-brand-primary pt-2 font-playfair">
                   Stomac Lift
                 </li>
               </Link>
@@ -279,7 +283,7 @@ export const Header = () => {
           </div>
           <div>
             <Link href="/tarifs">
-              <h2 className="text-lg font-bold text-brand-primary cursor-pointer transition hover:text-brand-dark font-playfair">
+              <h2 className="text-lg font-bold text-brand-dark cursor-pointer transition hover:text-brand-primary font-playfair">
                 Tarifs
               </h2>
             </Link>
