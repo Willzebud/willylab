@@ -5,29 +5,20 @@ export const Hero = () => {
   return (
     <div className="relative z-0 w-full h-auto mx-auto overflow-hidden bg-brand-cream mt-10">
       {/* Contenu du Hero */}
-      <div className="relative z-10 flex flex-col lg:flex-row mx-10">
+      <div className="relative z-10 flex flex-row lg:flex-row mx-10">
         {/* Bloc logo + carte */}
-        <div className="flex flex-col md:flex-row lg:flex-col items-center justify-center w-full lg:max-w-[45%]">
+        <div className="flex flex-row md:flex-row lg:flex-row-reverse items-center justify-center w-full lg:max-w-[45%]">
           {/* Logo */}
-          <div className="flex-shrink-0 md:mb-0">
-            <div
-              className="relative shadow-lg overflow-hidden rounded-full"
-              style={{
-                width: "224px",
-                height: "224px",
-                borderRadius: "66% 34% 67% 33% / 40% 65% 35% 60%",
-              }}
-            >
-              <Image
-                src="/images/Logo.webp"
-                alt="Logo de la marque Nopheïa"
-                width={224}
-                height={224}
-                priority
-                sizes="224px"
-                className="object-cover"
-              />
-            </div>
+          <div className="flex-shrink-0 md:mb-0 rounded-full border border-brand-primary overflow-hidden w-[224px] h-[224px]">
+            <Image
+              src="/images/will.webp"
+              alt="Photo de Willyam"
+              width={224}
+              height={224}
+              priority
+              sizes="224px"
+              className="object-cover w-full h-full"
+            />
           </div>
 
           {/* Carte info */}
@@ -37,28 +28,12 @@ export const Hero = () => {
               borderRadius: "66% 34% 67% 33% / 40% 65% 35% 60%",
             }}
           >
-            <h1 className="text-brand-cream font-afrah text-lg md:text-2xl lg:text-4xl text-center">
-              Découvrez le massage révolutionnaire, drainant, amincissant et
-              anticellulite : Le GAD®
+            <h1 className="text-brand-cream font-sans text-lg md:text-2xl font-lg text-center">
+              J’aide les praticiennes du bien-être à transformer leur simple
+              prestation en une offre signature désirable… et à décrocher leurs
+              premières clientes (avant d’y investir des mois).
             </h1>
           </div>
-        </div>
-
-        {/* Vidéo massage */}
-        <div
-          className="lg:w-[70%] lg:max-w-2xl mx-auto mt-4 overflow-hidden shadow-lg bg-brand-dark h-[250px] md:h-[500px]"
-          style={{
-            borderRadius: "23% 77% 37% 63% / 40% 44% 56% 60%",
-          }}
-        >
-          <video
-            src="/video/massage.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover"
-          />
         </div>
       </div>
     </div>

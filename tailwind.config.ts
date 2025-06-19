@@ -10,9 +10,9 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      sans: ["var(--font-geist-sans)"],
+      sans: ["var(--font-caption)", "sans-serif"], // Anek Telugu = font par défaut
       mono: ["var(--font-geist-mono)"],
-      caption: ["var(--font-caption)"],
+      caption: ["var(--font-caption)"], // si tu veux une variante caption
     },
     extend: {
       screens: {

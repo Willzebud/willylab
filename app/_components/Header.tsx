@@ -10,21 +10,9 @@ import Image from "next/image";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [openNosMethodes, setOpenNosMethodes] = useState(false);
-  const [openMesSoins, setOpenMesSoins] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const toggleNosMethodes = () => {
-    setOpenNosMethodes((prev) => !prev);
-    setOpenMesSoins(false); // Fermer l'autre menu si ouvert
-  };
-
-  const toggleMesSoins = () => {
-    setOpenMesSoins((prev) => !prev);
-    setOpenNosMethodes(false); // Fermer l'autre menu si ouvert
   };
 
   return (
@@ -71,94 +59,32 @@ export const Header = () => {
                 send_to: "AW-388768948/XLW_CPzTw8gaELTJsLkB",
               });
             }}
-          >
-            <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group ipadPro:hidden">
-              <p className="text-brand-dark group-hover:text-brand-primary font-playfair">
-                Rendez-vous
-              </p>
-            </div>
-          </a>
+          ></a>
           {/* Menu items */}
           <div className="hidden ipadPro:flex relative items-center space-x-4">
-            {/* Nos méthodes */}
-            <div className="relative">
-              <div
-                onClick={toggleNosMethodes}
-                className="px-3 lg:px-4 py-1 rounded-full cursor-pointer transition flex flex-col items-start group"
-              >
-                <p
-                  className={`transition ${
-                    openNosMethodes
-                      ? "text-brand-primary font-playfair" // Menu ouvert ➔ couleur dark fixe
-                      : "text-brand-dark group-hover:text-brand-primary font-playfair" // Menu fermé ➔ couleur normale
-                  }`}
-                >
-                  Nos méthodes
+            {/* Mon Offre / Services */}
+            <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group">
+              <Link href="">
+                <p className="text-brand-dark group-hover:text-brand-primary font-sans">
+                  Mon Offre / Services
                 </p>
-              </div>
-              {openNosMethodes && (
-                <div className="absolute left-0 top-full mt-2 flex flex-col bg-brand-cream shadow-lg rounded-md w-56 py-2">
-                  <Link href="/tout-savoir-sur-le-gad">
-                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
-                      Qu&apos;est ce que le GAD® ?
-                    </p>
-                  </Link>
-                  <Link href="/nopheia">
-                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
-                      Nopheïa
-                    </p>
-                  </Link>
-                  <Link href="/resultats">
-                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
-                      Les Résultats
-                    </p>
-                  </Link>
-                </div>
-              )}
-            </div>
-
-            {/* Mes soins */}
-            <div className="relative">
-              <div
-                onClick={toggleMesSoins}
-                className="px-3 lg:px-4 py-1 rounded-full cursor-pointer transition flex flex-col items-start group"
-              >
-                <p
-                  className={`transition ${
-                    openMesSoins
-                      ? "text-brand-primary font-playfair" // Menu ouvert ➔ couleur dark
-                      : "text-brand-dark group-hover:text-brand-primary font-playfair" // Menu fermé ➔ couleur normale
-                  }`}
-                >
-                  Nos soins
-                </p>
-              </div>
-              {openMesSoins && (
-                <div className="absolute left-0 top-full mt-2 flex flex-col bg-brand-cream shadow-lg rounded-md w-56 py-2">
-                  <Link href="/soin-signature-gad">
-                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
-                      Massage Drainant GAD®
-                    </p>
-                  </Link>
-                  <Link href="/gad-detox-plus">
-                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
-                      Massage Drainant & Detox +
-                    </p>
-                  </Link>
-                  <Link href="/belly-gad">
-                    <p className="px-4 py-2 text-brand-dark hover:text-brand-primary transition cursor-pointer font-playfair">
-                      Stomac Lift
-                    </p>
-                  </Link>
-                </div>
-              )}
+              </Link>
             </div>
 
             {/* Tarifs */}
             <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group">
               <Link href="/tarifs">
-                <p className="text-brand-dark group-hover:text-brand-primary font-playfair">
+                <p className="text-brand-dark group-hover:text-brand-primary font-sans">
                   Tarifs
+                </p>
+              </Link>
+            </div>
+
+            {/* Qui je suis */}
+            <div className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group">
+              <Link href="">
+                <p className="text-brand-dark group-hover:text-brand-primary font-sans">
+                  Qui je suis
                 </p>
               </Link>
             </div>
@@ -168,16 +94,14 @@ export const Header = () => {
               href="https://www.doctolib.fr/osteopathe/carnoux-en-provence/ophelie-ribiere/booking/places?specialityId=10&telehealth=false&bookingFunnelSource=profile"
               target="_blank"
               rel="noopener noreferrer"
-              className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition group"
+              className="h-auto w-auto px-3 lg:px-4 py-1 rounded-full cursor-pointer transition text-brand-dark hover:text-brand-primary font-sans"
               onClick={() => {
                 window.gtag?.("event", "conversion", {
                   send_to: "AW-388768948/XLW_CPzTw8gaELTJsLkB",
                 });
               }}
             >
-              <p className="text-brand-dark group-hover:text-brand-primary font-playfair">
-                Rendez-vous
-              </p>
+              Contacts
             </a>
           </div>
 
@@ -238,53 +162,30 @@ export const Header = () => {
         {/* Contenu mobile */}
         <div className="p-4 space-y-6 ml-4">
           <div>
-            <h2 className="text-lg font-bold text-brand-dark font-playfair">
-              Nos méthodes
-            </h2>
-            <ul className="space-y-2">
-              <Link href="/tout-savoir-sur-le-gad">
-                <li className="cursor-pointer text-brand-dark cursor-pointer transition hover:text-brand-primary pt-2 font-playfair">
-                  Qu&apos;est ce que le GAD® ?
-                </li>
-              </Link>
-              <Link href="/nopheia">
-                <li className="cursor-pointer text-brand-dark cursor-pointer transition hover:text-brand-primary pt-2 font-playfair">
-                  Nopheïa
-                </li>
-              </Link>
-              <Link href="/resultats">
-                <li className="cursor-pointer text-brand-dark cursor-pointer transition hover:text-brand-primary pt-2 font-playfair">
-                  Les résultats
-                </li>
-              </Link>
-            </ul>
-          </div>
-          <div>
-            <h2 className="text-lg font-bold text-brand-dark font-playfair">
-              Nos soins
-            </h2>
-            <ul className="space-y-2">
-              <Link href="/soin-signature-gad">
-                <li className="cursor-pointer text-brand-dark transition hover:text-brand-primary pt-2 font-playfair">
-                  MAssage Drainant GAD®
-                </li>
-              </Link>
-              <Link href="/gad-detox-plus">
-                <li className="cursor-pointer text-brand-dark transition hover:text-brand-primarybrand-dark pt-2 font-playfair">
-                  MAssage Drainant & Detox +
-                </li>
-              </Link>
-              <Link href="/belly-gad">
-                <li className="cursor-pointer text-brand-dark transition hover:text-brand-primary pt-2 font-playfair">
-                  Stomac Lift
-                </li>
-              </Link>
-            </ul>
+            <Link href="">
+              <h2 className="text-lg font-bold text-brand-dark cursor-pointer transition hover:text-brand-primary font-sans">
+                Mon Offre / Services
+              </h2>
+            </Link>
           </div>
           <div>
             <Link href="/tarifs">
-              <h2 className="text-lg font-bold text-brand-dark cursor-pointer transition hover:text-brand-primary font-playfair">
+              <h2 className="text-lg font-bold text-brand-dark cursor-pointer transition hover:text-brand-primary font-sans">
                 Tarifs
+              </h2>
+            </Link>
+          </div>
+          <div>
+            <Link href="">
+              <h2 className="text-lg font-bold text-brand-dark cursor-pointer transition hover:text-brand-primary font-sans">
+                Qui je suis
+              </h2>
+            </Link>
+          </div>
+          <div>
+            <Link href="">
+              <h2 className="text-lg font-bold text-brand-dark cursor-pointer transition hover:text-brand-primary font-sans">
+                Contacts
               </h2>
             </Link>
           </div>
