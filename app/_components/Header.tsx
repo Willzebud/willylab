@@ -107,7 +107,7 @@ export const Header = () => {
 
           {/* Bouton Burger Menu */}
           <div
-            className="bg-transparent cursor-pointer flex items-center justify-center transition group"
+            className="bg-transparent cursor-pointer flex items-center justify-center transition group ipadPro:hidden"
             onClick={toggleMenu}
           >
             <div className="grid grid-cols-3 grid-rows-3 gap-[4px]">
