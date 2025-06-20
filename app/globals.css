@@ -13,10 +13,10 @@
 @layer base {
   :root {
     /* Couleurs personnalisées */
-    --bleu-clair: 208 100% 91%; /* #CAE9FF */
-    --bleu-moyen: 204 67% 61%; /* #5FA8D3 */
-    --bleu-fonce: 205 55% 25%; /* #1B4965 */
-    --jaune: 45 100% 48%; /* #F4B400 */
+    --bleu-clair: #cae9ff;
+    --bleu-moyen: #5fa8d3;
+    --bleu-fonce: #1b4965;
+    --jaune: #f4b400;
 
     /* Système de design */
     --background: var(--bleu-clair);
@@ -34,7 +34,8 @@
   }
 
   body {
-    @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
+    background-color: var(--background);
+    color: hsl(var(--foreground));
   }
 }
 

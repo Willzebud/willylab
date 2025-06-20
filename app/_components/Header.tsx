@@ -16,7 +16,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full py-4 z-50 bg-brand-cream">
+    <header className="fixed top-0 left-0 w-full py-4 z-50 bg-[var(--background)]">
       <Section className="flex items-center justify-between">
         {/* Logo */}
         <div className="relative flex items-center space-x-2">
@@ -24,8 +24,8 @@ export const Header = () => {
             <Image
               src="/images/Logo.webp"
               alt="Logo de la marque Nopheïa"
-              width={120}
-              height={120}
+              width={100}
+              height={100}
               priority
               sizes="224px"
               className="object-cover"

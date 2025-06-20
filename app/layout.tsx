@@ -64,7 +64,7 @@ export default function RootLayout({
           GeistSans.variable,
           GeistMono.variable,
           AnekTelugu.variable,
-          "font-playfair h-full bg-[hsl(var(--background))] text-[hsl(var(--foreground))]"
+          "font-anek-telugu h-full bg-[var(--background)] text-[hsl(var(--foreground))]"
         )}
       >
         {children}
