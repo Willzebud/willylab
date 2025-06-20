@@ -16,7 +16,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full py-4 z-50 bg-[var(--background)]">
+    <header className="fixed top-0 px-6 left-0 w-full py-4 z-50 bg-[var(--background)]">
       <Section className="flex items-center justify-between">
         {/* Logo */}
         <div className="relative flex items-center space-x-2">
@@ -105,17 +105,18 @@ export const Header = () => {
             </a>
           </div>
 
-          {/* Burger Icon Mobile */}
-          <div className="relative flex items-center ipadPro:hidden">
-            <div
-              className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-brand-dark bg-brand-background cursor-pointer transition hover:border-brand-primary hover:bg-brand-primary flex items-center justify-center group"
-              onClick={toggleMenu}
-            >
-              <div className="space-y-[2px] flex flex-col items-center group-hover:bg-brand-primary">
-                <span className="w-1 h-1 bg-brand-dark rounded-full group-hover:bg-brand-light"></span>
-                <span className="w-1 h-1 bg-brand-dark rounded-full group-hover:bg-brand-light"></span>
-                <span className="w-1 h-1 bg-brand-dark rounded-full group-hover:bg-brand-light"></span>
-              </div>
+          {/* Bouton Burger Menu */}
+          <div
+            className="bg-transparent cursor-pointer flex items-center justify-center transition group"
+            onClick={toggleMenu}
+          >
+            <div className="grid grid-cols-3 grid-rows-3 gap-[4px]">
+              {Array.from({ length: 9 }).map((_, i) => (
+                <span
+                  key={i}
+                  className="w-1.5 h-1.5 bg-brand-dark rounded-full transition group-hover:brand-primary"
+                ></span>
+              ))}
             </div>
           </div>
         </div>
@@ -147,7 +148,7 @@ export const Header = () => {
         initial={{ y: "-100%" }}
         animate={{ y: isMenuOpen ? "0%" : "-100%" }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className="fixed top-0 left-0 w-full h-[26rem] bg-brand-light shadow-lg z-40 ipadPro:hidden"
+        className="fixed top-0 left-0 w-full h-[17rem] bg-brand-light shadow-lg z-40 ipadPro:hidden"
       >
         {/* Bouton fermer */}
         <div className="flex justify-end p-4">
